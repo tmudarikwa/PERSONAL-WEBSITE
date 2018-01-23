@@ -4,7 +4,7 @@
 body {
  font-family: 'Oswald', sans-serif;
  background-color: rgba(114, 28, 36, 1);
- color: #f8f9fae0;
+ color:white;
 }
 
 .container-fluid {
@@ -50,7 +50,7 @@ a{
  footer styles
 */
 footer{
-  background-color: #000000cf;
+  background-color:black;
   text-align: center;
   color:white;
 }
