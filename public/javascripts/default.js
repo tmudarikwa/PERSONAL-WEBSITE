@@ -4,7 +4,8 @@ $('.bcontent').css('height',(79/100 * winH)+'px');
 $('button').hover(function(){
 	$(this).css('background-color','black');
 	$(this).css('color','white')
+  $(this).css('mouse')
 }).mouseout(function(){
-	$(this).css('background-color','#000000ad')
+	$(this).css('background-color','transparent')
 	;$(this).css('color','black')
 });
