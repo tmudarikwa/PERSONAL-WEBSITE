@@ -5,8 +5,8 @@ var path = require('path');
 var date = new Date();
 /* download resume copy */
 router.get('/', function(req, res, next) {
-  var path = '/downloadresume';
-  res.locals.path = path;	
+  var vpath = '/downloadresume';
+  res.locals.path = vpath;	
    var file = path.join(__dirname, 'public/resume/TAKUNDA EUGENE MUDARIKWA - RESUME - 2018.pdf');
    res.download(file, function (err) {
        if (err) {
@@ -16,7 +16,7 @@ router.get('/', function(req, res, next) {
            console.log("Success");
        }
    });
-   res.render('index', { title: 'Takunda Mudarikwa | Portifolio', year: date.getFullYear(), filedownload: 'success'});
+  // res.render('index', { title: 'Takunda Mudarikwa | Portifolio', year: date.getFullYear(), filedownload: 'success'});
 });
 
 
