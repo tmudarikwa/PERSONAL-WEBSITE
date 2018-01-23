@@ -7,8 +7,7 @@ if( navigator.userAgent.match(/Android/i) || navigator.userAgent.match(/webOS/i)
     console.log(+navigator.userAgent);
  }
 else
-{
-    
+{    
     $('.bcontent').css('height',(79/100 * winH)+'px');  
 } 
 
