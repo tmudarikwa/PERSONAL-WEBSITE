@@ -12,7 +12,7 @@ else
     $('.bcontent').css('height',(79/100 * winH)+'px'); 
 
     //setting footer height
-    $('.footer')css('height',(10/100 * winH)+'px'); 
+    $('.footer').css('height',(10/100 * winH)+'px'); 
 } 
 
 $('button').hover(function(){
