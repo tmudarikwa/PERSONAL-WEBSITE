@@ -8,7 +8,11 @@ if( navigator.userAgent.match(/Android/i) || navigator.userAgent.match(/webOS/i)
  }
 else
 {    
-    $('.bcontent').css('height',(79/100 * winH)+'px');  
+    //setting main body content height
+    $('.bcontent').css('height',(79/100 * winH)+'px'); 
+
+    //setting footer height
+    $('.footer')css('height',(10/100 * winH)+'px'); 
 } 
 
 $('button').hover(function(){

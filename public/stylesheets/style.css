@@ -3,7 +3,7 @@
 */
 body {
  font-family: 'Oswald', sans-serif;
- background-color: #000000ad;
+ background-color: rgba(114, 28, 36, 1);
  color: #f8f9fae0;
 }
 
@@ -31,7 +31,7 @@ p {
 }
 button {
   background-color: inherit;
-  border: 1px solid white;
+  border: 1px solid black;
   border-radius: 3px;
   font-weight: bold;
   padding:2px;
@@ -52,6 +52,7 @@ a{
 footer{
   background-color: #000000cf;
   text-align: center;
+  color:white;
 }
 
 footer p {
