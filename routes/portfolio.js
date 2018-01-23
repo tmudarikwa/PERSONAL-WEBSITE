@@ -3,11 +3,11 @@ var router = express.Router();
 
 var date = new Date();
 
-/* GET contact page. */
+/* GET portifolio page. */
 router.get('/', function(req, res, next) {
-  var path = '/about';
+  var path = '/portfolio';
   res.locals.path = path;
-  res.render('contact', { title: 'Takunda Mudarikwa | Contact', year: date.getFullYear()});
+  res.render('portfolio', { title: 'Takunda Mudarikwa | Portfolio', year: date.getFullYear()});
 });
 
 module.exports = router;

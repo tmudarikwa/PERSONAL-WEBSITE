@@ -9,6 +9,7 @@ var index = require('./routes/index');
 var downloadfile = require('./routes/downloadfile');
 var contactme = require('./routes/contact');
 var aboutme = require('./routes/about');
+var portfolio = require('./routes/portfolio');
 
 var app = express();
 
@@ -28,6 +29,7 @@ app.use('/', index);
 app.use('/downloadresume', downloadfile);
 app.use('/about', aboutme);
 app.use('/contact', contactme);
+app.use('/portfolio', portfolio);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

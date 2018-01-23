@@ -4,7 +4,9 @@ var path = require('path');
 
 var date = new Date();
 /* download resume copy */
-router.get('/downloadresume', function (req, res) {
+router.get('/', function(req, res, next) {
+  var path = '/downloadresume';
+  res.locals.path = path;	
    var file = path.join(__dirname, 'public/resume/TAKUNDA EUGENE MUDARIKWA - RESUME - 2018.pdf');
    res.download(file, function (err) {
        if (err) {
