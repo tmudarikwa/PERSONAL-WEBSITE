@@ -38,6 +38,10 @@ button {
   font-size: 200%;
 }
 
+button.selected {
+  background-color: black;
+  color:white;
+}
 a{
   margin-left:2%;
 }
