@@ -7,7 +7,7 @@ var date = new Date();
 router.get('/', function(req, res, next) {
   var vpath = '/downloadresume';
   res.locals.path = vpath;	
-   var file = path.join(__dirname, 'public/resume/TAKUNDA EUGENE MUDARIKWA - RESUME - 2018.pdf');
+   var file = path.join(__dirname, '../public/resume/TAKUNDA EUGENE MUDARIKWA.pdf');
    res.download(file, function (err) {
        if (err) {
            console.log("Error");

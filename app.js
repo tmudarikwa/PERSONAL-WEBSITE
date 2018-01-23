@@ -10,6 +10,7 @@ var downloadfile = require('./routes/downloadfile');
 var contactme = require('./routes/contact');
 var aboutme = require('./routes/about');
 var portfolio = require('./routes/portfolio');
+var viewresume = require('./routes/viewresume');
 
 var app = express();
 
@@ -27,6 +28,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', index);
 app.use('/downloadresume', downloadfile);
+app.use('/viewresume', viewresume);
 app.use('/about', aboutme);
 app.use('/contact', contactme);
 app.use('/portfolio', portfolio);
