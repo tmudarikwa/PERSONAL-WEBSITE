@@ -5,7 +5,7 @@ var date = new Date();
 
 /* GET contact page. */
 router.get('/', function(req, res, next) {
-  var path = '/about';
+  var path = '/contact';
   res.locals.path = path;
   res.render('contact', { title: 'Takunda Mudarikwa | Contact', year: date.getFullYear()});
 });

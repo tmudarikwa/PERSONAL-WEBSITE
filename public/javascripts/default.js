@@ -12,10 +12,23 @@ else
 } 
 
 $('button').hover(function(){
-	$(this).css('background-color','black');
-	$(this).css('color','white')
-  $(this).css('mouse')
+  if($(this).hasClass("selected"))
+  {
+   console.log('doing nothing because button already highlighted');
+  }
+  else{
+	  $(this).css('background-color','black');
+    $(this).css('color','white');
+    $(this).css('mouse');
+  }
 }).mouseout(function(){
-	$(this).css('background-color','transparent')
-	;$(this).css('color','black')
+  if($(this).hasClass("selected"))
+  {
+    console.log('doing nothing because button already highlighted');
+  }
+  else
+  {	
+    $(this).css('background-color','transparent');
+	   $(this).css('color','black');
+   }
 });
