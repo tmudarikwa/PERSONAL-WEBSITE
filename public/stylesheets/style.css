@@ -1,0 +1,60 @@
+/*
+  general styles
+*/
+body {
+ font-family: 'Oswald', sans-serif;
+ background-color: #000000ad;
+ color: #f8f9fae0;
+}
+
+.container-fluid {
+  margin:0;
+}
+
+
+/*
+ body styles
+*/
+.img-thumbnail{
+	height:150px !important;
+}
+
+p.title{
+  font-size:150%;
+  font-weight:bold;
+  text-align:center;
+
+}
+
+p {
+  text-align:left;
+}
+button {
+  background-color: inherit;
+  border: 1px solid white;
+  border-radius: 3px;
+  font-weight: bold;
+  padding:2px;
+  font-size: 200%;
+}
+
+a{
+  margin-left:2%;
+}
+
+/*
+ footer styles
+*/
+footer{
+  background-color: #000000cf;
+  text-align: center;
+}
+
+footer p {
+  text-align: center;
+}
+
+footer img{
+  background-color: none;
+  height:40px !important;
+}
