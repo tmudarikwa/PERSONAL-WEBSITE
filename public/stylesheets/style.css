@@ -75,13 +75,11 @@ input, textarea{
 .description, .role, .portfolio a, .link {
   padding-top:.2em;
   color: inherit;
-}
-
-.role, .portfolio a, .link {
   text-align:left;
   padding-left:10%;
-  padding-right: 10%;
+  padding-right: 10%
 }
+
 .portfolio a{
   padding-top:-20px;
 }
