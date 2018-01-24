@@ -80,7 +80,6 @@ $("#emailfromcustomer button").click(function(e){
         }
         else
         {
-             $("#customertext").effect("shake");
             $("#customertext").css("box-shadow", "0 0 5px red");
             $('.alert').html("");
             $(".alert").noty({
@@ -99,7 +98,6 @@ $("#emailfromcustomer button").click(function(e){
     }
     else 
     {
-      $("#customeremail").effect("shake");
       $("#customeremail").css("box-shadow", "0 0 5px red");
       $('.alert').html("");
       $(".alert").noty({
