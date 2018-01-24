@@ -75,7 +75,7 @@ $("#emailfromcustomer button").click(function(e){
 
                 emailStatus(data);
                 $("#emailfromcustomer").html(contactusform);
-              })
+              }
             });
         }
         else
