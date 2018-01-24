@@ -60,7 +60,6 @@ $("#emailfromcustomer button").click(function(e){
         {
             $('.alert').html("");           
             var data = {};
-            data.selection = selection;
             data.email = email;
             data.message = customertext;
             
