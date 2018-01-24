@@ -72,9 +72,9 @@ input, textarea{
   text-align:center;
 }
 
-.description, .role, .link {
+.description, .role, a, .link {
   padding-top:.2em;
-  color: black;
+  color: inherit;
 }
 
 /*
