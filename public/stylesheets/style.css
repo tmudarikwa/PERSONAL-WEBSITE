@@ -76,7 +76,7 @@ input, textarea{
 }
 .portfolio p , .portfolio a{
   text-align:center;
-  padding-top: -15px;
+ 
 }
 
 .portfolio p.description, .portfolio p.role, .portfolio a, .portfolio p.link {
@@ -86,6 +86,9 @@ input, textarea{
   padding-right: 10%
 }
 
+.portfolio a {
+   margin-top: -15px;
+}
 
 /*
  footer styles
