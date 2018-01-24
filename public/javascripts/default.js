@@ -62,8 +62,7 @@ $("#emailfromcustomer button").click(function(e){
             var data = {};
             data.email = email;
             data.message = customertext;
-            
-            $("#emailfromcustomer").html("<image src='IMAGES/loading-small.gif' style='margin-left:45%'/>");
+          
             $.ajax({
               type: 'POST',
               data: JSON.stringify(data),
