@@ -51,9 +51,13 @@ a{
 /*
  contact page
 */
-#emailromcustomer {
+#emailfromcustomer {
   text-align:center;
   width:100%;
+}
+
+#emailfromcustomer button {
+  font-size:150%;
 }
 input, textarea{
   width:100%;
