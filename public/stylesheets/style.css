@@ -74,21 +74,18 @@ input, textarea{
   border: 2px solid;
 
 }
-.portfolio p {
+.portfolio p , .portfolio a{
   text-align:center;
+  padding-top: -15px;
 }
 
 .portfolio p.description, .portfolio p.role, .portfolio a, .portfolio p.link {
-  padding-top:.2em;
   color: inherit;
   text-align:left;
   padding-left:10%;
   padding-right: 10%
 }
 
-.portfolio a{
-  padding-top:-20px;
-}
 
 /*
  footer styles
