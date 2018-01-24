@@ -72,9 +72,13 @@ input, textarea{
   text-align:center;
 }
 
-.description, .role, a, .link {
+.description, .role, .portfolio a, .link {
   padding-top:.2em;
   color: inherit;
+}
+
+.portfolio a{
+  padding-top:-20px;
 }
 
 /*
