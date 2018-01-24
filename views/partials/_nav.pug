@@ -1,31 +1,32 @@
-nav(class="navbar navbar-default navbar-fixed-bottom",style='text-align: center;background-color:#f3bfbf;padding-top:.5em;padding-bottom:.5em')
-  if path == '/'
-    a(href='/')
-      button.selected HOME
-  else
-    a(href='/')
-      button HOME  
-  if path == '/portfolio'
-    a(href='/portfolio')
-      button.selected PORTFOLIO
-  else
-    a(href='/portfolio')
-      button PORTFOLIO      
-  if path == '/viewresume'
-    a(href='/viewresume',target='_blank')
-      button.selected RESUME
-  else
-    a(href='/viewresume',target='_blank')
-      button RESUME      
-  if path == '/about'
-    a(href='/about')
-      button.selected ABOUT
-  else
-    a(href='/about')
-      button ABOUT      
-  if path == '/contact'
-    a(href='/contact')
-      button.selected CONTACT
-  else
-    a(href='/contact')
-      button CONTACT
+nav(class="navbar navbar-default navbar-fixed-bottom ",style='text-align: center;background-color:#f3bfbf;padding-top:.5em;padding-bottom:.5em')
+  div(class="collapse navbar-collapse")
+    if path == '/'
+      a(href='/')
+        button.selected HOME
+    else
+      a(href='/')
+        button HOME  
+    if path == '/portfolio'
+      a(href='/portfolio')
+        button.selected PORTFOLIO
+    else
+      a(href='/portfolio')
+        button PORTFOLIO      
+    if path == '/viewresume'
+      a(href='/viewresume',target='_blank')
+        button.selected RESUME
+    else
+      a(href='/viewresume',target='_blank')
+        button RESUME      
+    if path == '/about'
+      a(href='/about')
+        button.selected ABOUT
+    else
+      a(href='/about')
+        button ABOUT      
+    if path == '/contact'
+      a(href='/contact')
+        button.selected CONTACT
+    else
+      a(href='/contact')
+        button CONTACT
