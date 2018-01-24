@@ -72,7 +72,7 @@ input, textarea{
   text-align:center;
 }
 
-.description, .role, .portfolio a, .link {
+.portfolio p.description, .portfolio p.role, .portfolio a, .link {
   padding-top:.2em;
   color: inherit;
   text-align:left;
