@@ -77,6 +77,11 @@ input, textarea{
   color: inherit;
 }
 
+.role, .portfolio a, .link {
+  text-align:left;
+  padding-left:10%;
+  padding-right: 10%;
+}
 .portfolio a{
   padding-top:-20px;
 }
