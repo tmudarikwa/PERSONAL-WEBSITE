@@ -13,6 +13,9 @@ else
 
     //setting footer height
     $('.footer').css('height',(12/100 * winH)+'px'); 
+
+    //setting portfolio image height sizes
+    %('.portfolio img').css('height', (70/100 * winH)+'px');
 } 
 
 $('button').hover(function(){

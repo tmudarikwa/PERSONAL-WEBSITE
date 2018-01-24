@@ -68,11 +68,17 @@ input, textarea{
 /*
  portfolio
 */
+
+.portfolio img{
+  border-radius:5px;
+  border: 2px solid;
+
+}
 .portfolio p {
   text-align:center;
 }
 
-.portfolio p.description, .portfolio p.role, .portfolio a, .link {
+.portfolio p.description, .portfolio p.role, .portfolio a, .portfolio p.link {
   padding-top:.2em;
   color: inherit;
   text-align:left;
