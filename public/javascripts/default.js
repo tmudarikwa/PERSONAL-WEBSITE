@@ -36,3 +36,135 @@ $('button').hover(function(){
 	   $(this).css('color','black');
    }
 });
+
+/****************************
+   CONTACT FORM
+****************************/
+
+//contact form email submit 
+var contactusform = ($("#emailfromcustomer").html());
+$("#emailfromcustomer button").click(function(e){
+  e.preventDefault();
+  console.log("button clicked");
+
+  var email = $("#customeremail").val();
+  var format = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+  var customertext = $("#customertext").val();
+
+  //validation first
+  if (email.length > 0 )
+  {
+    if(format.test(email) == true)
+    {
+        if (customertext.length > 0)
+        {
+            $('.alert').html("");           
+            var data = {};
+            data.selection = selection;
+            data.email = email;
+            data.message = customertext;
+            
+            $("#emailfromcustomer").html("<image src='IMAGES/loading-small.gif' style='margin-left:45%'/>");
+            $.ajax({
+              type: 'POST',
+              data: JSON.stringify(data),
+              contentType : 'application/json',
+              url:'/contactusemail',
+              success: function(data)
+              {
+
+                emailStatus(data);
+                $("#emailfromcustomer").html(contactusform);
+              })
+            });
+        }
+        else
+        {
+             $("#customertext").effect("shake");
+            $("#customertext").css("box-shadow", "0 0 5px red");
+            $('.alert').html("");
+            $(".alert").noty({
+                    theme:'defaultTheme',
+                    type :'error',
+                    text:'PLEASE FILL IN THE REASON YOU ARE TRYING TO CONTACT US!',
+                    animation:{
+                      open:'animated bounceInCenter',
+                      close: 'animated bounceOutLeft',
+                      easing: 'swing',
+                      speed: 500
+                    }
+
+            });
+        }
+    }
+    else 
+    {
+      $("#customeremail").effect("shake");
+      $("#customeremail").css("box-shadow", "0 0 5px red");
+      $('.alert').html("");
+      $(".alert").noty({
+          theme:'defaultTheme',
+          type :'error',
+          text:'PLEASE ENTER A VALID EMAIL!',
+          animation:{
+            open:'animated bounceInCenter',
+            close: 'animated bounceOutLeft',
+            easing: 'swing',
+            speed: 500
+          }
+
+        });
+    }
+ 
+  }
+  else
+  {
+    $("#customeremail").effect("shake");
+    $("#customeremail").css("box-shadow", "0 0 5px red");
+    $('.alert').html("");
+    $(".alert").noty({
+      theme:'defaultTheme',
+      type :'error',
+      text:'PLEASE ENTER YOUR EMAIL!',
+      animation:{
+        open:'animated bounceInCenter',
+        close: 'animated bounceOutLeft',
+        easing: 'swing',
+        speed: 500
+      }
+
+    });
+  }
+});
+
+
+function emailStatus(message){
+  if(message.includes("apologize"))
+  {
+        $(".alert").noty({
+      theme:'defaultTheme',
+      type :'error',
+      text:message,
+      animation:{
+        open:'animated bounceInCenter',
+        close: 'animated bounceOutLeft',
+        easing: 'swing',
+        speed: 500
+      }
+    });
+  }
+  else 
+  {
+      $(".alert").noty({
+      theme:'defaultTheme',
+      type :'success',
+      text:message,
+      animation:{
+        open:'animated bounceInCenter',
+        close: 'animated bounceOutLeft',
+        easing: 'swing',
+        speed: 500
+      }
+    });  
+  }
+}

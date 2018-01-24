@@ -11,6 +11,7 @@ var contactme = require('./routes/contact');
 var aboutme = require('./routes/about');
 var portfolio = require('./routes/portfolio');
 var viewresume = require('./routes/viewresume');
+var sendemail = require('./routes/contactemail');
 
 var app = express();
 
@@ -32,6 +33,7 @@ app.use('/viewresume', viewresume);
 app.use('/about', aboutme);
 app.use('/contact', contactme);
 app.use('/portfolio', portfolio);
+app.use('/sendemail', sendemail)
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
