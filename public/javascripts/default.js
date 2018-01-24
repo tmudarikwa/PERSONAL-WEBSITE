@@ -40,7 +40,7 @@ $('button').hover(function(){
 /****************************
    CONTACT FORM
 ****************************/
-
+$('.alert').hide();
 //contact form email submit 
 var contactusform = ($("#emailfromcustomer").html());
 $("#emailfromcustomer button").click(function(e){
@@ -81,6 +81,7 @@ $("#emailfromcustomer button").click(function(e){
         else
         {
             $("#customertext").css("box-shadow", "0 0 5px red");
+            $('.alert').show();
             $('.alert').html("");
             $(".alert").noty({
                     theme:'defaultTheme',
@@ -99,6 +100,7 @@ $("#emailfromcustomer button").click(function(e){
     else 
     {
       $("#customeremail").css("box-shadow", "0 0 5px red");
+      $('.alert').show();
       $('.alert').html("");
       $(".alert").noty({
           theme:'defaultTheme',
@@ -118,6 +120,7 @@ $("#emailfromcustomer button").click(function(e){
   else
   {
     $("#customeremail").css("box-shadow", "0 0 5px red");
+    $('.alert').show();
     $('.alert').html("");
     $(".alert").noty({
       theme:'defaultTheme',
@@ -138,7 +141,8 @@ $("#emailfromcustomer button").click(function(e){
 function emailStatus(message){
   if(message.includes("apologize"))
   {
-        $(".alert").noty({
+    $('.alert').show();
+    $(".alert").noty({
       theme:'defaultTheme',
       type :'error',
       text:message,
@@ -152,7 +156,8 @@ function emailStatus(message){
   }
   else 
   {
-      $(".alert").noty({
+    $('.alert').show();
+    $(".alert").noty({
       theme:'defaultTheme',
       type :'success',
       text:message,
