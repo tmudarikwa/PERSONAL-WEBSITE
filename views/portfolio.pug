@@ -1,7 +1,7 @@
 extends layout
 
 block content
-  .container-fluid
+  .container-fluid(class="portfolio")
     .row(class='align-items-center',style='border-top: 5px solid black;text-align:center')
       .col
         p.title(style='font-weight:bold;font-size:200%;') PORTFOLIO   
@@ -10,26 +10,28 @@ block content
         a(href='portalfrewprocess')
           img(class='img-fluid img-thumbnail rounded mx-auto d-block',src='images/portifolio/portalfrewprocess.png', alt=' profile picture')
         p INTERNAL SALES PORTAL - FPG | J2EE, HTML, HTML5, AJAX, jQuery, CSS, PostgreSQL 
+        p.description This is a internal sales portal which serves to make it easier for sales people to set and target customer to focus on. Though this was the main idea the application does far more than that from displaying a snap shot of the companys' revenue through graphs to mapping customers on a map using google maps API and also uploading excel data to a Postgres database.
         a(href='http://portal.frewprocess.com', target='_blank')
-          p http://portal.frewprocess.com
+          p.link http://portal.frewprocess.com
     .row(class='align-items-center')    
       .col
         a(href='portalgascoonline')
           img(class='img-fluid img-thumbnail rounded mx-auto d-block',src='images/portifolio/portalgascoonline.png', alt=' profile picture')
-        p INTERNAL SALES PORTAL - GASCO | J2EE, HTML, HTML5, AJAX, jQuery, CSS, PostgreSQL 
+        p INTERNAL SALES PORTAL - GASCO | J2EE, HTML, HTML5, AJAX, jQuery, CSS, PostgreSQL  
+        p.description This is a internal sales portal which serves to make it easier for sales people to set and target customer to focus on. Though this was the main idea the application does far more than that from displaying a snap shot of the companys' revenue through graphs to mapping customers on a map using google maps API and also uploading excel data to a Postgres database.
         a(href='http://portal.gascoonline.com', target='_blank')
-          p http://portal.gascoonline.com
+          p.link http://portal.gascoonline.com
     .row(class='align-items-center')
       .col
         a(href='mumoafruika')
           img(class='img-fluid img-thumbnail rounded mx-auto d-block',src='images/portifolio/mumoafruika.png', alt='mumoafruika')
         p MUMOAFRUIKA | NodeJS, HTML, JQuery, MongoDB, Express, MailChimp, Heroku
         a(href='http://www.mumoafruika.com', target='_blank')
-          p http://www.mumoafruika.com
+          p.link http://www.mumoafruika.com
     .row(class='align-items-center')     
       .col
         a(href='gerfusa')
           img(class='img-fluid img-thumbnail rounded mx-auto d-block',src='images/portifolio/gerfusa.png', alt='mumoafruika')
         p GERFUSA - still in development | NodeJS, HTML, JQuery, MongoDB, Express, MailChimp, Heroku  
         a(href='https://salty-mountain-65693.herokuapp.com/', target='_blank')
-          p https://salty-mountain-65693.herokuapp.com/
+          p.link https://salty-mountain-65693.herokuapp.com/
