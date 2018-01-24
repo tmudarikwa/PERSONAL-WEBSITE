@@ -66,6 +66,18 @@ input, textarea{
 }
 
 /*
+ portfolio
+*/
+.portfolio p {
+  text-align:center;
+}
+
+.description, .role, .link {
+  padding-top:.2em;
+  color: black;
+}
+
+/*
  footer styles
 */
 footer , .footer{
