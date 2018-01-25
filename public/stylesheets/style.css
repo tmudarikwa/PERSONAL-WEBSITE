@@ -68,7 +68,9 @@ input, textarea{
 /*
  portfolio
 */
-
+.portfolio-content{
+  margin-top:-40px;
+}
 .portfolio img{
   border-radius:5px;
   border: 2px solid;
@@ -79,15 +81,19 @@ input, textarea{
  
 }
 
-.portfolio p.description, .portfolio p.role, .portfolio a, .portfolio p.link {
+.portfolio p.description, .portfolio p.role, .portfolio a, .portfolio p.link, p.skills {
   color: inherit;
   text-align:left;
-  padding-left:10%;
-  padding-right: 10%
 }
 
 .portfolio a {
    margin-top: -15px;
+}
+
+.portfolio button{
+  margin-bottom:5px;
+  margin-top:5px;
+  margin-right: 10px;
 }
 
 /*
