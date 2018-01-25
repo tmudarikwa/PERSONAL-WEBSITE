@@ -15,7 +15,7 @@ var sendcontactemail = function(req, res){
                     "from_name": ""+data.email+"",
                     "to": [{
                             "email": "tkmud91@hotmail.com",
-                            "name": "GERF - CONTACTUS",
+                            "name": "TAKUNDA MUDARIKWA",
                             "type": "to"
                         }],
                     "headers": {
@@ -30,7 +30,7 @@ var sendcontactemail = function(req, res){
                     "url_strip_qs": null,
                     "preserve_recipients": null,
                     "view_content_link": null,
-                    "bcc_address": ""+data.email+"",
+                    "bcc_address": null,
                     "tracking_domain": null,
                     "signing_domain": null,
                     "return_path_domain": null,
@@ -52,7 +52,7 @@ var sendcontactemail = function(req, res){
       var ip_pool = "Main Pool";
       //var send_at = "example send_at";
       mandrill_client.messages.send({"message": message, "async": async, "ip_pool": ip_pool}, function(result) {
-        var emailsent = "Information submitted! Our team will get back to you asap. Thank you.";
+        var emailsent = "Email sent! I will get intouch with you asap. Thank you!";
         if(result[0].status !== 'sent') emailsent = "We apologize there has been an error trying to submit your information.";
         res.send(emailsent);
       }, function(e) {

@@ -21,7 +21,7 @@ else
 $('button').hover(function(){
   if($(this).hasClass("selected"))
   {
-   console.log('doing nothing because button already highlighted');
+   
   }
   else{
 	  $(this).css('background-color','black');
@@ -70,7 +70,7 @@ $("#emailfromcustomer button").click(function(e){
               type: 'POST',
               data: JSON.stringify(data),
               contentType : 'application/json',
-              url:'/contactusemail',
+              url:'/sendemail',
               success: function(data)
               {
 
@@ -82,9 +82,8 @@ $("#emailfromcustomer button").click(function(e){
         else
         {
             $("#customertext").css("box-shadow", "0 0 5px red");
-            $('.alert').show();
-            $('.alert').html("");
-            $(".alert").noty({
+                    noty({
+                    layout:'top',
                     theme:'defaultTheme',
                     type :'error',
                     text:'PLEASE FILL IN THE REASON YOU ARE TRYING TO CONTACT US!',
@@ -101,9 +100,8 @@ $("#emailfromcustomer button").click(function(e){
     else 
     {
       $("#customeremail").css("box-shadow", "0 0 5px red");
-      $('.alert').show();
-      $('.alert').html("");
-      $(".alert").noty({
+          noty({
+          layout:'top',
           theme:'defaultTheme',
           type :'error',
           text:'PLEASE ENTER A VALID EMAIL!',
@@ -121,9 +119,8 @@ $("#emailfromcustomer button").click(function(e){
   else
   {
     $("#customeremail").css("box-shadow", "0 0 5px red");
-    $('.alert').show();
-    $('.alert').html("");
-    $(".alert").noty({
+    noty({
+      layout:'top',
       theme:'defaultTheme',
       type :'error',
       text:'PLEASE ENTER YOUR EMAIL!',
@@ -132,8 +129,8 @@ $("#emailfromcustomer button").click(function(e){
         close: 'animated bounceOutLeft',
         easing: 'swing',
         speed: 500
-      }
-
+      },
+       timeout:2000
     });
   }
 });
@@ -142,8 +139,8 @@ $("#emailfromcustomer button").click(function(e){
 function emailStatus(message){
   if(message.includes("apologize"))
   {
-    $('.alert').show();
-    $(".alert").noty({
+    noty({
+      layout:'top',
       theme:'defaultTheme',
       type :'error',
       text:message,
@@ -152,13 +149,14 @@ function emailStatus(message){
         close: 'animated bounceOutLeft',
         easing: 'swing',
         speed: 500
-      }
+      },
+      timeout:2000
     });
   }
   else 
   {
-    $('.alert').show();
-    $(".alert").noty({
+    noty({
+      layout:'top',
       theme:'defaultTheme',
       type :'success',
       text:message,
@@ -167,7 +165,8 @@ function emailStatus(message){
         close: 'animated bounceOutLeft',
         easing: 'swing',
         speed: 500
-      }
+      },
+      timeout:2000
     });  
   }
 }

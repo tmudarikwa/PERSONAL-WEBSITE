@@ -5,7 +5,7 @@ var sendcontactemail = require('../config/mandrillemail');
 // =====================================
 // EMAIL SENT FROM THE CONTACT US PAGE==
 // =====================================
-router.post('/contactusemail', function(req,res){
+router.post('/', function(req,res){
     sendcontactemail.sendContactEmail(req,res);
 });
 
