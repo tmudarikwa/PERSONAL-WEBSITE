@@ -31,7 +31,7 @@ $('button').hover(function(){
 }).mouseout(function(){
   if($(this).hasClass("selected"))
   {
-    console.log('doing nothing because button already highlighted');
+
   }
   else
   {	
