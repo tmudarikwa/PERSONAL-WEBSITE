@@ -48,7 +48,6 @@ $('.alert').hide();
 var contactusform = ($("#emailfromcustomer").html());
 $("#emailfromcustomer button").click(function(e){
   e.preventDefault();
-  console.log("button clicked");
 
   var email = $("#customeremail").val();
   var format = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;

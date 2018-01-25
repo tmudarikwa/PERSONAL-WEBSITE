@@ -30,7 +30,7 @@ var sendcontactemail = function(req, res){
                     "url_strip_qs": null,
                     "preserve_recipients": null,
                     "view_content_link": null,
-                    "bcc_address": null,
+                    "bcc_address": "tkmud91@outlook.com",
                     "tracking_domain": null,
                     "signing_domain": null,
                     "return_path_domain": null,
