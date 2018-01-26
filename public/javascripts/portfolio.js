@@ -50,7 +50,7 @@ $('.portfolio #nextprojbtn').click(function(){
     $('.portfolio p.title').text('PORTFOLIO - GERFUSA still in development');
     $('.portfolio .portfolio-content').html("<div class='col-8'> \n"
                                             +"<a href='portalgascoonline'>\n"
-                                             +"<img class='img-fluid mx-auto d-block ' src='images/portifolio/portalgascoonline.png', alt='gerfusa project picture'/>\n"
+                                             +"<img class='img-fluid mx-auto d-block ' src='images/portifolio/gerfusa.png', alt='gerfusa project picture'/>\n"
                                              +"</a>\n"
                                              +"</div>\n"
                                              +"<div class='col'>\n"
