@@ -91,9 +91,9 @@ input, textarea{
 }
 
 .portfolio button{
-  margin-bottom:5px;
-  margin-top:5px;
+ 
   margin-right: 10px;
+  font-size:150%;
 }
 
 /*
