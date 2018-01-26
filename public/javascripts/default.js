@@ -10,7 +10,7 @@ else
 {    
     //setting main body content height
     $('.bcontent').css('height',(88/100 * winH)+'px'); 
-
+    $('.portfolio').css('height',(88/100 * winH)+10+'px'); 
     //setting footer height
     $('.footer').css('height',(12/100 * winH)+'px'); 
 

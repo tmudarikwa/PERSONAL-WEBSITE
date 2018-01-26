@@ -81,7 +81,7 @@ input, textarea{
  
 }
 
-.portfolio p.description, .portfolio p.role, .portfolio a, .portfolio p.link, p.skills {
+.portfolio p.description, .portfolio p.role, .portfolio a, .portfolio p.link, p.skills, p.projectname  {
   color: inherit;
   text-align:left;
 }
@@ -91,7 +91,7 @@ input, textarea{
 }
 
 .portfolio button{
- 
+ margin-top:10px;
   margin-right: 10px;
   font-size:150%;
 }
