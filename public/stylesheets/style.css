@@ -5,6 +5,25 @@ body {
  font-family: 'Oswald', sans-serif;
  background-color: rgba(114, 28, 36, 1);
  color:white;
+ font-size:1rem;
+}
+
+@include media-breakpoint-up(sm) {
+  html {
+    font-size: 1.2rem;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  html {
+    font-size: 1.4rem;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  html {
+    font-size: 1.6rem;
+  }
 }
 
 .container-fluid {
@@ -20,7 +39,6 @@ body {
 }
 
 p.title{
-  font-size:150%;
   font-weight:bold;
   text-align:center;
   padding-left:20px;
@@ -69,7 +87,7 @@ input, textarea{
  portfolio
 */
 .portfolio-content{
-  margin-top:-40px;
+  margin-top:-10px;
 }
 .portfolio img{
   border-radius:5px;
