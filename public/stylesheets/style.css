@@ -8,24 +8,6 @@ body {
  font-size:1rem;
 }
 
-@include media-breakpoint-up(sm) {
-  html {
-    font-size: 1.2rem;
-  }
-}
-
-@include media-breakpoint-up(md) {
-  html {
-    font-size: 1.4rem;
-  }
-}
-
-@include media-breakpoint-up(lg) {
-  html {
-    font-size: 1.6rem;
-  }
-}
-
 .container-fluid {
   margin:0;
 }
@@ -35,7 +17,7 @@ body {
  body styles
 */
 .img-thumbnail{
-	height:250px !important;
+	height:250px;
 }
 
 p.title{
@@ -109,7 +91,7 @@ input, textarea{
 }
 
 .portfolio button{
- margin-top:10px;
+ margin-top:-15px;
   margin-right: 10px;
   font-size:150%;
 }

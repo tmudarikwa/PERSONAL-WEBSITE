@@ -8,6 +8,7 @@ if( navigator.userAgent.match(/Android/i) || navigator.userAgent.match(/webOS/i)
  }
 else
 {    
+
     //setting main body content height
     $('.bcontent').css('height',(88/100 * winH)+'px'); 
     $('.portfolio').css('height',(88/100 * winH)+10+'px'); 
@@ -16,6 +17,14 @@ else
 
     //setting portfolio image height sizes
     $('.portfolio img').css('height', (70/100 * winH)+'px');
+
+    //large screen desktop styling
+    if(winH > 700)
+    {
+      $(".img-thumbnail").css('height', (46.2/100 * winH)+'px ');
+      $('body').css('font-size',(2.5/100 * winH)+'px');
+
+    }
 } 
 
 $('button').hover(function(){
