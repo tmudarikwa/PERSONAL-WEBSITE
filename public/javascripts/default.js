@@ -23,7 +23,7 @@ else
     {
       $(".img-thumbnail").css('height', (46.2/100 * winH)+'px ');
       $('body').css('font-size',(2.5/100 * winH)+'px');
-      $('.portfolio button').css('margin-top','15px');
+      $('.portfolio button').css('margin-top','-15px');
 
     }
 } 
