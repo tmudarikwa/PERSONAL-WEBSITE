@@ -1,5 +1,10 @@
 var winH = window.innerHeight;
 var imgheight = (70/100 * winH)+'px';
+if( navigator.userAgent.match(/Android/i) || navigator.userAgent.match(/webOS/i) || navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPad/i) || navigator.userAgent.match(/iPod/i)
+ || navigator.userAgent.match(/BlackBerry/i)
+ || navigator.userAgent.match(/Windows Phone/i)) imgheight="auto";
+var imgwidth="100%";
+
 /*********
   PORTFOLIO NAVIGATING
 *********/
@@ -11,7 +16,7 @@ $('.portfolio #nextprojbtn').click(function(){
     $('.portfolio #previousprojbtn').show();
     $('.portfolio .portfolio-content').html("<div class='col-8'> \n"
                                             +"<a href='portalgascoonline'>\n"
-                                             +"<img class='img-fluid mx-auto d-block ' src='images/portifolio/portalgascoonline.png' style='height:"+imgheight+"' alt='gasco salesportal picture'/>\n"
+                                             +"<img class='img-fluid mx-auto d-block ' src='images/portifolio/portalgascoonline.png' style='height:"+imgheight+";width:"+imgwidth+"' alt='gasco salesportal picture'/>\n"
                                              +"</a>\n"
                                              +"</div>\n"
                                              +"<div class='col'>\n"
@@ -30,7 +35,7 @@ $('.portfolio #nextprojbtn').click(function(){
     $('.portfolio #previousprojbtn').show();
     $('.portfolio .portfolio-content').html("<div class='col-8'> \n"
                                             +"<a href='mumoafruika'>\n"
-                                             +"<img class='img-fluid mx-auto d-block ' src='images/portifolio/mumoafruika.png' style='height:"+imgheight+"'  alt='mumoafruika project picture'/>\n"
+                                             +"<img class='img-fluid mx-auto d-block ' src='images/portifolio/mumoafruika.png' style='height:"+imgheight+";width:"+imgwidth+"'  alt='mumoafruika project picture'/>\n"
                                              +"</a>\n"
                                              +"</div>\n"
                                              +"<div class='col'>\n"
@@ -50,7 +55,7 @@ $('.portfolio #nextprojbtn').click(function(){
     $('.portfolio #nextprojbtn').hide();
     $('.portfolio .portfolio-content').html("<div class='col-8'> \n"
                                             +"<a href='portalgascoonline'>\n"
-                                             +"<img class='img-fluid mx-auto d-block ' src='images/portifolio/gerfusa.png' style='height:"+imgheight+"'  alt='gerfusa project picture'/>\n"
+                                             +"<img class='img-fluid mx-auto d-block ' src='images/portifolio/gerfusa.png' style='height:"+imgheight+";width:"+imgwidth+"'  alt='gerfusa project picture'/>\n"
                                              +"</a>\n"
                                              +"</div>\n"
                                              +"<div class='col'>\n"
@@ -75,7 +80,7 @@ $('.portfolio #previousprojbtn').click(function(){
     $('.portfolio #nextprojbtn').show();
     $('.portfolio .portfolio-content').html("<div class='col-8'> \n"
                                             +"<a href='portalgascoonline'>\n"
-                                             +"<img class='img-fluid mx-auto d-block ' src='images/portifolio/portalfrewprocess.png' style='height:"+imgheight+"'  alt='fpg sales portal picture'/>\n"
+                                             +"<img class='img-fluid mx-auto d-block ' src='images/portifolio/portalfrewprocess.png' style='height:"+imgheight+";width:"+imgwidth+"'  alt='fpg sales portal picture'/>\n"
                                              +"</a>\n"
                                              +"</div>\n"
                                              +"<div class='col'>\n"
@@ -95,7 +100,7 @@ $('.portfolio #previousprojbtn').click(function(){
     $('.portfolio #nextprojbtn').show();
     $('.portfolio .portfolio-content').html("<div class='col-8'> \n"
                                             +"<a href='portalgascoonline'>\n"
-                                             +"<img class='img-fluid mx-auto d-block ' src='images/portifolio/portalgascoonline.png' style='height:"+imgheight+"'  alt='gasco salesportal picture'/>\n"
+                                             +"<img class='img-fluid mx-auto d-block ' src='images/portifolio/portalgascoonline.png' style='height:"+imgheight+";width:"+imgwidth+"'  alt='gasco salesportal picture'/>\n"
                                              +"</a>\n"
                                              +"</div>\n"
                                              +"<div class='col'>\n"
@@ -115,7 +120,7 @@ $('.portfolio #previousprojbtn').click(function(){
     $('.portfolio #nextprojbtn').show();
     $('.portfolio .portfolio-content').html("<div class='col-8'> \n"
                                             +"<a href='mumoafruika'>\n"
-                                             +"<img class='img-fluid mx-auto d-block ' src='images/portifolio/mumoafruika.png' style='height:"+imgheight+"'  alt='mumoafruika project picture'/>\n"
+                                             +"<img class='img-fluid mx-auto d-block ' src='images/portifolio/mumoafruika.png' style='height:"+imgheight+";width:"+imgwidth+"'  alt='mumoafruika project picture'/>\n"
                                              +"</a>\n"
                                              +"</div>\n"
                                              +"<div class='col'>\n"

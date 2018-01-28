@@ -33,17 +33,25 @@ p {
   text-align:left;
 }
 
+.navbar{
+  justify-content: center;
+}
 .navlink{
-  background-color: inherit;
   border: 1px solid black;
   border-radius: 3px;
   font-weight: bold;
   padding:2px;
   font-size: 200%;
-  margin-left:2%;
+  margin-right:30%;
+  background-color: inherit;
   text-decoration: none;
   text-decoration-line: none;
   color:black;
+}
+
+.navbar-toggler-icon{
+    width: 5.5rem;
+    font-size: 200%;;
 }
 
 button {

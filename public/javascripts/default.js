@@ -4,7 +4,25 @@ if( navigator.userAgent.match(/Android/i) || navigator.userAgent.match(/webOS/i)
  || navigator.userAgent.match(/BlackBerry/i)
  || navigator.userAgent.match(/Windows Phone/i))
  {
-    console.log(+navigator.userAgent);
+    $('nav').addClass("sticky-top");
+    $('.navlink').css("margin","0");
+    $('.navlink').css("padding","0");
+    $('.navbar-toggler-icon').click(function()
+      {
+        if($('.collapse').hasClass('showing'))
+        {
+          $('.collapse').removeClass("showing");
+          $('.collapse').addClass("hidden").slideUp("slow");
+          $(this).text("MENU");
+        }
+        else
+        {
+          $('.collapse').removeClass("hidden");
+          $('.collapse').addClass("showing").slideDown("slow");
+          $(this).text("CLOSE");
+        }
+      }
+    );
  }
 else
 {    

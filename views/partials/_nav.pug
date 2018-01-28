@@ -1,21 +1,25 @@
-nav(class="navbar navbar-default collapse navbar-collapse",style='text-align: center;background-color:#f3bfbf;padding-top:.5em;padding-bottom:.5em')
-  if path == '/'
-    a.navlink(class="selected",href='/') HOME
-  else
-    a.navlink(href='/') HOME  
-  if path == '/portfolio'
-    a.navlink(href='/portfolio', class="selected") PORTFOLIO
-  else
-    a.navlink(href='/portfolio') PORTFOLIO      
-  if path == '/viewresume'
-    a.navlink(class="selected", href='/viewresume',target='_blank') RESUME
-  else
-    a.navlink(href='/viewresume',target='_blank') RESUME      
-  if path == '/about'
-    a.navlink(class="selected",href='/about') ABOUT
-  else
-    a.navlink(href='/about') ABOUT      
-  if path == '/contact'
-    a.navlink(class="selected",href='/contact') CONTACT
-  else
-    a.navlink(href='/contact') CONTACT
+nav(class="navbar navbar-expand-lg",style='text-align: center;background-color:#f3bfbf;padding-top:.5em;padding-bottom:.5em')
+  button(class="navbar-toggler" ,type="button" ,data-toggle="collapse" ,data-target="#navbarTogglerDemo01" ,aria-controls="navbarTogglerDemo01" ,aria-expanded="false" ,aria-label="Toggle navigation")
+    span(class="navbar-toggler-icon") MENU
+  .collapse(class="navbar-collapse" ,id="navbarNav")
+    div(class="navbar-nav")
+      if path == '/'
+        a.navlink(class="nav-item selected",href='/') HOME
+      else
+        a.navlink(class="nav-item",href='/') HOME  
+      if path == '/portfolio'
+        a.navlink(href='/portfolio', class="nav-item selected") PORTFOLIO
+      else
+        a.navlink(class="nav-item",href='/portfolio') PORTFOLIO      
+      if path == '/viewresume'
+        a.navlink(class="nav-item selected", href='/viewresume',target='_blank') RESUME
+      else
+        a.navlink(class="nav-item",href='/viewresume',target='_blank') RESUME      
+      if path == '/about'
+        a.navlink(class="nav-item selected",href='/about') ABOUT
+      else
+        a.navlink(class="nav-item",href='/about') ABOUT      
+      if path == '/contact'
+        a.navlink(class="nav-item selected",href='/contact') CONTACT
+      else
+        a.navlink(class="nav-item",href='/contact') CONTACT
