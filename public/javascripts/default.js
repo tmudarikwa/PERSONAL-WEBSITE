@@ -28,6 +28,7 @@ else
     }
 } 
 
+//nav links mouse highlights
 $('.navlink').hover(function(){
   if($(this).hasClass("selected"))
   {
@@ -47,6 +48,29 @@ $('.navlink').hover(function(){
   {	
     $(this).css('background-color','transparent');
 	   $(this).css('color','black');
+   }
+});
+
+//button mouse higlights
+('button').hover(function(){
+  if($(this).hasClass("selected"))
+  {
+   
+  }
+  else{
+    $(this).css('background-color','black');
+    $(this).css('color','white');
+    $(this).css('mouse');
+  }
+}).mouseout(function(){
+  if($(this).hasClass("selected"))
+  {
+
+  }
+  else
+  { 
+    $(this).css('background-color','transparent');
+     $(this).css('color','black');
    }
 });
 
