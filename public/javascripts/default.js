@@ -52,7 +52,7 @@ $('.navlink').hover(function(){
 });
 
 //button mouse higlights
-('button').hover(function(){
+$('button').hover(function(){
   if($(this).hasClass("selected"))
   {
    
