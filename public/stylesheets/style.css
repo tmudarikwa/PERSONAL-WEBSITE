@@ -8,6 +8,7 @@ body {
  font-size:1rem;
 }
 
+
 .container-fluid {
   margin:0;
 }
@@ -91,7 +92,7 @@ input, textarea{
 }
 
 .portfolio button{
- margin-top:-15px;
+ margin-top:10px;
   margin-right: 10px;
   font-size:150%;
 }
