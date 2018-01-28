@@ -28,7 +28,7 @@ else
     }
 } 
 
-$('button').hover(function(){
+$('.navlink').hover(function(){
   if($(this).hasClass("selected"))
   {
    

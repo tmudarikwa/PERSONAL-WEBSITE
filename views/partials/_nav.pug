@@ -1,31 +1,21 @@
 nav(class="navbar navbar-default collapse navbar-collapse",style='text-align: center;background-color:#f3bfbf;padding-top:.5em;padding-bottom:.5em')
   if path == '/'
-    a(href='/')
-      button.selected HOME
+    a.navlink(class="selected",href='/') HOME
   else
-    a(href='/')
-      button HOME  
+    a.navlink(href='/') HOME  
   if path == '/portfolio'
-    a.navlink(href='/portfolio')
-      button.selected PORTFOLIO
+    a.navlink(href='/portfolio', class="selected") PORTFOLIO
   else
-    a.navlink(href='/portfolio')
-      button PORTFOLIO      
+    a.navlink(href='/portfolio') PORTFOLIO      
   if path == '/viewresume'
-    a.navlink(href='/viewresume',target='_blank')
-      button.selected RESUME
+    a.navlink(class="selected", href='/viewresume',target='_blank') RESUME
   else
-    a.navlink(href='/viewresume',target='_blank')
-      button RESUME      
+    a.navlink(href='/viewresume',target='_blank') RESUME      
   if path == '/about'
-    a.navlink(href='/about')
-      button.selected ABOUT
+    a.navlink(class="selected",href='/about') ABOUT
   else
-    a.navlink(href='/about')
-      button ABOUT      
+    a.navlink(href='/about') ABOUT      
   if path == '/contact'
-    a.navlink(href='/contact')
-      button.selected CONTACT
+    a.navlink(class="selected",href='/contact') CONTACT
   else
-    a.navlink(href='/contact')
-      button CONTACT
+    a.navlink(href='/contact') CONTACT

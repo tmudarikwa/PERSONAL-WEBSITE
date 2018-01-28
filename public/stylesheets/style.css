@@ -32,6 +32,20 @@ p.title{
 p {
   text-align:left;
 }
+
+.navlink{
+  background-color: inherit;
+  border: 1px solid black;
+  border-radius: 3px;
+  font-weight: bold;
+  padding:2px;
+  font-size: 200%;
+  margin-left:2%;
+  text-decoration: none;
+  text-decoration-line: none;
+  color:black;
+}
+
 button {
   background-color: inherit;
   border: 1px solid black;
@@ -41,13 +55,11 @@ button {
   font-size: 200%;
 }
 
-button.selected {
+a.selected {
   background-color: black;
   color:white;
 }
-a{
-  margin-left:2%;
-}
+
 
 /*
  contact page
