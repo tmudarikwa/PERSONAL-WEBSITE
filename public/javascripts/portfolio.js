@@ -102,7 +102,7 @@ $('.portfolio #nextprojbtn').click(function(){
                                                +"<p class='projectname'> PROJECT NAME: REPLICATION TRACE WINDOWS DESKTOP APPLICATION</p>\n"
                                                +"<p class='role'> ROLE: GUI Designer & programmer </p>\n"
                                                +"<p class='skills'> TECHNOLOGIES: C# & WPF</p>\n"  
-                                               +"<p class='description'> DESCRIPTION: This desktop application was built inorder to trace duplicate records in a table. The application will return all the records that are identical from the table which it attains by individually checking each record in the table.</p>"
+                                               +"<p class='description'> DESCRIPTION: This desktop application was built inorder to trace duplicate records in a table. The application will return all the records that are identical from the table which it attains this by individually checking each record in the table.</p>"
                                                +"<a href='#'>\n"
                                                +"<p class='link'>LINK: NO LINK </p>\n"
                                              +"</a>\n"
