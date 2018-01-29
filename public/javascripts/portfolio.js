@@ -75,7 +75,7 @@ $('.portfolio #nextprojbtn').click(function(){
     $('.portfolio #nextprojbtn').show();
     $('.portfolio .portfolio-content').html("<div class='col-8'> \n"
                                             +"<a href='#'>\n"
-                                             +"<img class='img-fluid mx-auto d-block ' src='images/portifolio/expense_allocation_metrics.jpg' style='height:"+imgheight+";width:"+imgwidth+"'  alt='expense allocation metrics application picture'/>\n"
+                                             +"<img class='img-fluid mx-auto d-block ' src='images/portifolio/expense_allocation_metrics.JPG' style='height:"+imgheight+";width:"+imgwidth+"'  alt='expense allocation metrics application picture'/>\n"
                                              +"</a>\n"
                                              +"</div>\n"
                                              +"<div class='col'>\n"
@@ -95,7 +95,7 @@ $('.portfolio #nextprojbtn').click(function(){
     $('.portfolio #nextprojbtn').hide();
     $('.portfolio .portfolio-content').html("<div class='col-8'> \n"
                                             +"<a href='#'>\n"
-                                             +"<img class='img-fluid mx-auto d-block ' src='images/portifolio/replication_trace.jpg' style='height:"+imgheight+";width:"+imgwidth+"'  alt='replication trace application picture'/>\n"
+                                             +"<img class='img-fluid mx-auto d-block ' src='images/portifolio/replication_trace.JPG' style='height:"+imgheight+";width:"+imgwidth+"'  alt='replication trace application picture'/>\n"
                                              +"</a>\n"
                                              +"</div>\n"
                                              +"<div class='col'>\n"
@@ -200,7 +200,7 @@ $('.portfolio #previousprojbtn').click(function(){
     $('.portfolio #nextprojbtn').show();
     $('.portfolio .portfolio-content').html("<div class='col-8'> \n"
                                             +"<a href='#'>\n"
-                                             +"<img class='img-fluid mx-auto d-block ' src='images/portifolio/expense_allocation_metrics.jpg' style='height:"+imgheight+";width:"+imgwidth+"'  alt='expense allocation metrics application picture'/>\n"
+                                             +"<img class='img-fluid mx-auto d-block ' src='images/portifolio/expense_allocation_metrics.JPG' style='height:"+imgheight+";width:"+imgwidth+"'  alt='expense allocation metrics application picture'/>\n"
                                              +"</a>\n"
                                              +"</div>\n"
                                              +"<div class='col'>\n"
