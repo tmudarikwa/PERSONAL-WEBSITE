@@ -7,7 +7,7 @@ if( navigator.userAgent.match(/Android/i) || navigator.userAgent.match(/webOS/i)
     $('nav').addClass("sticky-top");
     $('.navlink').css("margin","0");
     $('.navlink').css("padding","0");
-    $('.navlink').css("width","none");
+    $('.navlink').css("width","100%");
     $('.title').removeClass("h1");
     $('.title').addClass("h4");
     $('.navbar-toggler-icon').click(function()
