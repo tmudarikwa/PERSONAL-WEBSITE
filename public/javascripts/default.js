@@ -21,7 +21,9 @@ if( navigator.userAgent.match(/Android/i) || navigator.userAgent.match(/webOS/i)
         {
           $('.collapse').removeClass("hidden");
           $('.collapse').addClass("showing").slideDown("slow");
-          $('.collapse').scroll();
+          $('html, body').animate({
+            scrollTop:$('.collapse').offset().top},
+            1000);
           $(this).text("CLOSE");
         }
       }
