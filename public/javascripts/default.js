@@ -15,6 +15,9 @@ if( navigator.userAgent.match(/Android/i) || navigator.userAgent.match(/webOS/i)
         {
           $('.collapse').removeClass("showing");
           $('.collapse').addClass("hidden").slideUp("slow");
+          $('html, body').animate({
+            scrollTop:$('.container-fluid').offset().top},
+            1000);          
           $(this).text("MENU");
         }
         else
@@ -22,7 +25,7 @@ if( navigator.userAgent.match(/Android/i) || navigator.userAgent.match(/webOS/i)
           $('.collapse').removeClass("hidden");
           $('.collapse').addClass("showing").slideDown("slow");
           $('html, body').animate({
-            scrollTop:$('.container-fluid').offset().top},
+            scrollTop:$('.collapse').offset().top},
             1000);
           $(this).text("CLOSE");
         }
