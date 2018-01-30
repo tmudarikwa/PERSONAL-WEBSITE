@@ -36,17 +36,23 @@ p {
 .navbar{
   justify-content: center;
 }
+
+.navbar-nav{
+  width:100%;
+}
+
 .navlink{
   border: 1px solid black;
   border-radius: 3px;
   font-weight: bold;
   padding:2px;
   font-size: 200%;
-  margin-right:25%;
+  margin-right:2%;
   background-color: inherit;
   text-decoration: none;
   text-decoration-line: none;
   color:black;
+  width:18%;
 }
 
 .navbar-toggler-icon{
