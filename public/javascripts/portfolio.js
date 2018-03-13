@@ -1,17 +1,6 @@
 var winH = window.innerHeight;
 var imgheight = (70/100 * winH)+'px';
 var imgwidth="100%";
-if( navigator.userAgent.match(/Android/i) || navigator.userAgent.match(/webOS/i) || navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPad/i) || navigator.userAgent.match(/iPod/i)
- || navigator.userAgent.match(/BlackBerry/i)
- || navigator.userAgent.match(/Windows Phone/i)) 
-  {
-    imgheight="auto";
-    $('.col-8 img').removeClass('img-fluid');
-    $('.col-8 img').removeClass('mx-auto');
-    $('.col-8 img').removeClass('d-block');
-    $('.col-8 img').css('width','156%');
-  }
-var imgwidth="100%";
 
 /*********
   PORTFOLIO NAVIGATING
@@ -231,3 +220,14 @@ $('.portfolio #previousprojbtn').click(function(){
       );
   }  
 });
+
+if( navigator.userAgent.match(/Android/i) || navigator.userAgent.match(/webOS/i) || navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPad/i) || navigator.userAgent.match(/iPod/i)
+ || navigator.userAgent.match(/BlackBerry/i)
+ || navigator.userAgent.match(/Windows Phone/i)) 
+  {
+    imgheight="auto";
+    $('.col-8 img').removeClass('img-fluid');
+    $('.col-8 img').removeClass('mx-auto');
+    $('.col-8 img').removeClass('d-block');
+    $('.col-8 img').css('width','156%');
+  }
