@@ -68,7 +68,7 @@ $('.portfolio #nextprojbtn').click(function(){
                                                +"<p class='link'>LINK: http://salty-mountain-65693.herokuapp.com/</p>\n"
                                              +"</a>\n"
                                             +"</div>"
-      );
+      );   
   }
   else if(title.includes("GERFUSA"))
   {
@@ -88,7 +88,7 @@ $('.portfolio #nextprojbtn').click(function(){
                                                +"<p class='link'>LINK: NO LINK </p>\n"
                                              +"</a>\n"
                                             +"</div>"
-      );
+      );   
   }  
   else if(title.includes("EXPENSE ALLOCATION"))
   {
@@ -108,8 +108,9 @@ $('.portfolio #nextprojbtn').click(function(){
                                                +"<p class='link'>LINK: NO LINK </p>\n"
                                              +"</a>\n"
                                             +"</div>"
-      );
+      );    
   }  
+    checkMobile();  
 });
 
 $('.portfolio #previousprojbtn').click(function(){
@@ -134,6 +135,7 @@ $('.portfolio #previousprojbtn').click(function(){
                                              +"</a>\n"
                                             +"</div>"
       );
+
   }
   else if (title.includes("MUMOAFRUIKA"))
   {
@@ -219,15 +221,20 @@ $('.portfolio #previousprojbtn').click(function(){
                                             +"</div>"
       );
   }  
+  checkMobile();
 });
 
-if( navigator.userAgent.match(/Android/i) || navigator.userAgent.match(/webOS/i) || navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPad/i) || navigator.userAgent.match(/iPod/i)
- || navigator.userAgent.match(/BlackBerry/i)
- || navigator.userAgent.match(/Windows Phone/i)) 
-  {
-    imgheight="auto";
-    $('.col-8 img').removeClass('img-fluid');
-    $('.col-8 img').removeClass('mx-auto');
-    $('.col-8 img').removeClass('d-block');
-    $('.col-8 img').css('width','156%');
-  }
+function checkMobile(){
+  if( navigator.userAgent.match(/Android/i) || navigator.userAgent.match(/webOS/i) || navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPad/i) || navigator.userAgent.match(/iPod/i)
+   || navigator.userAgent.match(/BlackBerry/i)
+   || navigator.userAgent.match(/Windows Phone/i)) 
+    {
+      imgheight="auto";
+      $('.col-8 img').removeClass('img-fluid');
+      $('.col-8 img').removeClass('mx-auto');
+      $('.col-8 img').removeClass('d-block');
+      $('.col-8 img').css('width','156%');
+    }
+}
+//invoking function
+checkMobile();
