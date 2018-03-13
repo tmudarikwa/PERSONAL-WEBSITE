@@ -84,8 +84,8 @@ $('.portfolio #nextprojbtn').click(function(){
                                                +"<p class='role'> ROLE: GUI Designer & programmer </p>\n"
                                                +"<p class='skills'> TECHNOLOGIES: C#, WPF</p>\n"  
                                                +"<p class='description'> DESCRIPTION: This desktop application was intended to ease the bi-weekly accounting and warehouse split calculations. The clients shared accounting and warehouse personel but always had to track payments owed from each client by means of querying invoices and orders processed by each department for each client. Migrated the queries from MySQL to Postgres and build a windows GUI application.</p>"
-                                               +"<a href='http://salty-mountain-65693.herokuapp.com/' target='_blank'>\n"
-                                               +"<p class='link'>LINK: http://salty-mountain-65693.herokuapp.com/</p>\n"
+                                               +"<a href='#' target='_blank'>\n"
+                                               +"<p class='link'>LINK: NO LINK since priamry application runs on Windows desktops</p>\n"
                                              +"</a>\n"
                                             +"</div>"
       );   
@@ -104,8 +104,8 @@ $('.portfolio #nextprojbtn').click(function(){
                                                +"<p class='role'> ROLE: GUI Designer & programmer </p>\n"
                                                +"<p class='skills'> TECHNOLOGIES: C# & WPF</p>\n"  
                                                +"<p class='description'> DESCRIPTION: This desktop application was built inorder to trace duplicate records in a table. The application will return all the records that are identical from the table which it attains by individually checking each record in the table.</p>"
-                                               +"<a href='http://salty-mountain-65693.herokuapp.com/' target='_blank'>\n"
-                                               +"<p class='link'>LINK: http://salty-mountain-65693.herokuapp.com/</p>\n"
+                                               +"<a href='#' target='_blank'>\n"
+                                               +"<p class='link'>LINK: NO LINK since priamry application runs on Windows desktops</p>\n"
                                              +"</a>\n"
                                             +"</div>"
       );    
@@ -216,7 +216,7 @@ $('.portfolio #previousprojbtn').click(function(){
                                                +"<p class='skills'> TECHNOLOGIES: C# & WPF</p>\n"  
                                                +"<p class='description'> DESCRIPTION: This desktop application was intended to ease the bi-weekly accounting and warehouse split calculations. The clients shared accounting and warehouse personel but always had to track payments owed from each client by means of querying invoices and orders processed by each department for each client. Migrated the queries from MySQL to Postgres and build a windows GUI application.</p>"
                                                +"<a href='#'>\n"
-                                               +"<p class='link'>LINK: NO LINK </p>\n"
+                                               +"<p class='link'>LINK: NO LINK since priamry application runs on Windows desktops </p>\n"
                                              +"</a>\n"
                                             +"</div>"
       );
