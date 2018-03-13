@@ -1,5 +1,6 @@
 var winH = window.innerHeight;
 var imgheight = (70/100 * winH)+'px';
+var imgwidth="100%";
 if( navigator.userAgent.match(/Android/i) || navigator.userAgent.match(/webOS/i) || navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPad/i) || navigator.userAgent.match(/iPod/i)
  || navigator.userAgent.match(/BlackBerry/i)
  || navigator.userAgent.match(/Windows Phone/i)) 
@@ -8,7 +9,7 @@ if( navigator.userAgent.match(/Android/i) || navigator.userAgent.match(/webOS/i)
     $('img').removeClass('img-fluid');
     $('img').removeClass('mx-auto');
     $('img').removeClass('d-block');
-    $('img').css('width','156% !important');
+    $('img').css('width','156%');
   }
 var imgwidth="100%";
 
