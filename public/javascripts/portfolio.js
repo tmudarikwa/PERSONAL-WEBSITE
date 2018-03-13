@@ -3,7 +3,7 @@ var imgheight = (70/100 * winH)+'px';
 if( navigator.userAgent.match(/Android/i) || navigator.userAgent.match(/webOS/i) || navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPad/i) || navigator.userAgent.match(/iPod/i)
  || navigator.userAgent.match(/BlackBerry/i)
  || navigator.userAgent.match(/Windows Phone/i)) imgheight="auto";
-var imgwidth="100%";
+var imgwidth="156%";
 
 /*********
   PORTFOLIO NAVIGATING
@@ -16,7 +16,7 @@ $('.portfolio #nextprojbtn').click(function(){
     $('.portfolio #previousprojbtn').show();
     $('.portfolio .portfolio-content').html("<div class='col-8'> \n"
                                             +"<a href='portalgascoonline'>\n"
-                                             +"<img class='img-fluid mx-auto d-block ' src='images/portifolio/portalgascoonline.png' style='height:"+imgheight+";width:"+imgwidth+"' alt='gasco salesportal web application picture'/>\n"
+                                             +"<img class='' src='images/portifolio/portalgascoonline.png' style='height:"+imgheight+";width:"+imgwidth+"' alt='gasco salesportal web application picture'/>\n"
                                              +"</a>\n"
                                              +"</div>\n"
                                              +"<div class='col'>\n"
@@ -35,7 +35,7 @@ $('.portfolio #nextprojbtn').click(function(){
     $('.portfolio #previousprojbtn').show();
     $('.portfolio .portfolio-content').html("<div class='col-8'> \n"
                                             +"<a href='mumoafruika'>\n"
-                                             +"<img class='img-fluid mx-auto d-block ' src='images/portifolio/mumoafruika.png' style='height:"+imgheight+";width:"+imgwidth+"'  alt='mumoafruika web application picture'/>\n"
+                                             +"<img class='' src='images/portifolio/mumoafruika.png' style='height:"+imgheight+";width:"+imgwidth+"'  alt='mumoafruika web application picture'/>\n"
                                              +"</a>\n"
                                              +"</div>\n"
                                              +"<div class='col'>\n"
@@ -57,7 +57,7 @@ $('.portfolio #nextprojbtn').click(function(){
     $('.portfolio #nextprojbtn').show();
     $('.portfolio .portfolio-content').html("<div class='col-8'> \n"
                                             +"<a href='gerfusa'>\n"
-                                             +"<img class='img-fluid mx-auto d-block ' src='images/portifolio/gerfusa.png' style='height:"+imgheight+";width:"+imgwidth+"'  alt='gerfusa web application picture'/>\n"
+                                             +"<img class='' src='images/portifolio/gerfusa.png' style='height:"+imgheight+";width:"+imgwidth+"'  alt='gerfusa web application picture'/>\n"
                                              +"</a>\n"
                                              +"</div>\n"
                                              +"<div class='col'>\n"
@@ -79,7 +79,7 @@ $('.portfolio #nextprojbtn').click(function(){
     $('.portfolio #nextprojbtn').show();
     $('.portfolio .portfolio-content').html("<div class='col-8'> \n"
                                             +"<a href='#'>\n"
-                                             +"<img class='img-fluid mx-auto d-block ' src='images/portifolio/expense_allocation_metrics.JPG' style='height:"+imgheight+";width:"+imgwidth+"'  alt='expense allocation metrics application picture'/>\n"
+                                             +"<img class='' src='images/portifolio/expense_allocation_metrics.JPG' style='height:"+imgheight+";width:"+imgwidth+"'  alt='expense allocation metrics application picture'/>\n"
                                              +"</a>\n"
                                              +"</div>\n"
                                              +"<div class='col'>\n"
@@ -99,7 +99,7 @@ $('.portfolio #nextprojbtn').click(function(){
     $('.portfolio #nextprojbtn').hide();
     $('.portfolio .portfolio-content').html("<div class='col-8'> \n"
                                             +"<a href='#'>\n"
-                                             +"<img class='img-fluid mx-auto d-block ' src='images/portifolio/replication_trace.JPG' style='height:"+imgheight+";width:"+imgwidth+"'  alt='replication trace application picture'/>\n"
+                                             +"<img class='' src='images/portifolio/replication_trace.JPG' style='height:"+imgheight+";width:"+imgwidth+"'  alt='replication trace application picture'/>\n"
                                              +"</a>\n"
                                              +"</div>\n"
                                              +"<div class='col'>\n"
