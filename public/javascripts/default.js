@@ -35,7 +35,7 @@ if( navigator.userAgent.match(/Android/i) || navigator.userAgent.match(/webOS/i)
         //setting main body content height
     $('.navbar').css('position','fixed'); 
     $('.navbar').css('width','100%');
-    $('.container-fluid').css('padding-top','24%'); 
+    $('.container-fluid').css('padding-top','23%'); 
 
  }
 else
