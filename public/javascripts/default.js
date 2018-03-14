@@ -32,6 +32,24 @@ if( navigator.userAgent.match(/Android/i) || navigator.userAgent.match(/webOS/i)
         }
       }
     );
+        //setting main body content height
+    $('.bcontent').css('height',(88/100 * winH)+'px'); 
+    $('.portfolio').css('height',(88/100 * winH)+10+'px'); 
+    //setting footer height
+    $('.footer').css('height',(15/100 * winH)+'px'); 
+
+    //setting portfolio image height sizes
+    $('.portfolio img').css('height', (70/100 * winH)+'px');
+
+    //large screen desktop styling
+    if(winH > 700)
+    {
+      $(".img-thumbnail").css('height', (46.2/100 * winH)+'px ');
+      $('body').css('font-size',(2.5/100 * winH)+'px');
+      //$('.portfolio button').css('margin-top','-15px');
+      //$('.navlink').css("margin-right","30%");
+
+    }
  }
 else
 {    
