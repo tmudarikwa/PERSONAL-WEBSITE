@@ -6,7 +6,6 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
 var index = require('./routes/index');
-var downloadfile = require('./routes/downloadfile');
 var contactme = require('./routes/contact');
 var aboutme = require('./routes/about');
 var portfolio = require('./routes/portfolio');
@@ -28,7 +27,6 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', index);
-app.use('/downloadresume', downloadfile);
 app.use('/viewresume', viewresume);
 app.use('/about', aboutme);
 app.use('/contact', contactme);
