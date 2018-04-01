@@ -157,7 +157,7 @@ $('.portfolio #previousprojbtn').click(function(){
                                                  +"<p class='link'>LINK: http://www.mumoafruika.com</p>\n"
                                                +"</a>\n"
                                               +"</div>");
-  } else if(title.includes("EXPENSE ALLOCATION"){
+  } else if(title.includes("EXPENSE ALLOCATION")){
       $('.portfolio #previousprojbtn').show();
       $('.portfolio #nextprojbtn').show();
       $('.portfolio .portfolio-content').html("<div class='col-8'> \n"
@@ -180,7 +180,7 @@ $('.portfolio #previousprojbtn').click(function(){
       $('.portfolio #previousprojbtn').show();
       $('.portfolio #nextprojbtn').show();
       $('.portfolio .portfolio-content').html("<div class='col-8'> \n"
-                                              +"<a href='#'>\n"
+                                                    +"<a href='#'>\n"
                                                +"<img class='img-fluid mx-auto d-block ' src='images/portifolio/expense_allocation_metrics.JPG' style='height:"+imgHeight+";width:"+imgWidth+"'  alt='expense allocation metrics application picture'/>\n"
                                                +"</a>\n"
                                                +"</div>\n"
