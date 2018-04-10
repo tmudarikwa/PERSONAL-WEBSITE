@@ -48,6 +48,9 @@ app.use(function(err, req, res, next) {
 
   // render the error page
   res.status(err.status || 500);
+  //console error logging
+  console.log('***** page access error *****');
+  console.log(err);
   res.render('error');
 });
 
