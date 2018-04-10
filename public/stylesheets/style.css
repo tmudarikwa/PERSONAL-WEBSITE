@@ -21,7 +21,7 @@ body {
 	height:250px;
 }
 
-p.title{
+h1.title{
   font-weight:bold;
   text-align:center;
   padding-left:20px;
@@ -105,7 +105,7 @@ input, textarea{
 }
 .portfolio p , .portfolio a{
   text-align:center;
- 
+
 }
 
 .portfolio p.description, .portfolio p.role, .portfolio a, .portfolio p.link, p.skills, p.projectname  {

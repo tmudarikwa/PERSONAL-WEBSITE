@@ -2,7 +2,6 @@ var express = require('express');
 var router = express.Router();
 
 var date = new Date();
-console.log("---router called---");
 /* GET about page. */
 router.get('/', function(req, res, next) {
   var path = '/about';

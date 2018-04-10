@@ -6,7 +6,7 @@ var imgWidth="100%";
   PORTFOLIO NAVIGATING
 *********/
 $('.portfolio #nextprojbtn').click(function(){
-  var title = $('.portfolio p.projectname').text();
+  var title = $('.portfolio h2.projectname').text();
 
   if(title.includes("INTERNAL FPG SALES PORTAL")){
       $('.portfolio #previousprojbtn').show();
@@ -16,12 +16,12 @@ $('.portfolio #nextprojbtn').click(function(){
                                                +"</a>\n"
                                                +"</div>\n"
                                                +"<div class='col'>\n"
-                                                 +"<p class='projectname'> PROJECT NAME: INTERNAL GASCO SALES PORTAL</p>\n"
+                                                 +"<h2 class='projectname'> PROJECT NAME: INTERNAL GASCO SALES PORTAL</p>\n"
                                                  +"<p class='role'> ROLE: Designer, front & back-end coder</p>\n"
                                                  +"<p class='skills'>  TECHNOLOGIES: J2EE, HTML, HTML5, AJAX, jQuery, CSS, PostgreSQL</p>\n"
                                                  +"<p class='description'> DESCRIPTION: This is an internal sales portal which serves to make it easier for sales people to set and target customer to focus on. Though this was the main idea the application does far more than that from displaying a snap shot of the companys' revenue through graphs to mapping customers on a map using google maps API and also uploading excel data to a Postgres database.</p>"
-                                                 +"<a href='http://portal.gascoonline.com' target='_blank'>\n"
-                                                 +"<p class='link'>LINK: http://portal.gascoonline.com</p>\n"
+                                                 +"<p class='link'>LINK: \n"
+                                                 +"<a href='http://portal.gascoonline.com' title='Gasco portal website'target='_blank'>http://portal.gascoonline.com</a></p>\n"
                                                +"</a>\n"
                                               +"</div>");
   } else if (title.includes("INTERNAL GASCO SALES PORTAL")){
@@ -32,14 +32,14 @@ $('.portfolio #nextprojbtn').click(function(){
                                                +"</a>\n"
                                                +"</div>\n"
                                                +"<div class='col'>\n"
-                                                 +"<p class='projectname'> PROJECT NAME: MUMOAFRUIKA</p>\n"
+                                                 +"<h2 class='projectname'> PROJECT NAME: MUMOAFRUIKA</p>\n"
                                                  +"<p class='role'> ROLE : Designer , front & back-end coder, database architect</p>\n"
                                                  +"<p class='skills'> TECHNOLOGIES: NodeJS, HTML, JQuery, MongoDB, Express, Mandrill, Heroku</p>\n"
                                                  +"<p class='description'> DESCRIPTION: This a web page that curates information and as well serves as a way to update the progress on the actual MuMoAfruika platform.</p>"
                                                  +"<a href='https://github.com/tmudarikwa/MuMoAfruika' target='_blank'>\n"
                                                  +"<p class='link'>GITHUB: https://github.com/tmudarikwa/MuMoAfruika</p>\n"
-                                                 +"<a href='http://www.mumoafruika.com' target='_blank'>\n"
-                                                 +"<p class='link'>LINK: http://www.mumoafruika.com</p>\n"
+                                                 +"<p class='link'>LINK: \n"
+                                                 +"<a href='http://www.mumoafruika.com' title='MuMoAfruika website' target='_blank'>http://www.mumoafruika.com</a></p>\n"
                                                +"</a>\n"
                                               +"</div>");
   } else if(title.includes("MUMOAFRUIKA")){
@@ -51,14 +51,14 @@ $('.portfolio #nextprojbtn').click(function(){
                                                +"</a>\n"
                                                +"</div>\n"
                                                +"<div class='col'>\n"
-                                                 +"<p class='projectname'> PROJECT NAME: GERFUSA (still in development)</p>\n"
+                                                 +"<h2 class='projectname'> PROJECT NAME: GERFUSA (still in development)</p>\n"
                                                  +"<p class='role'> ROLE: Designer, front & back-end coder, database architect </p>\n"
                                                  +"<p class='skills'> TECHNOLOGIES: NodeJS, HTML, CSS, JQuery, MongoDB, Express, MailChimp, Mandrill,Heroku</p>\n"
                                                  +"<p class='description'> DESCRIPTION: This web application is for a service and errands company which will enable customers to buy and schedule groceries/errands. It also has a customer chat interface plus and employee portal to facilitate retrieving the orders and all.</p>"
                                                  +"<a href='https://github.com/tmudarikwa/GERFUSA' target='_blank'>\n"
                                                  +"<p class='link'>GITHUB: https://github.com/tmudarikwa/GERFUSA</p>\n"
-                                                 +"<a href='http://salty-mountain-65693.herokuapp.com/' target='_blank'>\n"
-                                                 +"<p class='link'>LINK: http://salty-mountain-65693.herokuapp.com/</p>\n"
+                                                 +"<p class='link'>LINK: \n"
+                                                 +"<a href='http://salty-mountain-65693.herokuapp.com/' title='GERF website' target='_blank'>http://salty-mountain-65693.herokuapp.com/</a></p>\n"
                                                +"</a>\n"
                                               +"</div>");
   } else if(title.includes("GERFUSA")){
@@ -70,12 +70,12 @@ $('.portfolio #nextprojbtn').click(function(){
                                                +"</a>\n"
                                                +"</div>\n"
                                                +"<div class='col'>\n"
-                                                 +"<p class='projectname'> PROJECT NAME: EXPENSE ALLOCATION METICS WINDOWS DESKTOP APPLICATION</p>\n"
+                                                 +"<h2 class='projectname'> PROJECT NAME: EXPENSE ALLOCATION METICS WINDOWS DESKTOP APPLICATION</p>\n"
                                                  +"<p class='role'> ROLE: GUI Designer & programmer </p>\n"
                                                  +"<p class='skills'> TECHNOLOGIES: C#, WPF</p>\n"
                                                  +"<p class='description'> DESCRIPTION: This desktop application was intended to ease the bi-weekly accounting and warehouse split calculations. The clients shared accounting and warehouse personel but always had to track payments owed from each client by means of querying invoices and orders processed by each department for each client. Migrated the queries from MySQL to Postgres and build a windows GUI application.</p>"
-                                                 +"<a href='#'>\n"
-                                                 +"<p class='link'>LINK: http://salty-mountain-65693.herokuapp.com/</p>\n"
+                                                 +"<p class='link'>LINK: \n"
+                                                 +"<a href='#'>http://salty-mountain-65693.herokuapp.com/</a></p>\n"
                                                +"</a>\n"
                                               +"</div>");
   }  else if(title.includes("EXPENSE ALLOCATION")){
@@ -87,12 +87,12 @@ $('.portfolio #nextprojbtn').click(function(){
                                                +"</a>\n"
                                                +"</div>\n"
                                                +"<div class='col'>\n"
-                                                 +"<p class='projectname'> PROJECT NAME: REPLICATION TRACE WINDOWS DESKTOP APPLICATION</p>\n"
+                                                 +"<h2 class='projectname'> PROJECT NAME: REPLICATION TRACE WINDOWS DESKTOP APPLICATION</p>\n"
                                                  +"<p class='role'> ROLE: GUI Designer & programmer </p>\n"
                                                  +"<p class='skills'> TECHNOLOGIES: C# & WPF</p>\n"
                                                  +"<p class='description'> DESCRIPTION: This desktop application was built inorder to trace duplicate records in a table. The application will return all the records that are identical from the table which it attains by individually checking each record in the table.</p>"
-                                                 +"<a href='#'>\n"
-                                                 +"<p class='link'>LINK: http://salty-mountain-65693.herokuapp.com/</p>\n"
+                                                 +"<p class='link'>LINK: \n"
+                                                 +"<a href='#'>http://salty-mountain-65693.herokuapp.com/</a></p>\n"
                                                +"</a>\n"
                                               +"</div>");
   }
@@ -101,7 +101,7 @@ $('.portfolio #nextprojbtn').click(function(){
 });
 
 $('.portfolio #previousprojbtn').click(function(){
-  var title = $('.portfolio p.projectname').text();
+  var title = $('.portfolio h2.projectname').text();
 
   if(title.includes("INTERNAL GASCO SALES PORTAL")){
       $('.portfolio #previousprojbtn').hide();
@@ -112,12 +112,12 @@ $('.portfolio #previousprojbtn').click(function(){
                                                +"</a>\n"
                                                +"</div>\n"
                                                +"<div class='col'>\n"
-                                                 +"<p class='projectname'> PROJECT NAME: INTERNAL FPG SALES PORTAL</p>\n"
+                                                 +"<h2 class='projectname'> PROJECT NAME: INTERNAL FPG SALES PORTAL</p>\n"
                                                  +"<p class='role'> ROLE: Designer, front & back-end coder</p>\n"
                                                  +"<p class='skills'>  TECHNOLOGIES: J2EE, HTML, HTML5, AJAX, jQuery, CSS, PostgreSQL</p>\n"
                                                  +"<p class='description'> DESCRIPTION: This is an internal sales portal which serves to make it easier for sales people to set and target customer to focus on. Though this was the main idea the application does far more than that from displaying a snap shot of the companys' revenue through graphs to mapping customers on a map using google maps API and also uploading excel data to a Postgres database.</p>"
-                                                 +"<a href='http://portal.frewprocess.com' target='_blank'>\n"
-                                                 +"<p class='link'>LINK: http://portal.frewprocess.com</p>\n"
+                                                 +"<p class='link'>LINK: \n"
+                                                 +"<a href='http://portal.frewprocess.com' title='Frewprocess portal website' target='_blank'>http://portal.frewprocess.com</a></p>\n"
                                                +"</a>\n"
                                               +"</div>");
 
@@ -130,12 +130,12 @@ $('.portfolio #previousprojbtn').click(function(){
                                                +"</a>\n"
                                                +"</div>\n"
                                                +"<div class='col'>\n"
-                                                 +"<p class='projectname'> PROJECT NAME: INTERNAL GASCO SALES PORTAL</p>\n"
+                                                 +"<h2 class='projectname'> PROJECT NAME: INTERNAL GASCO SALES PORTAL</p>\n"
                                                  +"<p class='role'> ROLE: Designer, front & back-end coder</p>\n"
                                                  +"<p class='skills'> TECHNOLOGIES: J2EE, HTML, HTML5, AJAX, jQuery, CSS, PostgreSQL</p>\n"
                                                  +"<p class='description'> DESCRIPTION: This is an internal sales portal which serves to make it easier for sales people to set and target customer to focus on. Though this was the main idea the application does far more than that from displaying a snap shot of the companys' revenue through graphs to mapping customers on a map using google maps API and also uploading excel data to a Postgres database.</p>"
-                                                 +"<a href='http://portal.gascoonline.com' target='_blank'>\n"
-                                                 +"<p class='link'>LINK: http://portal.gascoonline.com</p>\n"
+                                                 +"<p class='link'>LINK: \n"
+                                                 +"<a href='http://portal.gascoonline.com' title='Gasco portal website' target='_blank'>http://portal.gascoonline.com</a></p>\n"
                                                +"</a>\n"
                                               +"</div>");
   } else if(title.includes("GERFUSA")){
@@ -147,14 +147,14 @@ $('.portfolio #previousprojbtn').click(function(){
                                                +"</a>\n"
                                                +"</div>\n"
                                                +"<div class='col'>\n"
-                                                 +"<p class='projectname'> PROJECT NAME: MUMOAFRUIKA</p>\n"
+                                                 +"<h2 class='projectname'> PROJECT NAME: MUMOAFRUIKA</p>\n"
                                                  +"<p class='role'> ROLE : Designer , front & back-end coder, database architect</p>\n"
                                                  +"<p class='skills'> TECHNOLOGIES: NodeJS, HTML, JQuery, MongoDB, Express, Mandrill, Heroku</p>\n"
                                                  +"<p class='description'> DESCRIPTION: This a web page that curates information and as well serves as a way to update the progress on the actual MuMoAfruika platform.</p>"
                                                  +"<a href='https://github.com/tmudarikwa/MuMoAfruika' target='_blank'>\n"
                                                  +"<p class='link'>GITHUB: https://github.com/tmudarikwa/MuMoAfruika</p>\n"
-                                                 +"<a href='http://www.mumoafruika.com' target='_blank'>\n"
-                                                 +"<p class='link'>LINK: http://www.mumoafruika.com</p>\n"
+                                                 +"<p class='link'>LINK: \n"
+                                                 +"<a href='http://www.mumoafruika.com' title='MuMoAfruika website' target='_blank'>http://www.mumoafruika.com</a></p>\n"
                                                +"</a>\n"
                                               +"</div>");
   } else if(title.includes("EXPENSE ALLOCATION")){
@@ -166,14 +166,14 @@ $('.portfolio #previousprojbtn').click(function(){
                                                +"</a>\n"
                                                +"</div>\n"
                                                +"<div class='col'>\n"
-                                                 +"<p class='projectname'> PROJECT NAME: GERFUSA (still in development)</p>\n"
+                                                 +"<h2 class='projectname'> PROJECT NAME: GERFUSA (still in development)</p>\n"
                                                  +"<p class='role'> ROLE: Designer, front & back-end coder, database architect </p>\n"
                                                  +"<p class='skills'> TECHNOLOGIES: NodeJS, HTML, CSS, JQuery, MongoDB, Express, MailChimp, Mandrill,Heroku</p>\n"
                                                  +"<p class='description'> DESCRIPTION: This web application is for a service and errands company which will enable customers to buy and schedule groceries/errands. It also has a customer chat interface plus and employee portal to facilitate retrieving the orders and all.</p>"
                                                  +"<a href='https://github.com/tmudarikwa/GERFUSA' target='_blank'>\n"
                                                  +"<p class='link'>GITHUB: https://github.com/tmudarikwa/GERFUSA</p>\n"
-                                                 +"<a href='http://salty-mountain-65693.herokuapp.com/' target='_blank'>\n"
-                                                 +"<p class='link'>LINK: http://salty-mountain-65693.herokuapp.com/</p>\n"
+                                                 +"<p class='link'>LINK: \n"
+                                                 +"<a href='http://salty-mountain-65693.herokuapp.com/' title='GERF website' target='_blank'>http://salty-mountain-65693.herokuapp.com/</a></p>\n"
                                                +"</a>\n"
                                               +"</div>");
   } else if(title.includes("REPLICATION TRACE")){
@@ -185,12 +185,12 @@ $('.portfolio #previousprojbtn').click(function(){
                                                +"</a>\n"
                                                +"</div>\n"
                                                +"<div class='col'>\n"
-                                                 +"<p class='projectname'> PROJECT NAME: EXPENSE ALLOCATION METICS WINDOWS DESKTOP APPLICATION</p>\n"
+                                                 +"<h2 class='projectname'> PROJECT NAME: EXPENSE ALLOCATION METICS WINDOWS DESKTOP APPLICATION</p>\n"
                                                  +"<p class='role'> ROLE: GUI Designer & programmer </p>\n"
                                                  +"<p class='skills'> TECHNOLOGIES: C# & WPF</p>\n"
                                                  +"<p class='description'> DESCRIPTION: This desktop application was intended to ease the bi-weekly accounting and warehouse split calculations. The clients shared accounting and warehouse personel but always had to track payments owed from each client by means of querying invoices and orders processed by each department for each client. Migrated the queries from MySQL to Postgres and build a windows GUI application.</p>"
-                                                 +"<a href='#'>\n"
-                                                 +"<p class='link'>LINK: http://salty-mountain-65693.herokuapp.com/</p>\n"
+                                                 +"<p class='link'>LINK: \n"
+                                                 +"<a href='#'>http://salty-mountain-65693.herokuapp.com/</a></p>\n"
                                                +"</a>\n"
                                               +"</div>");
   }
