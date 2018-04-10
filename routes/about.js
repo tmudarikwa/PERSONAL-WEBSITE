@@ -6,7 +6,7 @@ var date = new Date();
 router.get('/', function(req, res, next) {
   var path = '/about';
   res.locals.path = path;
-  res.render('about', { title: 'Takunda Mudarikwa | About', year: date.getFullYear()});
+  res.render('about', { title: 'Takunda Mudarikwa - Full-stack Web Developer | About', year: date.getFullYear()});
 });
 
 module.exports = router;
