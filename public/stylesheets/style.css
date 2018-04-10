@@ -1,6 +1,6 @@
-/*
+/***********
   general styles
-*/
+***********/
 body {
  font-family: 'Oswald', sans-serif;
  background-color: rgba(114, 28, 36, 1);
@@ -8,15 +8,13 @@ body {
  font-size:1rem;
 }
 
-
 .container-fluid {
   margin:0;
 }
 
-
-/*
+/***********
  body styles
-*/
+***********/
 .img-thumbnail{
 	height:250px;
 }
@@ -26,7 +24,6 @@ h1.title{
   text-align:center;
   padding-left:20px;
   padding-right:20px;
-
 }
 
 p {
@@ -74,10 +71,9 @@ a.selected {
   color:white;
 }
 
-
-/*
+/***********
  contact page
-*/
+***********/
 #emailfromcustomer {
   text-align:center;
   width:100%;
@@ -86,26 +82,33 @@ a.selected {
 #emailfromcustomer button {
   font-size:150%;
 }
+
 input, textarea{
   width:100%;
   border-radius:5px;
   border:3px solid black;
 }
 
-/*
+/***********
  portfolio
-*/
+***********/
 .portfolio-content{
   margin-top:-10px;
 }
+
 .portfolio img{
   border-radius:5px;
   border: 2px solid;
 
 }
+
 .portfolio p , .portfolio a{
   text-align:center;
 
+}
+
+h2.projectname{
+  font-size:1.5rem;
 }
 
 .portfolio p.description, .portfolio p.role, .portfolio a, .portfolio p.link, p.skills, p.projectname  {
@@ -123,9 +126,9 @@ input, textarea{
   font-size:150%;
 }
 
-/*
+/***********
  footer styles
-*/
+***********/
 footer , .footer{
   background-color:black;
   text-align: center;
