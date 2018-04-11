@@ -5,7 +5,7 @@ var imgWidth="100%";
 /*********
   PORTFOLIO NAVIGATING
 *********/
-$('.portfolio #nextprojbtn').click(function(){
+$('.portfolio button').click(function(){
   var direction = $(this).text()
   var currentProject = $('.portfolio h2.projectname').text();
   navigatePortfolio(direction,currentProject)
