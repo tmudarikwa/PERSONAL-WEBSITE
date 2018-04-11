@@ -33,7 +33,7 @@ app.use('/about', aboutme);
 app.use('/contact', contactme);
 app.use('/portfolio', portfolio);
 app.use('/sendemail', sendemail);
-app.user('/portfolio/frewprocess',frewprocess);
+app.use('/portfolio/frewprocess',frewprocess);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
