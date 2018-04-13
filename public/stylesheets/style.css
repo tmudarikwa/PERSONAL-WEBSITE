@@ -96,10 +96,9 @@ input, textarea{
   margin-top:-10px;
 }
 
-.portfolio img{
+.portfolio img, #portfoliodetails img{
   border-radius:5px;
   border: 2px solid;
-
 }
 
 .portfolio p , .portfolio a{
