@@ -3,7 +3,7 @@ function setVisibility(){
   $('#portfoliodetails').children().hide();
   $('#portfoliodetails').children('.active').show();
 }
-setVisibility;
+setVisibility();
 
 //navigation through a selected projects details (when a user clicks on a projects image whilst on /portfolio)
 $('.portfoliodetail button').click(function(){
@@ -43,5 +43,5 @@ $('.portfoliodetail button').click(function(){
   //removing active class from currentItem
   $("#portfoliodetails #"+currentItem+"").removeClass('.active');
   //setting Visibility
-  setVisibility;
+  setVisibility();
 });
