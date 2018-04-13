@@ -16,7 +16,7 @@ function navigatePortfolio(direction, currentProject){
       $('.portfolio #previousprojbtn').hide();
       $('.portfolio #nextprojbtn').show();
       $('.portfolio .portfolio-content').html("<div class='col-8'> \n"
-                                              +"<a href='portalgascoonline'>\n"
+                                              +"<a href='portfolio/frewprocess>\n"
                                                +"<img class='img-fluid mx-auto d-block ' src='images/portifolio/portalfrewprocess.png' style='height:"+imgHeight+";width:"+imgWidth+"'  alt='fpg sales portal web application picture'/>\n"
                                                +"</a>\n"
                                                +"</div>\n"
@@ -32,7 +32,7 @@ function navigatePortfolio(direction, currentProject){
   }else if(currentProject.includes("INTERNAL FPG SALES PORTAL") && direction.startsWith("NEXT") || currentProject.includes("MUMOAFRUIKA") && direction.startsWith("PREVIOUS")){
         $('.portfolio #previousprojbtn').show();
         $('.portfolio .portfolio-content').html("<div class='col-8'> \n"
-                                                +"<a href='portalgascoonline'>\n"
+                                                +"<a href='portfolio/gascoonline'>\n"
                                                  +"<img class='img-fluid mx-auto d-block ' src='images/portifolio/portalgascoonline.png' style='height:"+imgHeight+";width:"+imgWidth+"' alt='gasco salesportal web application picture'/>\n"
                                                  +"</a>\n"
                                                  +"</div>\n"
@@ -48,7 +48,7 @@ function navigatePortfolio(direction, currentProject){
     } else if (currentProject.includes("INTERNAL GASCO SALES PORTAL") && direction.startsWith("NEXT") || currentProject.includes("GERFUSA") && direction.startsWith("PREVIOUS")){
         $('.portfolio #previousprojbtn').show();
         $('.portfolio .portfolio-content').html("<div class='col-8'> \n"
-                                                +"<a href='mumoafruika'>\n"
+                                                +"<a href='portfolio/mumoafruika'>\n"
                                                  +"<img class='img-fluid mx-auto d-block ' src='images/portifolio/mumoafruika.png' style='height:"+imgHeight+";width:"+imgWidth+"'  alt='mumoafruika web application picture'/>\n"
                                                  +"</a>\n"
                                                  +"</div>\n"
@@ -67,7 +67,7 @@ function navigatePortfolio(direction, currentProject){
         $('.portfolio #previousprojbtn').show();
         $('.portfolio #nextprojbtn').show();
         $('.portfolio .portfolio-content').html("<div class='col-8'> \n"
-                                                +"<a href='gerfusa'>\n"
+                                                +"<a href='portfolio/gerfusa'>\n"
                                                  +"<img class='img-fluid mx-auto d-block ' src='images/portifolio/gerfusa.png' style='height:"+imgHeight+";width:"+imgWidth+"'  alt='gerfusa web application picture'/>\n"
                                                  +"</a>\n"
                                                  +"</div>\n"
@@ -86,7 +86,7 @@ function navigatePortfolio(direction, currentProject){
         $('.portfolio #previousprojbtn').show();
         $('.portfolio #nextprojbtn').show();
         $('.portfolio .portfolio-content').html("<div class='col-8'> \n"
-                                                +"<a href='#'>\n"
+                                                +"<a href='#=portfolio/expense-allocation-metrics'>\n"
                                                  +"<img class='img-fluid mx-auto d-block ' src='images/portifolio/expense_allocation_metrics.JPG' style='height:"+imgHeight+";width:"+imgWidth+"'  alt='expense allocation metrics application picture'/>\n"
                                                  +"</a>\n"
                                                  +"</div>\n"
@@ -137,6 +137,15 @@ checkMobile();
 
 //stopping carousel cycling
 $('.portfolio').click(function(){
-  $('.carousel').carousel('pause');
-  $('.carousel').css('height','560px');
+  $('#portfoliodetails').click(function(){
+    $(this).children().hide();
+    $(this).children('.active').show();
+  });
 });
+
+//navigation through a selected projects details (when a user clicks on a projects image whilst on /portfolio)
+$('.portfoliodetail btn'){
+  var direction = $(this).text();
+  var currentItem = $(this).children('.active').attr('id');
+  console.log(currentItem);
+}

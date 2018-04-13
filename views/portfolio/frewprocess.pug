@@ -3,52 +3,45 @@ extends ../layout
 block content
   .container-fluid
     .row(class='align-items-center',style='border-top: 5px solid black; padding-top: 5px')
-      .col(class='bcontent')
-        h1.title PORTFOLIO - FPG SALES PORTAL
-        #carouselExampleIndicators.carousel.slide(data-ride='carousel')
-          ol.carousel-indicators
-            li.active(data-target='#carouselExampleIndicators', data-slide-to='0')
-            li(data-target='#carouselExampleIndicators', data-slide-to='1')
-            li(data-target='#carouselExampleIndicators', data-slide-to='2')
-          .carousel-inner
-            .carousel-item.active
-              img.d-block.w-100(src='../images/portifolio/frewprocess/Dashboard2.png', alt='Dashboard page')
-              div(class='carousel-caption d-none d-md-block')
-              h4 Dashboard page
-              h5 When an employee signs into the portal they land on to this dashboard page that give them a glance look at the company's progress categorized by certain documents. The is also filter functionality that enables a historical data search.
-            .carousel-item
-              img.d-block.w-100(src='../images/portifolio/frewprocess/Dashboard.png', alt='Dashboard page')
-              div(class='carousel-caption d-none d-md-block')
-              h4 Dashboard page (continued)
-              h5 The graphs have interactive functionality that enables a user to click the original graph and be presented the a graph that responds to clicks and mouseover hovers.
-            .carousel-item
-              img.d-block.w-100(src='../images/portifolio/frewprocess/Sales Goals.png', alt='Sales goals page')
-              div(class='carousel-caption d-none d-md-block')
-              h4 Sales Goals page
-              h5 This page allows a user to create sales target goals based on different sales territories and also to filter and search those goals.
-            .carousel-item
-              img.d-block.w-100(src='../images/portifolio/frewprocess/Customer Accounts.png', alt='Customer Accounts page')
-              div(class='carousel-caption d-none d-md-block')
-              h4 Customer Accounts page
-              h5 The Customer Accounts page list all customers that the company has and provides options to select if a customer is a sales target for a particular period or not. It also provides searching and sorting capabilities.
-            .carousel-item
-              img.d-block.w-100(src='../images/portifolio/frewprocess/Prospects Map.png', alt='Prospects Map page')
-              div(class='carousel-caption d-none d-md-block')
-              h4 Prospects Map page
-              h5 The Prospects map page displays plotted customers by different categorization( target account, key accounts, and historic customers and others) which ties back to sales efforts roles assigned on the Customer Accounts page. This page leverages to googleMaps API. On a customer point a user is able to see the customer's past orders and past paid invoices. The right fly out enable filtering by date, classifications, categories, account type, geocoding quality, and by dynamically adding some grouped filters. Last but not least a user can short list the customers that they want to focus on by doubling clicking on a customer point and adding the to the "Added Partners" cache.
-            .carousel-item
-              img.d-block.w-100(src='../images/portifolio/frewprocess/Customizable Map.png', alt='Customizable Map page')
-              div(class='carousel-caption d-none d-md-block')
-              h4 Prospects Map page (continued)
-              h5 The Customizable Map is were the "Added Partners" from the Prospects Map are displayed. On this page a user can search a customer's address straight on to the maps and can added on the points to be able to print the information.
-            .carousel-item
-              img.d-block.w-100(src='../images/portifolio/frewprocess/Upload.png', alt='Customizable Map page')
-              div(class='carousel-caption d-none d-md-block')
-              h4 Upload page
-              h5 The Upload page is for uploading excel marketing data into the company's database. This follows a number of different business rules to ensure data integrity. Before uploading a file users can verify if their excel document is formatted correctly by downloading a copy of the excepted file format.
-          a.carousel-control-prev(href='#carouselExampleIndicators', role='button', data-slide='prev')
-              span.carousel-control-prev-icon(aria-hidden='true')
-              span.sr-only Previous
-          a.carousel-control-next(href='#carouselExampleIndicators', role='button', data-slide='next')
-            span.carousel-control-next-icon(aria-hidden='true')
-            span.sr-only Next
+      .col(class='bcontent portfoliodetail')
+      h1.title PORTFOLIO - FPG SALES PORTAL
+      #portfoliodetails
+        #portfoliodetails-item1(class='active')
+          img(class='img-fluid mx-auto d-block' src='../images/portifolio/frewprocess/Dashboard2.png', alt='Dashboard page')
+          div
+            h4 Dashboard page
+            h5 When an employee signs into the portal they land on to this dashboard page that give them a glance look at the company's progress categorized by certain documents. The is also filter functionality that enables a historical data search.
+        .portfoliodetails-item
+          img(class='img-fluid mx-auto d-block' src='../images/portifolio/frewprocess/Dashboard.png', alt='Dashboard page')
+          div
+            h4 Dashboard page (continued)
+            h5 The graphs have interactive functionality that enables a user to click the original graph and be presented the a graph that responds to clicks and mouseover hovers.
+        .portfoliodetails-item
+          img(class='img-fluid mx-auto d-block' src='../images/portifolio/frewprocess/Sales Goals.png', alt='Sales goals page')
+          div
+            h4 Sales Goals page
+            h5 This page allows a user to create sales target goals based on different sales territories and also to filter and search those goals.
+        .portfoliodetails-item
+          img(class='img-fluid mx-auto d-block' src='../images/portifolio/frewprocess/Customer Accounts.png', alt='Customer Accounts page')
+          div
+            h4 Customer Accounts page
+            h5 The Customer Accounts page list all customers that the company has and provides options to select if a customer is a sales target for a particular period or not. It also provides searching and sorting capabilities.
+        .portfoliodetails-item
+          img(class='img-fluid mx-auto d-block' src='../images/portifolio/frewprocess/Prospects Map.png', alt='Prospects Map page')
+          div
+            h4 Prospects Map page
+            h5 The Prospects map page displays plotted customers by different categorization( target account, key accounts, and historic customers and others) which ties back to sales efforts roles assigned on the Customer Accounts page. This page leverages to googleMaps API. On a customer point a user is able to see the customer's past orders and past paid invoices. The right fly out enable filtering by date, classifications, categories, account type, geocoding quality, and by dynamically adding some grouped filters. Last but not least a user can short list the customers that they want to focus on by doubling clicking on a customer point and adding the to the "Added Partners" cache.
+        .portfoliodetails-item
+          img(class='img-fluid mx-auto d-block' src='../images/portifolio/frewprocess/Customizable Map.png', alt='Customizable Map page')
+          div
+            h4 Prospects Map page (continued)
+            h5 The Customizable Map is were the "Added Partners" from the Prospects Map are displayed. On this page a user can search a customer's address straight on to the maps and can added on the points to be able to print the information.
+        .portfoliodetails-item
+          img(class='img-fluid mx-auto d-block' src='../images/portifolio/frewprocess/Upload.png', alt='Customizable Map page')
+          div
+            h4 Upload page
+            h5 The Upload page is for uploading excel marketing data into the company's database. This follows a number of different business rules to ensure data integrity. Before uploading a file users can verify if their excel document is formatted correctly by downloading a copy of the excepted file format.
+  .row(class='align-items-center',style='text-align:center')
+        .col
+          button(style='display:none') PREVIOUS PROJECT
+          button() NEXT PROJECT
