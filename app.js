@@ -13,6 +13,7 @@ var viewresume = require('./routes/viewresume');
 var sendemail = require('./routes/contactemail');
 var frewprocess = require('./routes/portfolio/frewprocess');
 var gasco = require('./routes/portfolio/gasco');
+var mumoafruika = require('./routes/portfolio/mumoafruika');
 
 
 var app = express();
@@ -37,6 +38,7 @@ app.use('/portfolio', portfolio);
 app.use('/sendemail', sendemail);
 app.use('/portfolio/frewprocess',frewprocess);
 app.use('/portfolio/gasco',gasco);
+app.use('/portfolio/mumoafruika',mumoafruika);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
