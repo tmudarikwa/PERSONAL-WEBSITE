@@ -125,6 +125,10 @@ h2.projectname{
   font-size:150%;
 }
 
+#portfoliodetails .content{
+  text-align:center;
+}
+
 /***********
  footer styles
 ***********/
