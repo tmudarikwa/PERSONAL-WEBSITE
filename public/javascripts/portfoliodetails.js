@@ -22,22 +22,22 @@ $('.portfoliodetail button').click(function(){
 
   //displaying next or prev item
   if(checkNextItem == 1 && nextItem > 1 && nextItem < numOfItems && direction.startsWith('NEXT')){
-    $("#portfoliodetails #"+nextItem+"").addClass('.active');
+    $("#portfoliodetails #"+nextItem+"").addClass('active');
     $("#previousportfoliobtn").show();
   }else if(checkNextItem == 1 && nextItem == numOfItems && direction.startsWith('NEXT')){
-    $("#portfoliodetails #"+nextItem+"").addClass('.active');
+    $("#portfoliodetails #"+nextItem+"").addClass('active');
     $("#previousportfoliobtn").show();
     $("#nextportfoliobtn").hide()
   }else if(checkPrevItem == 1 && prevItem == 1 && direction.startsWith('PREVIOUS')){
-    $("#portfoliodetails #"+prevItem+"").addClass('.active');
+    $("#portfoliodetails #"+prevItem+"").addClass('active');
     $("#previousportfoliobtn").hide();
   }else if(checkPrevItem == 1 && prevItem > 1 && direction.startsWith('PREVIOUS')){
-    $("#portfoliodetails #"+prevItem+"").addClass('.active');
+    $("#portfoliodetails #"+prevItem+"").addClass('active');
     $("#previousportfoliobtn").show();
   }
 
   //removing active class from currentItem
-  $("#portfoliodetails #"+currentItem+"").removeClass('.active');
+  $("#portfoliodetails #"+currentItem+"").removeClass('active');
   //setting Visibility
   setVisibility();
 });
