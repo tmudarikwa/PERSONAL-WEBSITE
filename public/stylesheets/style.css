@@ -129,6 +129,10 @@ h2.projectname{
   text-align:center;
 }
 
+#portfoliodetails .content h5{
+  text-align:right;
+}
+
 /***********
  footer styles
 ***********/
