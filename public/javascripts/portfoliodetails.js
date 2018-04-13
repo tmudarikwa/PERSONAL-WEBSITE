@@ -35,6 +35,7 @@ $('.portfoliodetail button').click(function(){
   }else if(checkPrevItem == 1 && prevItem > 1 && direction.startsWith('PREVIOUS')){
     $("#portfoliodetails #"+prevItem+"").addClass('active');
     $("#previousportfoliobtn").show();
+    $("#nextportfoliobtn").show();
   }
 
   //removing active class from currentItem
