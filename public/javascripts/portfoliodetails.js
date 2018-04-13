@@ -9,10 +9,10 @@ setVisibility();
 $('.portfoliodetail button').click(function(){
   var direction = $(this).text();
   var currentItem = $('#portfoliodetails').children('.active').attr('id');
-  var nextItem, prevItem;
+  var nextItem = 0, prevItem = 0;
 
-  if(direction.startsWith('NEXT')) nextItem +=1;
-  if(direction.startsWith('PREVIOUS')) prevItem -=1;
+  if(direction.startsWith('NEXT')) nextItem = currentItem + 1;
+  if(direction.startsWith('PREVIOUS')) prevItem = currentItem - 1;
 
   //checking if nextItem id exists
   var checkNextItem = $('#portfoliodetails').has("#"+nextItem+"").length;
