@@ -32,7 +32,7 @@ function navigatePortfolio(direction, currentProject){
   }else if(currentProject.includes("INTERNAL FPG SALES PORTAL") && direction.startsWith("NEXT") || currentProject.includes("MUMOAFRUIKA") && direction.startsWith("PREVIOUS")){
         $('.portfolio #previousprojbtn').show();
         $('.portfolio .portfolio-content').html("<div class='col-8'> \n"
-                                                +"<a href='portfolio/gascoonline'>\n"
+                                                +"<a href='portfolio/gasco'>\n"
                                                  +"<img class='img-fluid mx-auto d-block ' src='images/portifolio/portalgascoonline.png' style='height:"+imgHeight+";width:"+imgWidth+"' alt='gasco salesportal web application picture'/>\n"
                                                  +"</a>\n"
                                                  +"</div>\n"
