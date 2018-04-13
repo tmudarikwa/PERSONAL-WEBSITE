@@ -27,10 +27,11 @@ $('.portfoliodetail button').click(function(){
   }else if(checkNextItem == 1 && nextItem == numOfItems && direction.startsWith('NEXT')){
     $("#portfoliodetails #"+nextItem+"").addClass('active');
     $("#previousportfoliobtn").show();
-    $("#nextportfoliobtn").hide()
+    $("#nextportfoliobtn").hide();
   }else if(checkPrevItem == 1 && prevItem == 1 && direction.startsWith('PREVIOUS')){
     $("#portfoliodetails #"+prevItem+"").addClass('active');
     $("#previousportfoliobtn").hide();
+    $("#nextportfoliobtn").show();
   }else if(checkPrevItem == 1 && prevItem > 1 && direction.startsWith('PREVIOUS')){
     $("#portfoliodetails #"+prevItem+"").addClass('active');
     $("#previousportfoliobtn").show();
