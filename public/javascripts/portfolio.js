@@ -21,11 +21,11 @@ function navigatePortfolio(direction, currentProject){
                                                +"</a>\n"
                                                +"</div>\n"
                                                +"<div class='col'>\n"
-                                                 +"<h2 class='projectname'> <strong><u>PROJECT NAME:</u></strong> INTERNAL FPG SALES PORTAL</h2>\n"
-                                                 +"<p class='role'> <strong><u>ROLE:</u></strong> Designer, front & back-end coder</p>\n"
-                                                 +"<p class='skills'>  <strong><u>TECHNOLOGIES:</u></strong> J2EE, HTML, HTML5, AJAX, jQuery, CSS, PostgreSQL</p>\n"
-                                                 +"<p class='description'> <strong><u>DESCRIPTION:</u></strong> This is an internal sales portal which serves to make it easier for sales people to set and target customer to focus on. Though this was the main idea the application does far more than that from displaying a snap shot of the companys' revenue through graphs to mapping customers on a map using google maps API and also uploading excel data to a Postgres database.</p>"
-                                                 +"<p class='link'><strong><u>LINK:</u></strong> \n"
+                                                 +"<h2 class='projectname'> <strong>PROJECT NAME:</strong> INTERNAL FPG SALES PORTAL</h2>\n"
+                                                 +"<p class='role'> <strong>ROLE:</strong> Designer, front & back-end coder</p>\n"
+                                                 +"<p class='skills'>  <strong>TECHNOLOGIES:</strong> J2EE, HTML, HTML5, AJAX, jQuery, CSS, PostgreSQL</p>\n"
+                                                 +"<p class='description'> <strong>DESCRIPTION:</strong> This is an internal sales portal which serves to make it easier for sales people to set and target customer to focus on. Though this was the main idea the application does far more than that from displaying a snap shot of the companys' revenue through graphs to mapping customers on a map using google maps API and also uploading excel data to a Postgres database.</p>"
+                                                 +"<p class='link'><strong>LINK:</strong> \n"
                                                  +"<a href='http://portal.frewprocess.com' title='Frewprocess portal website' target='_blank'>http://portal.frewprocess.com</a></p>\n"
                                                +"</a>\n"
                                               +"</div>");
@@ -37,11 +37,11 @@ function navigatePortfolio(direction, currentProject){
                                                  +"</a>\n"
                                                  +"</div>\n"
                                                  +"<div class='col'>\n"
-                                                   +"<h2 class='projectname'> <strong><u>PROJECT NAME:</u></strong> INTERNAL GASCO SALES PORTAL</h2>\n"
-                                                   +"<p class='role'> <strong><u>ROLE:</u></strong> Designer, front & back-end coder</p>\n"
-                                                   +"<p class='skills'>  <strong><u>TECHNOLOGIES:</u></strong> J2EE, HTML, HTML5, AJAX, jQuery, CSS, PostgreSQL</p>\n"
-                                                   +"<p class='description'> <strong><u>DESCRIPTION:</u></strong> This is an internal sales portal which serves to make it easier for sales people to set and target customer to focus on. Though this was the main idea the application does far more than that from displaying a snap shot of the companys' revenue through graphs to mapping customers on a map using google maps API and also uploading excel data to a Postgres database.</p>"
-                                                   +"<p class='link'><strong><u>LINK:</u></strong> \n"
+                                                   +"<h2 class='projectname'> <strong>PROJECT NAME:</strong> INTERNAL GASCO SALES PORTAL</h2>\n"
+                                                   +"<p class='role'> <strong>ROLE:</strong> Designer, front & back-end coder</p>\n"
+                                                   +"<p class='skills'>  <strong>TECHNOLOGIES:</strong> J2EE, HTML, HTML5, AJAX, jQuery, CSS, PostgreSQL</p>\n"
+                                                   +"<p class='description'> <strong>DESCRIPTION:</strong> This is an internal sales portal which serves to make it easier for sales people to set and target customer to focus on. Though this was the main idea the application does far more than that from displaying a snap shot of the companys' revenue through graphs to mapping customers on a map using google maps API and also uploading excel data to a Postgres database.</p>"
+                                                   +"<p class='link'><strong>LINK:</strong> \n"
                                                    +"<a href='http://portal.gascoonline.com' title='Gasco portal website'target='_blank'>http://portal.gascoonline.com</a></p>\n"
                                                  +"</a>\n"
                                                 +"</div>");
@@ -53,13 +53,13 @@ function navigatePortfolio(direction, currentProject){
                                                  +"</a>\n"
                                                  +"</div>\n"
                                                  +"<div class='col'>\n"
-                                                   +"<h2 class='projectname'> <strong><u>PROJECT NAME:</u></strong> MUMOAFRUIKA</h2>\n"
-                                                   +"<p class='role'> <strong><u>ROLE:</u></strong> Designer , front & back-end coder, database architect</p>\n"
-                                                   +"<p class='skills'> <strong><u>TECHNOLOGIES:</u></strong> NodeJS, HTML, JQuery, MongoDB, Express, Mandrill, Heroku</p>\n"
-                                                   +"<p class='description'> <strong><u>DESCRIPTION:</u></strong> This a web page that curates information and as well serves as a way to update the progress on the actual MuMoAfruika platform.</p>"
+                                                   +"<h2 class='projectname'> <strong>PROJECT NAME:</strong> MUMOAFRUIKA</h2>\n"
+                                                   +"<p class='role'> <strong>ROLE:</strong> Designer , front & back-end coder, database architect</p>\n"
+                                                   +"<p class='skills'> <strong>TECHNOLOGIES:</strong> NodeJS, HTML, JQuery, MongoDB, Express, Mandrill, Heroku</p>\n"
+                                                   +"<p class='description'> <strong>DESCRIPTION:</strong> This a web page that curates information and as well serves as a way to update the progress on the actual MuMoAfruika platform.</p>"
                                                    +"<a href='https://github.com/tmudarikwa/MuMoAfruika' target='_blank'>\n"
-                                                   +"<p class='link'><strong><u>GITHUB:</u></strong> https://github.com/tmudarikwa/MuMoAfruika</p>\n"
-                                                   +"<p class='link'><strong><u>LINK:</u></strong> \n"
+                                                   +"<p class='link'><strong>GITHUB:</strong> https://github.com/tmudarikwa/MuMoAfruika</p>\n"
+                                                   +"<p class='link'><strong>LINK:</strong> \n"
                                                    +"<a href='http://www.mumoafruika.com' title='MuMoAfruika website' target='_blank'>http://www.mumoafruika.com</a></p>\n"
                                                  +"</a>\n"
                                                 +"</div>");
@@ -72,13 +72,13 @@ function navigatePortfolio(direction, currentProject){
                                                  +"</a>\n"
                                                  +"</div>\n"
                                                  +"<div class='col'>\n"
-                                                   +"<h2 class='projectname'> <strong><u>PROJECT NAME:</u></strong> GERFUSA (still in development)</h2>\n"
-                                                   +"<p class='role'> <strong><u>ROLE:</u></strong> Designer, front & back-end coder, database architect </p>\n"
-                                                   +"<p class='skills'> <strong><u>TECHNOLOGIES:</u></strong> NodeJS, HTML, CSS, JQuery, MongoDB, Express, MailChimp, Mandrill,Heroku</p>\n"
-                                                   +"<p class='description'> <strong><u>DESCRIPTION:</u></strong> This web application is for a service and errands company which will enable customers to buy and schedule groceries/errands. It also has a customer chat interface plus a employee portal to facilitate retrieving the orders and other company/customer data.</p>"
+                                                   +"<h2 class='projectname'> <strong>PROJECT NAME:</strong> GERFUSA (still in development)</h2>\n"
+                                                   +"<p class='role'> <strong>ROLE:</strong> Designer, front & back-end coder, database architect </p>\n"
+                                                   +"<p class='skills'> <strong>TECHNOLOGIES:</strong> NodeJS, HTML, CSS, JQuery, MongoDB, Express, MailChimp, Mandrill,Heroku</p>\n"
+                                                   +"<p class='description'> <strong>DESCRIPTION:</strong> This web application is for a service and errands company which will enable customers to buy and schedule groceries/errands. It also has a customer chat interface plus a employee portal to facilitate retrieving the orders and other company/customer data.</p>"
                                                    +"<a href='https://github.com/tmudarikwa/GERFUSA' target='_blank'>\n"
-                                                   +"<p class='link'><strong><u>GITHUB:</u></strong> https://github.com/tmudarikwa/GERFUSA</p>\n"
-                                                   +"<p class='link'><strong><u>LINK:</u></strong> \n"
+                                                   +"<p class='link'><strong>GITHUB:</strong> https://github.com/tmudarikwa/GERFUSA</p>\n"
+                                                   +"<p class='link'><strong>LINK:</strong> \n"
                                                    +"<a href='http://salty-mountain-65693.herokuapp.com/' title='GERF website' target='_blank'>http://salty-mountain-65693.herokuapp.com/</a></p>\n"
                                                  +"</a>\n"
                                                 +"</div>");
@@ -91,11 +91,11 @@ function navigatePortfolio(direction, currentProject){
                                                  +"</a>\n"
                                                  +"</div>\n"
                                                  +"<div class='col'>\n"
-                                                   +"<h2 class='projectname'> <strong><u>PROJECT NAME:</u></strong> EXPENSE ALLOCATION METRICS WINDOWS DESKTOP APPLICATION</h2>\n"
-                                                   +"<p class='role'> <strong><u>ROLE:</u></strong> GUI Designer & programmer </p>\n"
-                                                   +"<p class='skills'> <strong><u>TECHNOLOGIES:</u></strong> C#, WPF</p>\n"
-                                                   +"<p class='description'> <strong><u>DESCRIPTION:</u></strong> This desktop application was intended to ease the bi-weekly accounting and warehouse split calculations. The clients shared accounting and warehouse personel but always had to track payments owed from each client by means of querying invoices and orders processed by each department for each client. Migrated the queries from MySQL to Postgres and build a windows GUI application.</p>"
-                                                   +"<p class='link'><strong><u>LINK:</u></strong> \n"
+                                                   +"<h2 class='projectname'> <strong>PROJECT NAME:</strong> EXPENSE ALLOCATION METRICS WINDOWS DESKTOP APPLICATION</h2>\n"
+                                                   +"<p class='role'> <strong>ROLE:</strong> GUI Designer & programmer </p>\n"
+                                                   +"<p class='skills'> <strong>TECHNOLOGIES:</strong> C#, WPF</p>\n"
+                                                   +"<p class='description'> <strong>DESCRIPTION:</strong> This desktop application was intended to ease the bi-weekly accounting and warehouse split calculations. The clients shared accounting and warehouse personel but always had to track payments owed from each client by means of querying invoices and orders processed by each department for each client. Migrated the queries from MySQL to Postgres and build a windows GUI application.</p>"
+                                                   +"<p class='link'><strong>LINK:</strong> \n"
                                                    +"<a href='#'>http://salty-mountain-65693.herokuapp.com/</a></p>\n"
                                                  +"</a>\n"
                                                 +"</div>");
@@ -108,11 +108,11 @@ function navigatePortfolio(direction, currentProject){
                                                  +"</a>\n"
                                                  +"</div>\n"
                                                  +"<div class='col'>\n"
-                                                   +"<h2 class='projectname'> <strong><u>PROJECT NAME:</u></strong> REPLICATION TRACE WINDOWS DESKTOP APPLICATION</h2>\n"
-                                                   +"<p class='role'> <strong><u>ROLE:</u></strong> GUI Designer & programmer </p>\n"
-                                                   +"<p class='skills'> <strong><u>TECHNOLOGIES:</u></strong> C# & WPF</p>\n"
-                                                   +"<p class='description'> <strong><u>DESCRIPTION:</u></strong> This desktop application was built inorder to trace duplicate records in a table. The application will return all the records that are identical from the table which it attains by individually checking each record in the table.</p>"
-                                                   +"<p class='link'><strong><u>LINK:</u></strong> \n"
+                                                   +"<h2 class='projectname'> <strong>PROJECT NAME:</strong> REPLICATION TRACE WINDOWS DESKTOP APPLICATION</h2>\n"
+                                                   +"<p class='role'> <strong>ROLE:</strong> GUI Designer & programmer </p>\n"
+                                                   +"<p class='skills'> <strong>TECHNOLOGIES:</strong> C# & WPF</p>\n"
+                                                   +"<p class='description'> <strong>DESCRIPTION:</strong> This desktop application was built inorder to trace duplicate records in a table. The application will return all the records that are identical from the table which it attains by individually checking each record in the table.</p>"
+                                                   +"<p class='link'><strong>LINK:</strong> \n"
                                                    +"<a href='#'>http://salty-mountain-65693.herokuapp.com/</a></p>\n"
                                                  +"</a>\n"
                                                 +"</div>");
@@ -134,14 +134,3 @@ function checkMobile(){
 }
 //invoking function
 checkMobile();
-
-//stopping carousel cycling
-$('#portfoliodetails').children().hide();
-$('#portfoliodetails').children('.active').show();
-
-//navigation through a selected projects details (when a user clicks on a projects image whilst on /portfolio)
-$('.portfoliodetail btn').click(function(){
-  var direction = $(this).text();
-  var currentItem = $(this).children('.active').attr('id');
-  console.log(currentItem);
-});

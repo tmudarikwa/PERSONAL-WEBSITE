@@ -8,7 +8,7 @@ router.get('/', function(req, res, next) {
   var path = '/portfolio/frewprocess';
   console.log('*******path**************');
   console.log(path);
-  res.locals.path = path;
+  res.locals.path = '/portfolio/';
   res.render('portfolio/frewprocess', { title: 'Takunda Mudarikwa - Full-stack Web Developer | Portfolio - Frewprocess Portal', year: date.getFullYear()});
 });
 
