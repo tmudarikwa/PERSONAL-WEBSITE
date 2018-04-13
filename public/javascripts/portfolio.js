@@ -79,7 +79,7 @@ function navigatePortfolio(direction, currentProject){
                                                    +"<a href='https://github.com/tmudarikwa/GERFUSA' target='_blank'>\n"
                                                    +"<p class='link'><strong>GITHUB:</strong> https://github.com/tmudarikwa/GERFUSA</p>\n"
                                                    +"<p class='link'><strong>LINK:</strong> \n"
-                                                   +"<a href='http://salty-mountain-65693.herokuapp.com/' title='GERF website' target='_blank'>http://salty-mountain-65693.herokuapp.com/</a></p>\n"
+                                                   +"<a href='https://salty-mountain-65693.herokuapp.com/' title='GERF website' target='_blank'>http://salty-mountain-65693.herokuapp.com/</a></p>\n"
                                                  +"</a>\n"
                                                 +"</div>");
     } else if(currentProject.includes("GERFUSA") && direction.startsWith("NEXT") || currentProject.includes("REPLICATION TRACE") && direction.startsWith("PREVIOUS")){
