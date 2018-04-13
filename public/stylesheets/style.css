@@ -119,7 +119,7 @@ h2.projectname{
    margin-top: -15px;
 }
 
-.portfolio button, #portfoliodetails button {
+.portfolio button, .portfoliodetail button {
  margin-top:10px;
   margin-right: 10px;
   font-size:150%;
