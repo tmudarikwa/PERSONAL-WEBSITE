@@ -127,6 +127,7 @@ h2.projectname{
 
 #portfoliodetails .content{
   text-align:center;
+  display:none;
 }
 
 #portfoliodetails .content h5{
