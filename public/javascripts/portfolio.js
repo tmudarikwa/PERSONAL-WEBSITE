@@ -144,8 +144,8 @@ $('.portfolio').click(function(){
 });
 
 //navigation through a selected projects details (when a user clicks on a projects image whilst on /portfolio)
-$('.portfoliodetail btn'){
+$('.portfoliodetail btn').click(function(){
   var direction = $(this).text();
   var currentItem = $(this).children('.active').attr('id');
   console.log(currentItem);
-}
+});
