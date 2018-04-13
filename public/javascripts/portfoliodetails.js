@@ -23,20 +23,16 @@ $('.portfoliodetail button').click(function(){
   //displaying next or prev item
   if(checkNextItem == 1 && nextItem > 1 && nextItem < numOfItems && direction.startsWith('NEXT')){
     $("#portfoliodetails #"+nextItem+"").addClass('.active');
-    $('#portfoliodetails').children('.active').show();
     $("#previousportfoliobtn").show();
   }else if(checkNextItem == 1 && nextItem == numOfItems && direction.startsWith('NEXT')){
     $("#portfoliodetails #"+nextItem+"").addClass('.active');
-    $('#portfoliodetails').children('.active').show();
     $("#previousportfoliobtn").show();
     $("#nextportfoliobtn").hide()
   }else if(checkPrevItem == 1 && prevItem == 1 && direction.startsWith('PREVIOUS')){
     $("#portfoliodetails #"+prevItem+"").addClass('.active');
-    $('#portfoliodetails').children('.active').show();
     $("#previousportfoliobtn").hide();
   }else if(checkPrevItem == 1 && prevItem > 1 && direction.startsWith('PREVIOUS')){
     $("#portfoliodetails #"+prevItem+"").addClass('.active');
-    $('#portfoliodetails').children('.active').show();
     $("#previousportfoliobtn").show();
   }
 
