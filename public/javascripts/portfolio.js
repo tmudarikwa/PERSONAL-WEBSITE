@@ -136,4 +136,6 @@ function checkMobile(){
 checkMobile();
 
 //stopping carousel cycling
-$('.carousel').carousel('pause');
+$('.portfolio').click(function(){
+  $('.carousel').carousel('pause');
+});
