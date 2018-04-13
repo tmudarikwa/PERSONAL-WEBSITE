@@ -136,4 +136,4 @@ function checkMobile(){
 checkMobile();
 
 //stopping carousel cycling
-.carousel('pause');
+$(.carousel).carousel('pause');
