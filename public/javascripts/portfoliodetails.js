@@ -11,8 +11,8 @@ $('.portfoliodetail button').click(function(){
   var currentItem = $('#portfoliodetails').children('.active').attr('id');
   var nextItem = 0, prevItem = 0;
 
-  if(direction.startsWith('NEXT')) nextItem = currentItem + 1;
-  if(direction.startsWith('PREVIOUS')) prevItem = currentItem - 1;
+  if(direction.startsWith('NEXT')) nextItem = parseInt(currentItem) + 1;
+  if(direction.startsWith('PREVIOUS')) prevItem = parseInt(currentItem) - 1;
 
   //checking if nextItem id exists
   var checkNextItem = $('#portfoliodetails').has("#"+nextItem+"").length;
