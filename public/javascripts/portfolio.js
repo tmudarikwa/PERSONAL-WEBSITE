@@ -16,7 +16,7 @@ function navigatePortfolio(direction, currentProject){
       $('.portfolio #previousprojbtn').hide();
       $('.portfolio #nextprojbtn').show();
       $('.portfolio .portfolio-content').html("<div class='col-8'> \n"
-                                              +"<a href='portfolio/frewprocess>\n"
+                                              +"<a href='portfolio/frewprocess'>\n"
                                                +"<img class='img-fluid mx-auto d-block' src='images/portifolio/portalfrewprocess.png' style='height:"+imgHeight+";width:"+imgWidth+"'  alt='fpg sales portal web application picture'/>\n"
                                                +"</a>\n"
                                                +"</div>\n"
