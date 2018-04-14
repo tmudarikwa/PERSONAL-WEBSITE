@@ -17,7 +17,7 @@ function navigatePortfolio(direction, currentProject){
       $('.portfolio #nextprojbtn').show();
       $('.portfolio .portfolio-content').html("<div class='col-8'> \n"
                                               +"<a href='portfolio/frewprocess>\n"
-                                               +"<img class='img-fluid mx-auto d-block ' src='images/portifolio/portalfrewprocess.png' style='height:"+imgHeight+";width:"+imgWidth+"'  alt='fpg sales portal web application picture'/>\n"
+                                               +"<img class='img-fluid mx-auto d-block' src='images/portifolio/portalfrewprocess.png' style='height:"+imgHeight+";width:"+imgWidth+"'  alt='fpg sales portal web application picture'/>\n"
                                                +"</a>\n"
                                                +"</div>\n"
                                                +"<div class='col'>\n"
@@ -72,7 +72,7 @@ function navigatePortfolio(direction, currentProject){
                                                  +"</a>\n"
                                                  +"</div>\n"
                                                  +"<div class='col'>\n"
-                                                   +"<h2 class='projectname'> <strong>PROJECT NAME:</strong> GERFUSA (still in development)</h2>\n"
+                                                   +"<h2 class='projectname'> <strong>PROJECT NAME:</strong> GERFUSA</h2>\n"
                                                    +"<p class='role'> <strong>ROLE:</strong> Designer, front & back-end coder, database architect </p>\n"
                                                    +"<p class='skills'> <strong>TECHNOLOGIES:</strong> NodeJS, HTML, CSS, JQuery, MongoDB, Express, MailChimp, Mandrill,Heroku</p>\n"
                                                    +"<p class='description'> <strong>DESCRIPTION:</strong> This web application is for a service and errands company which will enable customers to buy and schedule groceries/errands. It also has a customer chat interface plus a employee portal to facilitate retrieving the orders and other company/customer data.</p>"
