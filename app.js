@@ -9,7 +9,7 @@ var index = require('./routes/index');
 var contactme = require('./routes/contact');
 var aboutme = require('./routes/about');
 var portfolio = require('./routes/portfolio');
-var viewresume = require('./routes/TAKUNDAEUGENEMUDARIKWA-RESUME');
+var viewresume = require('./routes/viewresume');
 var sendemail = require('./routes/contactemail');
 var frewprocess = require('./routes/portfolio/frewprocess');
 var gasco = require('./routes/portfolio/gasco');
@@ -31,7 +31,7 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', index);
-app.use('/viewresume', viewresume);
+app.use('/TAKUNDAEUGENEMUDARIKWA-RESUME', viewresume);
 app.use('/about', aboutme);
 app.use('/contact', contactme);
 app.use('/portfolio', portfolio);
