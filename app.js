@@ -14,6 +14,7 @@ var sendemail = require('./routes/contactemail');
 var frewprocess = require('./routes/portfolio/frewprocess');
 var gasco = require('./routes/portfolio/gasco');
 var mumoafruika = require('./routes/portfolio/mumoafruika');
+var gerf = require('./routes/portfolio/gerfusa');
 //var expenseallocation = require('./routes/portfolio/expenseallocation');
 
 
