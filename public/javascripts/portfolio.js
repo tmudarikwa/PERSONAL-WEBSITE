@@ -86,7 +86,7 @@ function navigatePortfolio(direction, currentProject){
         $('.portfolio #previousprojbtn').show();
         $('.portfolio #nextprojbtn').show();
         $('.portfolio .portfolio-content').html("<div class='col-8'> \n"
-                                                +"<a href='#=portfolio/expense-allocation-metrics'>\n"
+                                                +"<a href='portfolio/expense-allocation-metrics'>\n"
                                                  +"<img class='img-fluid mx-auto d-block ' src='images/portifolio/expense_allocation_metrics.JPG' style='height:"+imgHeight+";width:"+imgWidth+"'  alt='expense allocation metrics application picture'/>\n"
                                                  +"</a>\n"
                                                  +"</div>\n"

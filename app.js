@@ -42,7 +42,7 @@ app.use('/portfolio/frewprocess',frewprocess);
 app.use('/portfolio/gasco',gasco);
 app.use('/portfolio/mumoafruika',mumoafruika);
 app.use('/portfolio/gerfusa',gerf);
-app.use('/portfolio/expenseallocation', expenseallocation);
+app.use('/portfolio/expense-allocation-metrics', expenseallocation);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
