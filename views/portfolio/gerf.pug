@@ -1,0 +1,59 @@
+extends ../layout
+
+block content
+  .container-fluid.portfolio.portfoliodetail
+    .row(class='align-items-center',style='border-top: 5px solid black; padding-top: 5px')
+      .col
+        h1.title PORTFOLIO - GERFUSA
+    .row
+      .col
+        #portfoliodetails
+          #1(class='active')
+            img(class='img-fluid mx-auto d-block' src='../images/portifolio/gerfusa/homepage.png', alt='GERFUSA home page')
+            div.content
+              h4 Home page
+              p Full window browser width home page look that gives users a peak at what the company does.
+          #2
+            img(class='img-fluid mx-auto d-block' src='../images/portifolio/gerfusa/homepage2.png', alt='GERFUSA how it works')
+            div.content
+              h4 Home page (continued) - HOW IT WORKS
+              p Clicking the "HOW IT WORKS" button shows the ordering a service process from start to delivery.
+          #3
+            img(class='img-fluid mx-auto d-block' src='../images/portifolio/gerfusa/homepage3.png', alt='GERFUSA Groceries information')
+            div.content
+              h4 Home page (continued) - GROCERIES
+              p Clicking on one of the navigation links opens up a detailed description of that service. In the above image there is a detailed description and estimated pricing for Grocery deliveries.
+          #4
+            img(class='img-fluid mx-auto d-block' src='../images/portifolio/gerfusa/homepage4.png', alt='GERFUSA Errands information')
+            div.content
+              h4 Home page (continued) - ERRANDS
+              p Clicking on one of the navigation links opens up a detailed description of that service. In the above image there is a detailed description and estimated pricing for Errands services.
+          #5
+            img(class='img-fluid mx-auto d-block' src='../images/portifolio/gerfusa/homepage5.png', alt='GERFUSA Fast Food information')
+            div.content
+              h4 Home page (continued) - FAST FOOD
+              p Clicking on one of the navigation links opens up a detailed description of that service. In the above image there is a detailed description and estimated pricing for Fast Food deliveries.
+          #6
+            img(class='img-fluid mx-auto d-block' src='../images/portifolio/gerfusa/signup.png', alt='GERFUSA Signup page')
+            div.content
+              h4 Signup page
+              p GERFUSA local account creation but there is also option for creating an account using some social accounts found on the login page.
+          #7
+            img(class='img-fluid mx-auto d-block' src='../images/portifolio/gerfusa/login.png', alt='GERFUSA Login page')
+            div.content
+              h4 Signup page
+              p Login page that has an option to sign in with Facebook, Google, and Twitter. Users can also use the GERFUSA created account information if they created their account from the "SIGN UP" page.
+          #8
+            img(class='img-fluid mx-auto d-block' src='../images/portifolio/gerfusa/servicelocations.png', alt='GERFUSA Service locations page')
+            div.content
+              h4 Service Locations page
+              p Google Maps API powered page that detectes a users location and shows them if there is service in their area or not.
+          #9
+            img(class='img-fluid mx-auto d-block' src='../images/portifolio/gerfusa/contactus.png', alt='Contact us')
+            div.content
+              h4 Contact page
+              p Contact page provide an option for users to submit information using our form based on a couple of categories. Alternatively they can just see displayed contact information
+    .row(class='align-items-center',style='text-align:center')
+        .col
+          button(id='previousportfoliobtn' style='display:none') PREVIOUS
+          button(id='nextportfoliobtn') NEXT

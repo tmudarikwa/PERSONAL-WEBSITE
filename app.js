@@ -14,6 +14,7 @@ var sendemail = require('./routes/contactemail');
 var frewprocess = require('./routes/portfolio/frewprocess');
 var gasco = require('./routes/portfolio/gasco');
 var mumoafruika = require('./routes/portfolio/mumoafruika');
+//var expenseallocation = require('./routes/portfolio/expenseallocation');
 
 
 var app = express();
@@ -39,6 +40,8 @@ app.use('/sendemail', sendemail);
 app.use('/portfolio/frewprocess',frewprocess);
 app.use('/portfolio/gasco',gasco);
 app.use('/portfolio/mumoafruika',mumoafruika);
+app.use('/portfolio/gerfusa',gerf);
+//app.use('/portfolio/expenseallocation', expenseallocation);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
