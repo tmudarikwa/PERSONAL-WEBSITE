@@ -2,6 +2,7 @@
 function setVisibility(){
   $('#portfoliodetails').children().hide();
   $('#portfoliodetails').children('.active').show();
+  if($('#portfoliodetails').children().length <= 1) $("#nextportfoliobtn").hide();
 }
 setVisibility();
 
@@ -21,9 +22,7 @@ $('.portfoliodetail button').click(function(){
   var numOfItems = $('#portfoliodetails').children().length;
 
   //displaying next or prev item
-  if(numOfItems <= 1 ){
-    $("#nextportfoliobtn").hide();
-  }else if(checkNextItem == 1 && nextItem > 1 && nextItem < numOfItems && direction.startsWith('NEXT')){
+  if(checkNextItem == 1 && nextItem > 1 && nextItem < numOfItems && direction.startsWith('NEXT')){
     $("#portfoliodetails #"+nextItem+"").addClass('active');
     $("#previousportfoliobtn").show();
   }else if(checkNextItem == 1 && nextItem == numOfItems && direction.startsWith('NEXT')){
