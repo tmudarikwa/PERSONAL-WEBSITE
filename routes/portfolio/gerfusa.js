@@ -9,7 +9,7 @@ router.get('/', function(req, res, next) {
   console.log('*******path**************');
   console.log(path);
   res.locals.path = '/portfolio/';
-  res.render('portfolio/gerfusa', { title: 'Takunda Mudarikwa - Full-stack Web Developer | Portfolio - GERFUSA', year: date.getFullYear()});
+  res.render('portfolio/gerf', { title: 'Takunda Mudarikwa - Full-stack Web Developer | Portfolio - GERFUSA', year: date.getFullYear()});
 });
 
 module.exports = router;
