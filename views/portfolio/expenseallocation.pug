@@ -1,0 +1,19 @@
+extends ../layout
+
+block content
+  .container-fluid.portfolio.portfoliodetail
+    .row(class='align-items-center',style='border-top: 5px solid black; padding-top: 5px')
+      .col
+        h1.title PORTFOLIO - EXPENSE ALLOCATION
+    .row
+      .col
+        #portfoliodetails
+          #1(class='active')
+            img(class='img-fluid mx-auto d-block' src='../images/portifolio/expenseallocation/expenseallocation.jpg', alt='Expense Allocation Metrics')
+            div.content
+              h4 Expense Allocation
+              p The GUI interface provides input for different parameters that allow the user to be able to get calculated total that end up being used for payroll purposes.
+    .row(class='align-items-center',style='text-align:center')
+        .col
+          button(id='previousportfoliobtn' style='display:none') PREVIOUS
+          button(id='nextportfoliobtn') NEXT
