@@ -9,7 +9,7 @@ $('.portfolio button').click(function(){
   var direction = $(this).text()
   var currentProject = $('.portfolio h2.projectname').text();
   console.log("**********render portfolio************");
-  console.log(portfolioToDisplay);
+  console.log(renderPortfolio);
   navigatePortfolio(direction,currentProject)
 });
 
