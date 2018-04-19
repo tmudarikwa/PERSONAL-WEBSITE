@@ -40,7 +40,7 @@ app.use('/contact', contactme);
 app.use('/portfolio', portfolio);
 //app.use('/portfolio?:id', backtoportfolio);
 app.use('/sendemail', sendemail);
-app.use('/portfolio/frewprocess',frewprocess);
+app.use('/portfolio/fpg',frewprocess);
 app.use('/portfolio/gasco',gasco);
 app.use('/portfolio/mumoafruika',mumoafruika);
 app.use('/portfolio/gerfusa',gerf);

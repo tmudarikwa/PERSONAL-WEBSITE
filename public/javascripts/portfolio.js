@@ -8,6 +8,8 @@ var imgWidth="100%";
 $('.portfolio button').click(function(){
   var direction = $(this).text()
   var currentProject = $('.portfolio h2.projectname').text();
+  console.log("**********render portfolio************");
+  console.log(renderPortfolio);
   navigatePortfolio(direction,currentProject)
 });
 
@@ -16,7 +18,7 @@ function navigatePortfolio(direction, currentProject){
       $('.portfolio #previousprojbtn').hide();
       $('.portfolio #nextprojbtn').show();
       $('.portfolio .portfolio-content').html("<div class='col-8'> \n"
-                                              +"<a href='portfolio/frewprocess'>\n"
+                                              +"<a href='portfolio/fpg'>\n"
                                                +"<img class='img-fluid mx-auto d-block' src='images/portifolio/portalfrewprocess.png' style='height:"+imgHeight+";width:"+imgWidth+"'  alt='fpg sales portal web application picture'/>\n"
                                                +"</a>\n"
                                                +"</div>\n"
