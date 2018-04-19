@@ -44,3 +44,9 @@ $('.portfoliodetail button').click(function(){
   //setting Visibility
   setVisibility();
 });
+
+//detecting back button click routing it to the previously accessed page
+$('#backbtn').click(function(){
+  var currentHref = window.location.href;
+  window.location.href = currentHref.slice(31);
+})
