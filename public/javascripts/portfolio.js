@@ -142,7 +142,7 @@ if(currentHref.includes("#"))
   //getting the project name to display from the
   var projectToDisplay = currentHref.slice(11)
   //creatiing an array of all projects by name
-  var projectsArray = ["FPG","GASCO","MUMOAFRUIKA","GERFUSA","EXPENSE ALLOCATION METRICS"];
+  var projectsArray = ["FPG","GASCO","MUMOAFRUIKA","GERFUSA","EXPENSE"];
   //looping array inorder to determine how to display the requested PAGE
   for(var i=0;i < projectsArray.length; i++){
     if(projectToDisplay.toUpperCase() == projectsArray[i]){
