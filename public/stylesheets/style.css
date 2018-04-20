@@ -101,9 +101,13 @@ input, textarea{
   border: 2px solid;
 }
 
-#portfoliodetail img{
+.portfoliodetail img{
   border:none;
   width:45%;
+}
+
+.portfoliodetail h1.title{
+  padding:0;
 }
 
 .portfolio p , .portfolio a{
