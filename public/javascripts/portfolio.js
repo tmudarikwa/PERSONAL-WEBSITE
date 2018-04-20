@@ -11,8 +11,7 @@ if(currentHref.includes("?"))
   var projectsArray = ["FPG","GASCO","MUMOAFRUIKA","GERFUSA","EXPENSE ALLOCATION METRICS"];
   //looping array inorder to determine how to display the requested PAGE
   if(var i=0;i < projectsArray.length; i++){
-    if(projectToDisplay == projectsArray[i].toUpperCase())
-    {
+    if(projectToDisplay == projectsArray[i].toUpperCase()){
       if(i == 0){
         var currentProject = projectsArray[i+1];
         var direction = "PREVIOUS";
@@ -24,7 +23,6 @@ if(currentHref.includes("?"))
       }
     }
   }
-
 }
 /*********
   PORTFOLIO NAVIGATING

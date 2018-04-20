@@ -101,6 +101,11 @@ input, textarea{
   border: 2px solid;
 }
 
+#portfoliodetail img{
+  border:none;
+  width:45%;
+}
+
 .portfolio p , .portfolio a{
   text-align:center;
 
