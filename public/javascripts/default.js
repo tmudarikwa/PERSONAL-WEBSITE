@@ -38,7 +38,7 @@ if( navigator.userAgent.match(/Android/i) || navigator.userAgent.match(/webOS/i)
     $('.footer').css('height',(15/100 * winH)+'px');
 
     //setting portfolio image height sizes
-    $('.portfolio img').css('height', (70/100 * winH)+'px');
+    $('.portfolio-content img').css('height', (70/100 * winH)+'px');
 
     //large screen desktop styling
     if(winH > 700){
