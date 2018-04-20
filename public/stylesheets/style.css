@@ -101,7 +101,7 @@ input, textarea{
   border: 2px solid;
 }
 
-.portfoliodetail.col-1.img{
+.portfoliodetail .col-1 img{
   border:none;
   width:45%;
   height:100%;
