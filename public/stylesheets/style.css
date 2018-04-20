@@ -104,6 +104,12 @@ input, textarea{
 .portfoliodetail img{
   border:none;
   width:45%;
+  height:100%
+}
+
+#portfoliodetails img{
+  border-radius:5px;
+  border: 2px solid;
 }
 
 .portfoliodetail h1.title{
