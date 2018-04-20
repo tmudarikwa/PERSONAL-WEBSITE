@@ -48,6 +48,6 @@ $('.portfoliodetail button').click(function(){
 //detecting back button click routing it to the previously accessed page
 $('#backbtn').click(function(){
   var currentHref = (window.location.href).slice(31);
-  window.location.href = ""+currentHref.slice(0,10)+"?"+currentHref.slice(11);
-  
+  window.location.href = ""+currentHref.slice(0,10)+"#"+currentHref.slice(11);
+
 })

@@ -136,7 +136,7 @@ function checkMobile(){
 checkMobile();
 
 var currentHref = (window.location.href).slice(31);
-if(currentHref.includes("?"))
+if(currentHref.includes("#"))
 {
   console.log("inside loadByUrl function '?' check if statment");
   //getting the project name to display from the
