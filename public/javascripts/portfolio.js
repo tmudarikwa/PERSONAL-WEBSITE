@@ -10,7 +10,7 @@ if(currentHref.includes("?"))
   //creatiing an array of all projects by name
   var projectsArray = ["FPG","GASCO","MUMOAFRUIKA","GERFUSA","EXPENSE ALLOCATION METRICS"];
   //looping array inorder to determine how to display the requested PAGE
-  if(var i=0;i < projectsArray.length; i++){
+  for(var i=0;i < projectsArray.length; i++){
     if(projectToDisplay == projectsArray[i].toUpperCase()){
       if(i == 0){
         var currentProject = projectsArray[i+1];
