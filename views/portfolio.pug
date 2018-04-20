@@ -1,7 +1,7 @@
 extends layout
 
 block content
-  .container-fluid(class="portfolio")
+  .container-fluid(class="portfolio", onloadstart="loadByUrl()")
     .row(class='align-items-center',style='border-top: 5px solid black;text-align:center')
       .col
         h1.title PORTFOLIO

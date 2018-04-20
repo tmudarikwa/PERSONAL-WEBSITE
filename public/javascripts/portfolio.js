@@ -2,28 +2,6 @@ var winH = window.innerHeight;
 var imgHeight = (70/100 * winH)+'px';
 var imgWidth="100%";
 
-var currentHref = (window.location.href).slice(31);
-if(currentHref.includes("?"))
-{
-  //getting the project name to display from the
-  var projectToDisplay = currentHref.slice(11)
-  //creatiing an array of all projects by name
-  var projectsArray = ["FPG","GASCO","MUMOAFRUIKA","GERFUSA","EXPENSE ALLOCATION METRICS"];
-  //looping array inorder to determine how to display the requested PAGE
-  for(var i=0;i < projectsArray.length; i++){
-    if(projectToDisplay == projectsArray[i].toUpperCase()){
-      if(i == 0){
-        var currentProject = projectsArray[i+1];
-        var direction = "PREVIOUS";
-        navigatePortfolio(direction,currentProject);
-      }else{
-        var currentProject = projectsArray[i-1];
-        var direction = "NEXT";
-        navigatePortfolio(direction,currentProject);
-      }
-    }
-  }
-}
 /*********
   PORTFOLIO NAVIGATING
 *********/
@@ -156,3 +134,28 @@ function checkMobile(){
 }
 //invoking function
 checkMobile();
+
+function loadByUrl(){
+  var currentHref = (window.location.href).slice(31);
+  if(currentHref.includes("?"))
+  {
+    //getting the project name to display from the
+    var projectToDisplay = currentHref.slice(11)
+    //creatiing an array of all projects by name
+    var projectsArray = ["FPG","GASCO","MUMOAFRUIKA","GERFUSA","EXPENSE ALLOCATION METRICS"];
+    //looping array inorder to determine how to display the requested PAGE
+    for(var i=0;i < projectsArray.length; i++){
+      if(projectToDisplay == projectsArray[i].toUpperCase()){
+        if(i == 0){
+          var currentProject = projectsArray[i+1];
+          var direction = "PREVIOUS";
+          navigatePortfolio(direction,currentProject);
+        }else{
+          var currentProject = projectsArray[i-1];
+          var direction = "NEXT";
+          navigatePortfolio(direction,currentProject);
+        }
+      }
+    }
+  }
+};
