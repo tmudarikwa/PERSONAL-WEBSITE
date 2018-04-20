@@ -6,9 +6,9 @@ var imgWidth="100%";
   PORTFOLIO NAVIGATING
 *********/
 $('.portfolio button').click(function(){
-  var direction = $(this).text()
+  var direction = $(this).text();
   var currentProject = $('.portfolio h2.projectname').text();
-  navigatePortfolio(direction,currentProject)
+  navigatePortfolio(direction,currentProject);
 });
 
 function navigatePortfolio(direction, currentProject){
@@ -135,10 +135,10 @@ function checkMobile(){
 //invoking function
 checkMobile();
 
+//gettting current url for back button navigation
 var currentHref = (window.location.href).slice(31);
 if(currentHref.includes("#"))
 {
-  console.log("inside loadByUrl function '?' check if statment");
   //getting the project name to display from the
   var projectToDisplay = currentHref.slice(11)
   //creatiing an array of all projects by name

@@ -1,7 +1,8 @@
-//stopping carousel cycling
+//setting portfolio details degault page visibility
 function setVisibility(){
   $('#portfoliodetails').children().hide();
   $('#portfoliodetails').children('.active').show();
+  //if we only have when item on the project details page we don't show the NEXT button
   if($('#portfoliodetails').children().length <= 1) $("#nextportfoliobtn").hide();
 }
 setVisibility();
@@ -45,7 +46,7 @@ $('.portfoliodetail button').click(function(){
   setVisibility();
 });
 
-//detecting back button click routing it to the previously accessed page
+//back button routing
 $('#backbtn').click(function(){
   var currentHref = (window.location.href).slice(31);
   window.location.href = ""+currentHref.slice(0,10)+"#"+currentHref.slice(11);

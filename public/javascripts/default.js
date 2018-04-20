@@ -52,16 +52,14 @@ if( navigator.userAgent.match(/Android/i) || navigator.userAgent.match(/webOS/i)
 //nav links mouse highlights
 $('.navlink').hover(function(){
   if($(this).hasClass("selected")){
-  }
-  else{
+  }else{
   	  $(this).css('background-color','black');
       $(this).css('color','white');
       $(this).css('mouse');
   }
 }).mouseout(function(){
   if($(this).hasClass("selected")){
-  }
-  else{
+  }else{
       $(this).css('background-color','transparent');
   	  $(this).css('color','black');
    }
@@ -70,21 +68,14 @@ $('.navlink').hover(function(){
 //button mouse higlights
 $('button').hover(function(){
   if($(this).hasClass("selected"))
-  {
-
-  }
-  else{
+  {}else{
     $(this).css('background-color','black');
     $(this).css('color','white');
     $(this).css('mouse');
   }
 }).mouseout(function(){
   if($(this).hasClass("selected"))
-  {
-
-  }
-  else
-  {
+  {}else{
     $(this).css('background-color','transparent');
      $(this).css('color','black');
    }
@@ -104,12 +95,9 @@ $("#emailfromcustomer button").click(function(e){
   var customertext = $("#customertext").val();
 
   //validation first
-  if (email.length > 0 )
-  {
-    if(format.test(email) == true)
-    {
-        if (customertext.length > 0)
-        {
+  if (email.length > 0 ){
+    if(format.test(email) == true){
+        if (customertext.length > 0){
             $('.alert').html("");
             var data = {};
             data.email = email;
@@ -127,9 +115,7 @@ $("#emailfromcustomer button").click(function(e){
                 $("#emailfromcustomer").html(contactusform);
               }
             });
-        }
-        else
-        {
+        }else{
             $("#customertext").css("box-shadow", "0 0 5px red");
                     noty({
                     layout:'top',
@@ -145,9 +131,7 @@ $("#emailfromcustomer button").click(function(e){
 
             });
         }
-    }
-    else
-    {
+    }else{
       $("#customeremail").css("box-shadow", "0 0 5px red");
           noty({
           layout:'top',
@@ -164,9 +148,7 @@ $("#emailfromcustomer button").click(function(e){
         });
     }
 
-  }
-  else
-  {
+  }else{
     $("#customeremail").css("box-shadow", "0 0 5px red");
     noty({
       layout:'top',
@@ -186,8 +168,7 @@ $("#emailfromcustomer button").click(function(e){
 
 
 function emailStatus(message){
-  if(message.includes("apologize"))
-  {
+  if(message.includes("apologize")){
     noty({
       layout:'top',
       theme:'defaultTheme',
@@ -201,9 +182,7 @@ function emailStatus(message){
       },
       timeout:2000
     });
-  }
-  else
-  {
+  }else{
     noty({
       layout:'top',
       theme:'defaultTheme',
