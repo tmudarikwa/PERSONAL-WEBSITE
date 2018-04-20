@@ -49,5 +49,5 @@ $('.portfoliodetail button').click(function(){
 $('#backbtn').click(function(){
   var currentHref = (window.location.href).slice(31);
   window.location.href = ""+currentHref.slice(0,10)+"?"+currentHref.slice(11);
-  loadByUrl();
+  
 })
