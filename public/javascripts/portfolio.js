@@ -12,7 +12,7 @@ $('.portfolio button').click(function(){
 });
 
 function navigatePortfolio(direction, currentProject){
-  if(currentProject.includes("INTERNAL GASCO SALES PORTAL") && direction.startsWith("PREVIOUS")){
+  if(currentProject.includes("GASCO") && direction.startsWith("PREVIOUS")){
       $('.portfolio #previousprojbtn').hide();
       $('.portfolio #nextprojbtn').show();
       $('.portfolio .portfolio-content').html("<div class='col-8'> \n"
@@ -29,7 +29,7 @@ function navigatePortfolio(direction, currentProject){
                                                  +"<a href='http://portal.frewprocess.com' title='Frewprocess portal website' target='_blank'>http://portal.frewprocess.com</a></p>\n"
                                                +"</a>\n"
                                               +"</div>");
-  }else if(currentProject.includes("INTERNAL FPG SALES PORTAL") && direction.startsWith("NEXT") || currentProject.includes("MUMOAFRUIKA") && direction.startsWith("PREVIOUS")){
+  }else if(currentProject.includes("FPG") && direction.startsWith("NEXT") || currentProject.includes("MUMOAFRUIKA") && direction.startsWith("PREVIOUS")){
         $('.portfolio #previousprojbtn').show();
         $('.portfolio .portfolio-content').html("<div class='col-8'> \n"
                                                 +"<a href='portfolio/gasco'>\n"
@@ -45,7 +45,7 @@ function navigatePortfolio(direction, currentProject){
                                                    +"<a href='http://portal.gascoonline.com' title='Gasco portal website'target='_blank'>http://portal.gascoonline.com</a></p>\n"
                                                  +"</a>\n"
                                                 +"</div>");
-    } else if (currentProject.includes("INTERNAL GASCO SALES PORTAL") && direction.startsWith("NEXT") || currentProject.includes("GERFUSA") && direction.startsWith("PREVIOUS")){
+    } else if (currentProject.includes("GASCO") && direction.startsWith("NEXT") || currentProject.includes("GERFUSA") && direction.startsWith("PREVIOUS")){
         $('.portfolio #previousprojbtn').show();
         $('.portfolio .portfolio-content').html("<div class='col-8'> \n"
                                                 +"<a href='portfolio/mumoafruika'>\n"
@@ -63,7 +63,7 @@ function navigatePortfolio(direction, currentProject){
                                                    +"<a href='http://www.mumoafruika.com' title='MuMoAfruika website' target='_blank'>http://www.mumoafruika.com</a></p>\n"
                                                  +"</a>\n"
                                                 +"</div>");
-    } else if(currentProject.includes("MUMOAFRUIKA") && direction.startsWith("NEXT") || currentProject.includes("EXPENSE ALLOCATION") && direction.startsWith("PREVIOUS")){
+    } else if(currentProject.includes("MUMOAFRUIKA") && direction.startsWith("NEXT") || currentProject.includes("EXPENSE") && direction.startsWith("PREVIOUS")){
         $('.portfolio #previousprojbtn').show();
         $('.portfolio #nextprojbtn').show();
         $('.portfolio .portfolio-content').html("<div class='col-8'> \n"
@@ -99,7 +99,7 @@ function navigatePortfolio(direction, currentProject){
                                                    +"<a href='#'>http://salty-mountain-65693.herokuapp.com/</a></p>\n"
                                                  +"</a>\n"
                                                 +"</div>");
-    }  else if(currentProject.includes("EXPENSE ALLOCATION") && direction.startsWith("NEXT")){
+    }  else if(currentProject.includes("EXPENSE") && direction.startsWith("NEXT")){
         $('.portfolio #previousprojbtn').show();
         $('.portfolio #nextprojbtn').hide();
         $('.portfolio .portfolio-content').html("<div class='col-8'> \n"
