@@ -2,14 +2,36 @@ var winH = window.innerHeight;
 var imgHeight = (70/100 * winH)+'px';
 var imgWidth="100%";
 
+var currentHref = (window.location.href).slice(31);
+if(currentHref.includes("?"))
+{
+  //getting the project name to display from the
+  var projectToDisplay = currentHref.slice(11)
+  //creatiing an array of all projects by name
+  var projectsArray = ["FPG","GASCO","MUMOAFRUIKA","GERFUSA","EXPENSE ALLOCATION METRICS"];
+  //looping array inorder to determine how to display the requested PAGE
+  if(var i=0;i < projectsArray.length; i++){
+    if(projectToDisplay == projectsArray[i].toUpperCase())
+    {
+      if(i == 0){
+        var currentProject = projectsArray[i+1];
+        var direction = "PREVIOUS";
+        navigatePortfolio(direction,currentProject);
+      }else{
+        var currentProject = projectsArray[i-1];
+        var direction = "NEXT";
+        navigatePortfolio(direction,currentProject);
+      }
+    }
+  }
+
+}
 /*********
   PORTFOLIO NAVIGATING
 *********/
 $('.portfolio button').click(function(){
   var direction = $(this).text()
   var currentProject = $('.portfolio h2.projectname').text();
-  console.log("**********render portfolio************");
-  console.log(renderPortfolio);
   navigatePortfolio(direction,currentProject)
 });
 
@@ -88,7 +110,7 @@ function navigatePortfolio(direction, currentProject){
         $('.portfolio #previousprojbtn').show();
         $('.portfolio #nextprojbtn').show();
         $('.portfolio .portfolio-content').html("<div class='col-8'> \n"
-                                                +"<a href='portfolio/expense-allocation-metrics'>\n"
+                                                +"<a href='portfolio/expense'>\n"
                                                  +"<img class='img-fluid mx-auto d-block ' src='images/portifolio/expense_allocation_metrics.JPG' style='height:"+imgHeight+";width:"+imgWidth+"'  alt='expense allocation metrics application picture'/>\n"
                                                  +"</a>\n"
                                                  +"</div>\n"
