@@ -29,9 +29,7 @@ if( navigator.userAgent.match(/Android/i) || navigator.userAgent.match(/webOS/i)
     );
    $('#portfoliodetails .content').show();
    $('.portfoliodetail .col-1 img').css('width','2.5rem');
-   //setting footer Height
-   var footerHeight = ($(".portfolio")[0].scrollHeight + $("nav")[0].scrollHeight) / winH;
-   $('.footer').css('height',footerHeight+'px');
+
  }else{
 
     //setting main body content height
