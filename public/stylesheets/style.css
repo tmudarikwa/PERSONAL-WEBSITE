@@ -159,9 +159,9 @@ footer , .footer{
   color:white;
   bottom: 0;
   width: 100%;
-  padding:5%;
+  padding-top:2%;
   height:35%;
-  margin-bottom:0;
+  bottom:0;
 }
 
 footer p {
