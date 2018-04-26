@@ -35,8 +35,6 @@ if( navigator.userAgent.match(/Android/i) || navigator.userAgent.match(/webOS/i)
     //setting main body content height
     $('.bcontent').css('height',(88/100 * winH)+'px');
     $('.portfolio').css('height',(88/100 * winH)+10+'px');
-    //setting footer height
-    $('.footer').css('height',(15/100 * winH)+'px');
 
     //setting portfolio image height sizes
     $('.portfolio-content img').css('height', (70/100 * winH)+'px');
