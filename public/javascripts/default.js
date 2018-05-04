@@ -44,6 +44,9 @@ if( navigator.userAgent.match(/Android/i) || navigator.userAgent.match(/webOS/i)
     if(winH > 700){
         $(".img-thumbnail").css('height', (46.2/100 * winH)+'px ');
         $('body').css('font-size',(2.5/100 * winH)+'px');
+        //setting main body content height
+        $('.bcontent').css('height',(88/100 * winH)+'px');
+        $('.portfolio').css('height',(88/100 * winH)+10+'px');
     }
 }
 
