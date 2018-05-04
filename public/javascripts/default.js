@@ -33,8 +33,8 @@ if( navigator.userAgent.match(/Android/i) || navigator.userAgent.match(/webOS/i)
  }else{
 
     //setting main body content height
-    $('.bcontent').css('height',(88/100 * winH)+'px');
-    $('.portfolio').css('height',(88/100 * winH)+10+'px');
+    $('.bcontent').css('height',(86/100 * winH)+'px');
+    $('.portfolio').css('height',(86/100 * winH)+10+'px');
 
     //setting portfolio image height sizes
     $('.portfolio-content img').css('height', (70/100 * winH)+'px');
