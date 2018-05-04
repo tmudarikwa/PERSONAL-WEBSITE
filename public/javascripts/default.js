@@ -45,8 +45,8 @@ if( navigator.userAgent.match(/Android/i) || navigator.userAgent.match(/webOS/i)
         $(".img-thumbnail").css('height', (46.2/100 * winH)+'px ');
         $('body').css('font-size',(2.5/100 * winH)+'px');
         //setting main body content height
-        $('.bcontent').css('height',(90/100 * winH)+'px');
-        $('.portfolio').css('height',(90/100 * winH)+10+'px');
+        $('.bcontent').css('height',(89/100 * winH)+'px');
+        $('.portfolio').css('height',(89/100 * winH)+10+'px');
     }
 }
 
