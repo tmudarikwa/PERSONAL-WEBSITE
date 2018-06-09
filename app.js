@@ -41,8 +41,8 @@ app.use('/portfolio', portfolio);
 app.use('/sendemail', sendemail);
 app.use('/portfolio/fpg',frewprocess);
 app.use('/portfolio/gasco',gasco);
-app.use('/portfolio/mumoafruika',mumoafruika);
-app.use('/portfolio/mumoafruika-platform-ui',mumoafruikaui);
+app.use('/portfolio/mumoafruika-landing',mumoafruika);
+app.use('/portfolio/mumoafruika-platform',mumoafruikaui);
 app.use('/portfolio/gerfusa',gerf);
 app.use('/portfolio/expense', expenseallocation);
 

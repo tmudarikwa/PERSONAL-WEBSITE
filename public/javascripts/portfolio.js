@@ -28,7 +28,7 @@ function navigatePortfolio(direction, currentProject){
                                                  +"<p class='link'><strong>LINK:</strong> \n"
                                                  +"<a href='http://portal.frewprocess.com' title='Frewprocess portal website' target='_blank'>http://portal.frewprocess.com</a></p>\n"
                                               +"</div>");
-  }else if(currentProject.includes("FPG") && direction.startsWith("NEXT") || currentProject.includes("MUMOAFRUIKA") && direction.startsWith("PREVIOUS")){
+  }else if(currentProject.includes("FPG") && direction.startsWith("NEXT") || currentProject.includes("MUMOAFRUIKA-LANDING") && direction.startsWith("PREVIOUS")){
         $('.portfolio #previousprojbtn').show();
         $('.portfolio .portfolio-content').html("<div class='col-8'> \n"
                                                 +"<a href='portfolio/gasco'>\n"
@@ -43,7 +43,7 @@ function navigatePortfolio(direction, currentProject){
                                                    +"<p class='link'><strong>LINK:</strong> \n"
                                                    +"<a href='http://portal.gascoonline.com' title='Gasco portal website'target='_blank'>http://portal.gascoonline.com</a></p>\n"
                                                 +"</div>");
-    } else if (currentProject.includes("GASCO") && direction.startsWith("NEXT") || currentProject.includes("MuMoAfruika PLATFORM") && direction.startsWith("PREVIOUS")){
+    } else if (currentProject.includes("GASCO") && direction.startsWith("NEXT") || currentProject.includes("MUMOAFRUIKA-PLATFORM") && direction.startsWith("PREVIOUS")){
         $('.portfolio #previousprojbtn').show();
         $('.portfolio .portfolio-content').html("<div class='col-8'> \n"
                                                 +"<a href='portfolio/mumoafruika'>\n"
@@ -60,7 +60,7 @@ function navigatePortfolio(direction, currentProject){
                                                    +"<p class='link'><strong>LINK:</strong> \n"
                                                    +"<a href='http://www.mumoafruika.com' title='MuMoAfruika website' target='_blank'>http://www.mumoafruika.com</a></p>\n"
                                                 +"</div>");
-    } else if(currentProject.includes("MuMoAfruika LANDING") && direction.startsWith("NEXT") || currentProject.includes("GASCO") && direction.startsWith("PREVIOUS")){
+    } else if(currentProject.includes("MUMOAFRUIKA-LANDING") && direction.startsWith("NEXT") || currentProject.includes("GERFUSA") && direction.startsWith("PREVIOUS")){
         $('.portfolio #previousprojbtn').show();
         $('.portfolio #nextprojbtn').show();
         $('.portfolio .portfolio-content').html("<div class='col-8'> \n"
@@ -69,7 +69,7 @@ function navigatePortfolio(direction, currentProject){
                                                  +"</a>\n"
                                                  +"</div>\n"
                                                  +"<div class='col'>\n"
-                                                   +"<h2 class='projectname'> <strong>PROJECT NAME:</strong> MuMoAfruika PLATFORM - UI</h2>\n"
+                                                   +"<h2 class='projectname'> <strong>PROJECT NAME:</strong> MUMOAFRUIKA-PLATFORM - UI</h2>\n"
                                                    +"<p class='role'> <strong>ROLE:</strong> Front end developer</p>\n"
                                                    +"<p class='skills'> <strong>TECHNOLOGIES:</strong> HTML5 , CSS, JQUERY, Javascript, Photoshop</p>\n"
                                                    +"<p class='description'> <strong>DESCRIPTION:</strong> This is the UI concept for the comming soon MuMoAfruika plaform. Currently focusing on the responsive web version.</p>"
@@ -78,7 +78,7 @@ function navigatePortfolio(direction, currentProject){
                                                    +"<p class='link'><strong>LINK:</strong> \n"
                                                    +"<a href='#' title='#'>NONE</a></p>\n"
                                                 +"</div>");
-    } else if(currentProject.includes("MuMoAfruika PLATFORM") && direction.startsWith("NEXT") || currentProject.includes("EXPENSE") && direction.startsWith("PREVIOUS")){
+    } else if(currentProject.includes("MUMOAFRUIKA-PLATFORM") && direction.startsWith("NEXT") || currentProject.includes("EXPENSE") && direction.startsWith("PREVIOUS")){
       $('.portfolio #previousprojbtn').show();
       $('.portfolio #nextprojbtn').show();
       $('.portfolio .portfolio-content').html("<div class='col-8'> \n"
@@ -153,8 +153,8 @@ if(currentHref.includes("#"))
 {
   //getting the project name to display from the
   var projectToDisplay = currentHref.slice(11)
-  //creatiing an array of all projects by name
-  var projectsArray = ["FPG","GASCO","MuMoAfruika LANDING","MuMoAfruika PLATFORM","GERFUSA","EXPENSE"];
+  //creating an array of all projects by name
+  var projectsArray = ["FPG","GASCO","MUMOAFRUIKA-LANDING","MUMOAFRUIKA-PLATFORM","GERFUSA","EXPENSE"];
   //looping array inorder to determine how to display the requested PAGE
   for(var i=0;i < projectsArray.length; i++){
     if(projectToDisplay.toUpperCase() == projectsArray[i]){
