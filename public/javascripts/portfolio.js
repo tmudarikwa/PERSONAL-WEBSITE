@@ -64,7 +64,7 @@ function navigatePortfolio(direction, currentProject){
         $('.portfolio #previousprojbtn').show();
         $('.portfolio #nextprojbtn').show();
         $('.portfolio .portfolio-content').html("<div class='col-8'> \n"
-                                                +"<a href='portfolio/mumoafruika-platform-ui'>\n"
+                                                +"<a href='portfolio/mumoafruika-platform'>\n"
                                                  +"<img class='img-fluid mx-auto d-block ' src='images/portifolio/mumoafruikaui.png' style='height:"+imgHeight+";width:"+imgWidth+"'  alt='mumoafruika plaform music ui image'/>\n"
                                                  +"</a>\n"
                                                  +"</div>\n"
