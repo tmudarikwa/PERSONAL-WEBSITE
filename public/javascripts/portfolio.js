@@ -51,7 +51,7 @@ function navigatePortfolio(direction, currentProject){
                                                  +"</a>\n"
                                                  +"</div>\n"
                                                  +"<div class='col'>\n"
-                                                   +"<h2 class='projectname'> <strong>PROJECT NAME:</strong> MuMoAfruika LANDING PAGE</h2>\n"
+                                                   +"<h2 class='projectname'> <strong>PROJECT NAME:</strong> MUMOAFRUIKA-LANDING PAGE</h2>\n"
                                                    +"<p class='role'> <strong>ROLE:</strong> Designer , front & back-end coder, database architect</p>\n"
                                                    +"<p class='skills'> <strong>TECHNOLOGIES:</strong> NodeJS, HTML, JQuery, MongoDB, Express, Mandrill, Heroku</p>\n"
                                                    +"<p class='description'> <strong>DESCRIPTION:</strong> This a web page that curates information and as well serves as a way to update the progress on the actual MuMoAfruika platform.</p>"
