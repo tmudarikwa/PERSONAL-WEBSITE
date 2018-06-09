@@ -46,7 +46,7 @@ function navigatePortfolio(direction, currentProject){
     } else if (currentProject.includes("GASCO") && direction.startsWith("NEXT") || currentProject.includes("MUMOAFRUIKA-PLATFORM") && direction.startsWith("PREVIOUS")){
         $('.portfolio #previousprojbtn').show();
         $('.portfolio .portfolio-content').html("<div class='col-8'> \n"
-                                                +"<a href='portfolio/mumoafruika'>\n"
+                                                +"<a href='portfolio/mumoafruika-landing'>\n"
                                                  +"<img class='img-fluid mx-auto d-block ' src='images/portifolio/mumoafruika.png' style='height:"+imgHeight+";width:"+imgWidth+"'  alt='mumoafruika web application picture'/>\n"
                                                  +"</a>\n"
                                                  +"</div>\n"
