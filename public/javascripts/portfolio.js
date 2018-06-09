@@ -60,7 +60,7 @@ function navigatePortfolio(direction, currentProject){
                                                    +"<p class='link'><strong>LINK:</strong> \n"
                                                    +"<a href='http://www.mumoafruika.com' title='MuMoAfruika website' target='_blank'>http://www.mumoafruika.com</a></p>\n"
                                                 +"</div>");
-    } else if(currentProject.includes("MuMoAfruika LANDING") && direction.startsWith("NEXT") || currentProject.includes("GERFUSA") && direction.startsWith("PREVIOUS")){
+    } else if(currentProject.includes("MuMoAfruika LANDING") && direction.startsWith("NEXT") || currentProject.includes("GASCO") && direction.startsWith("PREVIOUS")){
         $('.portfolio #previousprojbtn').show();
         $('.portfolio #nextprojbtn').show();
         $('.portfolio .portfolio-content').html("<div class='col-8'> \n"
@@ -154,7 +154,7 @@ if(currentHref.includes("#"))
   //getting the project name to display from the
   var projectToDisplay = currentHref.slice(11)
   //creatiing an array of all projects by name
-  var projectsArray = ["FPG","GASCO","MUMOAFRUIKA","GERFUSA","EXPENSE"];
+  var projectsArray = ["FPG","GASCO","MuMoAfruika LANDING","MuMoAfruika PLATFORM","GERFUSA","EXPENSE"];
   //looping array inorder to determine how to display the requested PAGE
   for(var i=0;i < projectsArray.length; i++){
     if(projectToDisplay.toUpperCase() == projectsArray[i]){
