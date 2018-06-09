@@ -43,7 +43,7 @@ function navigatePortfolio(direction, currentProject){
                                                    +"<p class='link'><strong>LINK:</strong> \n"
                                                    +"<a href='http://portal.gascoonline.com' title='Gasco portal website'target='_blank'>http://portal.gascoonline.com</a></p>\n"
                                                 +"</div>");
-    } else if (currentProject.includes("GASCO") && direction.startsWith("NEXT") || currentProject.includes("GERFUSA") && direction.startsWith("PREVIOUS")){
+    } else if (currentProject.includes("GASCO") && direction.startsWith("NEXT") || currentProject.includes("MuMoAfruika PLATFORM") && direction.startsWith("PREVIOUS")){
         $('.portfolio #previousprojbtn').show();
         $('.portfolio .portfolio-content').html("<div class='col-8'> \n"
                                                 +"<a href='portfolio/mumoafruika'>\n"
