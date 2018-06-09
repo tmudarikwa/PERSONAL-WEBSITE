@@ -51,7 +51,7 @@ function navigatePortfolio(direction, currentProject){
                                                  +"</a>\n"
                                                  +"</div>\n"
                                                  +"<div class='col'>\n"
-                                                   +"<h2 class='projectname'> <strong>PROJECT NAME:</strong> MUMOAFRUIKA</h2>\n"
+                                                   +"<h2 class='projectname'> <strong>PROJECT NAME:</strong> MuMoAfruika LANDING PAGE</h2>\n"
                                                    +"<p class='role'> <strong>ROLE:</strong> Designer , front & back-end coder, database architect</p>\n"
                                                    +"<p class='skills'> <strong>TECHNOLOGIES:</strong> NodeJS, HTML, JQuery, MongoDB, Express, Mandrill, Heroku</p>\n"
                                                    +"<p class='description'> <strong>DESCRIPTION:</strong> This a web page that curates information and as well serves as a way to update the progress on the actual MuMoAfruika platform.</p>"
@@ -60,25 +60,43 @@ function navigatePortfolio(direction, currentProject){
                                                    +"<p class='link'><strong>LINK:</strong> \n"
                                                    +"<a href='http://www.mumoafruika.com' title='MuMoAfruika website' target='_blank'>http://www.mumoafruika.com</a></p>\n"
                                                 +"</div>");
-    } else if(currentProject.includes("MUMOAFRUIKA") && direction.startsWith("NEXT") || currentProject.includes("EXPENSE") && direction.startsWith("PREVIOUS")){
+    } else if(currentProject.includes("MuMoAfruika LANDING") && direction.startsWith("NEXT") || currentProject.includes("GERFUSA") && direction.startsWith("PREVIOUS")){
         $('.portfolio #previousprojbtn').show();
         $('.portfolio #nextprojbtn').show();
         $('.portfolio .portfolio-content').html("<div class='col-8'> \n"
-                                                +"<a href='portfolio/gerfusa'>\n"
-                                                 +"<img class='img-fluid mx-auto d-block ' src='images/portifolio/gerfusa.png' style='height:"+imgHeight+";width:"+imgWidth+"'  alt='gerfusa web application picture'/>\n"
+                                                +"<a href='portfolio/mumoafruika-platform-ui'>\n"
+                                                 +"<img class='img-fluid mx-auto d-block ' src='images/portifolio/mumoafruikaui.png' style='height:"+imgHeight+";width:"+imgWidth+"'  alt='mumoafruika plaform music ui image'/>\n"
                                                  +"</a>\n"
                                                  +"</div>\n"
                                                  +"<div class='col'>\n"
-                                                   +"<h2 class='projectname'> <strong>PROJECT NAME:</strong> GERFUSA</h2>\n"
-                                                   +"<p class='role'> <strong>ROLE:</strong> Designer, front & back-end coder, database architect </p>\n"
-                                                   +"<p class='skills'> <strong>TECHNOLOGIES:</strong> NodeJS, HTML, CSS, JQuery, MongoDB, Express, MailChimp, Twilio, Mandrill,Heroku</p>\n"
-                                                   +"<p class='description'> <strong>DESCRIPTION:</strong> This web application is for a service and errands company which will enable customers to buy and schedule groceries/errands. It also has a customer chat interface plus a employee portal to facilitate retrieving the orders and other company/customer data.</p>"
-                                                   +"<a href='https://github.com/tmudarikwa/GERFUSA' target='_blank'>\n"
-                                                   +"<p class='link'><strong>GITHUB:</strong> https://github.com/tmudarikwa/GERFUSA</p></a>\n"
+                                                   +"<h2 class='projectname'> <strong>PROJECT NAME:</strong> MuMoAfruika PLATFORM - UI</h2>\n"
+                                                   +"<p class='role'> <strong>ROLE:</strong> Front end developer</p>\n"
+                                                   +"<p class='skills'> <strong>TECHNOLOGIES:</strong> HTML5 , CSS, JQUERY, Javascript, Photoshop</p>\n"
+                                                   +"<p class='description'> <strong>DESCRIPTION:</strong> This is the UI concept for the comming soon MuMoAfruika plaform. Currently focusing on the responsive web version.</p>"
+                                                   +"<a href='#'>\n"
+                                                   +"<p class='link'><strong>GITHUB:</strong> NONE</p></a>\n"
                                                    +"<p class='link'><strong>LINK:</strong> \n"
-                                                   +"<a href='https://salty-mountain-65693.herokuapp.com/' title='GERF website' target='_blank'>http://salty-mountain-65693.herokuapp.com/</a></p>\n"
+                                                   +"<a href='#' title='#'>NONE</a></p>\n"
                                                 +"</div>");
-    } else if(currentProject.includes("GERFUSA") && direction.startsWith("NEXT") || currentProject.includes("REPLICATION TRACE") && direction.startsWith("PREVIOUS")){
+    } else if(currentProject.includes("MuMoAfruika PLATFORM") && direction.startsWith("NEXT") || currentProject.includes("EXPENSE") && direction.startsWith("PREVIOUS")){
+      $('.portfolio #previousprojbtn').show();
+      $('.portfolio #nextprojbtn').show();
+      $('.portfolio .portfolio-content').html("<div class='col-8'> \n"
+                                              +"<a href='portfolio/gerfusa'>\n"
+                                               +"<img class='img-fluid mx-auto d-block ' src='images/portifolio/gerfusa.png' style='height:"+imgHeight+";width:"+imgWidth+"'  alt='gerfusa web application picture'/>\n"
+                                               +"</a>\n"
+                                               +"</div>\n"
+                                               +"<div class='col'>\n"
+                                                 +"<h2 class='projectname'> <strong>PROJECT NAME:</strong> GERFUSA</h2>\n"
+                                                 +"<p class='role'> <strong>ROLE:</strong> Designer, front & back-end coder, database architect </p>\n"
+                                                 +"<p class='skills'> <strong>TECHNOLOGIES:</strong> NodeJS, HTML, CSS, JQuery, MongoDB, Express, MailChimp, Twilio, Mandrill,Heroku</p>\n"
+                                                 +"<p class='description'> <strong>DESCRIPTION:</strong> This web application is for a service and errands company which will enable customers to buy and schedule groceries/errands. It also has a customer chat interface plus a employee portal to facilitate retrieving the orders and other company/customer data.</p>"
+                                                 +"<a href='https://github.com/tmudarikwa/GERFUSA' target='_blank'>\n"
+                                                 +"<p class='link'><strong>GITHUB:</strong> https://github.com/tmudarikwa/GERFUSA</p></a>\n"
+                                                 +"<p class='link'><strong>LINK:</strong> \n"
+                                                 +"<a href='https://salty-mountain-65693.herokuapp.com/' title='GERF website' target='_blank'>http://salty-mountain-65693.herokuapp.com/</a></p>\n"
+                                              +"</div>");
+    }else if(currentProject.includes("GERFUSA") && direction.startsWith("NEXT") || currentProject.includes("REPLICATION TRACE") && direction.startsWith("PREVIOUS")){
         $('.portfolio #previousprojbtn').show();
         $('.portfolio #nextprojbtn').show();
         $('.portfolio .portfolio-content').html("<div class='col-8'> \n"

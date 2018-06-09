@@ -1,0 +1,31 @@
+extends ../layout
+
+block content
+  .container-fluid.portfolio.portfoliodetail
+    .row(class='align-items-center',style='border-top: 5px solid black; padding-top: 5px')
+      .col-1
+        img(id='backbtn' src='../images/back.png' , alt='Back button image')
+      .col-11
+        h1.title PORTFOLIO - MuMoAfruika Platform UI
+    .row
+      .col
+        #portfoliodetails
+          #1(class='active')
+            img(class='img-fluid mx-auto d-block' src='../images/portifolio/mumoafruikaui/mumoafruikaui.png', alt='MuMoAfruika  user types')
+            div.content
+              h4 MUSIC PAGE
+              p This will be the homepage were users are mostly likely to be automatically re-routed to. The design will be the basis for the whole WEB platform. It directly shows the features that make us distinct and at the same time provide the user with a great user experience.
+          #2
+            img(class='img-fluid mx-auto d-block' src='../images/portifolio/mumoafruikaui/mumoafruikamovies.png', alt='MuMoAfruika  ')
+            div.content
+              h4 MOVIES PAGE
+              p The MOVIES page will be very similar to the MUSIC page because on both of these pages were are trying to showcase the different content that is produced from all African countries.
+          #3
+            img(class='img-fluid mx-auto d-block' src='../images/portifolio/mumoafruikaui/mumoafruikavideos.png', alt='Sales goals page')
+            div.content
+              h4 VIDEOS
+              p The VIDEOS page differs from the first two page because in its default layout is doesn't present the country filter. We feel that since these videos maybe random and do not fit in the MOVIES & MUSIC professional or aspiring categories there isn't a need to present the country filter by default.
+    .row(class='align-items-center',style='text-align:center')
+        .col
+          button(id='previousportfoliobtn' style='display:none') PREVIOUS
+          button(id='nextportfoliobtn') NEXT

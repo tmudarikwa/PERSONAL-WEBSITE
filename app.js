@@ -14,6 +14,7 @@ var sendemail = require('./routes/contactemail');
 var frewprocess = require('./routes/portfolio/frewprocess');
 var gasco = require('./routes/portfolio/gasco');
 var mumoafruika = require('./routes/portfolio/mumoafruika');
+var mumoafruikaui = require('./routes/portfolio/mumoafruikaui');
 var gerf = require('./routes/portfolio/gerfusa');
 var expenseallocation = require('./routes/portfolio/expenseallocation');
 
@@ -41,6 +42,7 @@ app.use('/sendemail', sendemail);
 app.use('/portfolio/fpg',frewprocess);
 app.use('/portfolio/gasco',gasco);
 app.use('/portfolio/mumoafruika',mumoafruika);
+app.use('/portfolio/mumoafruika-platform-ui',mumoafruikaui);
 app.use('/portfolio/gerfusa',gerf);
 app.use('/portfolio/expense', expenseallocation);
 
