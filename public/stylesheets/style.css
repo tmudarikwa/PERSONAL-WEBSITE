@@ -1,6 +1,7 @@
 /***********
   general styles
 ***********/
+
 body {
  font-family: 'Oswald', sans-serif;
  background-color: whitesmoke;
@@ -25,17 +26,39 @@ background-size: cover;
 	height:250px;
 }
 
-h1.title{
+h1 {
+  font-weight:bold !important;
+}
+.title {
+  width:100%;
+  text-align: center;
+  display: inline-block;
+}
+
+.title h1{
   font-weight:bold;
   text-align:center;
   padding-left:20px;
   padding-right:20px;
 }
 
+.title h4{
+  font-style:italic;
+  font-size:1rem;
+}
+
 p {
   text-align:left;
 }
 
+.navbar:before {
+          content: "";
+          -webkit-box-shadow: 0px 0px 10px rgba(0,0,0,.8);
+              -moz-box-shadow: 0px 0px 10px rgba(0,0,0,.8);
+                         box-shadow: 0px 0px 10px rgba(0,0,0,.8);
+
+          z-index: 100;
+}
 .navbar{
   justify-content: center;
   background-color:white !important;
@@ -76,6 +99,16 @@ button {
 a.selected {
   background-color: black;
   color:white;
+}
+
+/***********
+ INDEX page
+***********/
+.profilepic{
+  height: 56%;
+  border-radius: 60%;
+  background-color: #f5f5f5b0;
+  border: 2px solid antiquewhite;
 }
 
 /***********
@@ -165,10 +198,10 @@ footer , .footer{
   background-color:black;
   text-align: center;
   color:white;
-  bottom: 0;
   width: 100%;
   padding-top:2%;
   bottom:0;
+  height:100%;
 }
 
 footer p {
