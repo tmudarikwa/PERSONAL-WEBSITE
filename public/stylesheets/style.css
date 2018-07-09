@@ -3,9 +3,15 @@
 ***********/
 body {
  font-family: 'Oswald', sans-serif;
- background-color: rgba(114, 28, 36, 1);
- color:white;
+ background-color: whitesmoke;
+ color:black;
  font-size:1.2rem;
+ background-image: url(../images/background-image1.png);
+background-position: center;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+background-size: cover;
+-o-background-size: cover;
 }
 
 .container-fluid {
@@ -32,6 +38,7 @@ p {
 
 .navbar{
   justify-content: center;
+  background-color:white !important;
 }
 
 .navbar-nav{
@@ -99,6 +106,7 @@ input, textarea{
 .portfolio img, #portfoliodetails img{
   border-radius:5px;
   border: 2px solid;
+  color:white;
 }
 
 .portfoliodetail .col-1 img{
