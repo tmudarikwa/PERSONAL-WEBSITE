@@ -52,12 +52,11 @@ p {
 }
 
 .navbar:before {
-          content: "";
-          -webkit-box-shadow: 0px 0px 10px rgba(0,0,0,.8);
-              -moz-box-shadow: 0px 0px 10px rgba(0,0,0,.8);
-                         box-shadow: 0px 0px 10px rgba(0,0,0,.8);
-
-          z-index: 100;
+  content: "";
+  -webkit-box-shadow: 0px 0px 10px rgba(0,0,0,.8);
+  -moz-box-shadow: 0px 0px 10px rgba(0,0,0,.8);
+  box-shadow: 0px 0px 10px rgba(0,0,0,.8);
+  z-index: 100;
 }
 .navbar{
   justify-content: center;
@@ -105,7 +104,7 @@ a.selected {
  INDEX page
 ***********/
 .profilepic{
-  height: 56%;
+  height: 55%;
   border-radius: 60%;
   background-color: #f5f5f5b0;
   border: 2px solid antiquewhite;
@@ -121,6 +120,7 @@ a.selected {
 
 #emailfromcustomer button {
   font-size:150%;
+  margin-top:.7%
 }
 
 input, textarea{
