@@ -24,6 +24,7 @@ background-size: cover;
 ***********/
 .img-thumbnail{
 	height:250px;
+  border: 2px solid antiquewhite ;
 }
 
 h1 {
@@ -139,7 +140,7 @@ input, textarea{
 .portfolio img, #portfoliodetails img{
   border-radius:5px;
   border: 2px solid;
-  color:white;
+  color:antiquewhite;
 }
 
 .portfoliodetail .col-1 img{
