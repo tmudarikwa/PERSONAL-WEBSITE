@@ -84,6 +84,11 @@ $('button').hover(function(){
    }
 });
 
+$('.navlink').click(function(){
+  $('.topbar').hide();
+  $('.loader').show();
+})
+
 /****************************
    CONTACT FORM
 ****************************/
@@ -201,3 +206,7 @@ function emailStatus(message){
     });
   }
 }
+
+//stop loader
+$('.loader').hide();
+$('.topbar').show();
