@@ -1,7 +1,7 @@
 //setting portfolio details degault page visibility
 function setVisibility(){
   $('#portfoliodetails').children().hide();
-  $('#portfoliodetails').children('.active').show();
+  $('#portfoliodetails').children('.active').slideDown("slow");
   //if we only have when item on the project details page we don't show the NEXT button
   if($('#portfoliodetails').children().length <= 1) $("#nextportfoliobtn").hide();
 }

@@ -25,6 +25,8 @@ background-size: cover;
   position: relative;
   overflow: hidden;
   background-color: black;
+  position:fixed;
+  z-index: :1;
 }
 .loader:before{
   display: block;
@@ -34,7 +36,8 @@ background-size: cover;
   width: 200px;
   height: 4px;
   background-color: antiquewhite;
-  animation: loading .6s linear infinite;
+  animation: loading 1s linear infinite;
+  z-index: :2;
 }
 
 @keyframes loading {
@@ -48,6 +51,10 @@ background-size: cover;
 
 .topbar{
   border-top: 5px solid black;
+  width:100%;
+  top:0;
+  position:fixed;
+  z-index:3;
 }
 
 /***********

@@ -208,5 +208,7 @@ function emailStatus(message){
 }
 
 //stop loader
-$('.loader').hide();
-$('.topbar').show();
+$(window).on('load',function(){
+  $('.loader').hide();
+  $('.topbar').show();
+});
