@@ -1,11 +1,12 @@
+var slideDirection = "right";
 //setting portfolio details degault page visibility
-function setVisibility(){
+function setVisibility(slideDirection){
   $('#portfoliodetails').children().hide();
-  $('#portfoliodetails').children('.active').slideDown("slow");
+  $('#portfoliodetails').children('.active').show("slide", { direction: slideDirection}, 1000);;
   //if we only have when item on the project details page we don't show the NEXT button
   if($('#portfoliodetails').children().length <= 1) $("#nextportfoliobtn").hide();
 }
-setVisibility();
+setVisibility(slideDirection);
 
 //navigation through a selected projects details (when a user clicks on a projects image whilst on /portfolio)
 $('.portfoliodetail button').click(function(){
@@ -14,7 +15,9 @@ $('.portfoliodetail button').click(function(){
   var nextItem = 0, prevItem = 0;
 
   if(direction.startsWith('NEXT')) nextItem = parseInt(currentItem) + 1;
+  if(direction.startsWith('NEXT')) slideDirection = "right";
   if(direction.startsWith('PREVIOUS')) prevItem = parseInt(currentItem) - 1;
+  if(direction.startsWith('PREVIOUS')) slideDirection = "left";
 
   //checking if nextItem id exists
   var checkNextItem = $('#portfoliodetails').has("#"+nextItem+"").length;
@@ -43,7 +46,7 @@ $('.portfoliodetail button').click(function(){
   //removing active class from currentItem
   $("#portfoliodetails #"+currentItem+"").removeClass('active');
   //setting Visibility
-  setVisibility();
+  setVisibility(slideDirection);
 });
 
 //back button routing
