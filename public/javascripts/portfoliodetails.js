@@ -1,12 +1,13 @@
+$("#portfoliodetail").css("height",80/100 *  (window.innerHeight)+"px")
 var slideDirection = "right";
 //setting portfolio details degault page visibility
 function setVisibility(slideDirection){
   $('#portfoliodetails').children().hide();
   $('#portfoliodetails').children('.active').show("slide", { direction: slideDirection}, 1000);;
-  //if we only have when item on the project details page we don't show the NEXT button
-  if($('#portfoliodetails').children().length <= 1) $("#nextportfoliobtn").hide();
 }
 setVisibility(slideDirection);
+//if we only have when item on the project details page we don't show the NEXT button
+if($('#portfoliodetails').children().length <= 1) $("#nextportfoliobtn").hide();
 
 //navigation through a selected projects details (when a user clicks on a projects image whilst on /portfolio)
 $('.portfoliodetail button').click(function(){
