@@ -1,0 +1,253 @@
+/***********
+  general styles
+***********/
+
+body {
+ font-family: 'Oswald', sans-serif;
+ background-color: whitesmoke;
+ color:black;
+ font-size:1.2rem;
+ background-image: url(../images/background-image1.png);
+background-position: center;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+background-size: cover;
+-o-background-size: cover;
+}
+
+.container-fluid {
+  margin:0;
+}
+
+.loader {
+  height: 4px;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  background-color: black;
+  position:fixed;
+  z-index: :1;
+}
+.loader:before{
+  display: block;
+  position: absolute;
+  content: "";
+  left: -200px;
+  width: 200px;
+  height: 4px;
+  background-color: antiquewhite;
+  animation: loading 1s linear infinite;
+  z-index: :2;
+}
+
+@keyframes loading {
+    from {left: -200px; width: 30%;}
+    50% {width: 30%;}
+    70% {width: 70%;}
+    80% { left: 50%;}
+    95% {left: 120%;}
+    to {left: 100%;}
+}
+
+.topbar{
+  border-top: 5px solid black;
+  width:100%;
+  top:0;
+  position:fixed;
+  z-index:3;
+}
+
+/***********
+ body styles
+***********/
+.img-thumbnail{
+	height:250px;
+  border: 2px solid antiquewhite ;
+}
+
+h1 {
+  font-weight:bold !important;
+}
+.title {
+  width:100%;
+  text-align: center;
+  display: inline-block;
+}
+
+.title h1{
+  font-weight:bold;
+  text-align:center;
+  padding-left:20px;
+  padding-right:20px;
+}
+
+.title h4{
+  font-style:italic;
+  font-size:1rem;
+}
+
+p {
+  text-align:left;
+}
+
+.navbar:before {
+  content: "";
+  -webkit-box-shadow: 0px 0px 10px rgba(0,0,0,.8);
+  -moz-box-shadow: 0px 0px 10px rgba(0,0,0,.8);
+  box-shadow: 0px 0px 10px rgba(0,0,0,.8);
+  z-index: 100;
+}
+.navbar{
+  justify-content: center;
+  background-color:white !important;
+}
+
+.navbar-nav{
+  width:100%;
+}
+
+.navlink{
+  border: 1px solid black;
+  border-radius: 3px;
+  font-weight: bold;
+  padding:2px;
+  font-size: 200%;
+  margin-right:2%;
+  background-color: inherit;
+  text-decoration: none;
+  text-decoration-line: none;
+  color:black;
+  width:18%;
+}
+
+.navbar-toggler-icon{
+    width: 5.5rem;
+    font-size: 200%;;
+}
+
+button {
+  background-color: inherit;
+  border: 1px solid black;
+  border-radius: 3px;
+  font-weight: bold;
+  padding:2px;
+  font-size: 200%;
+}
+
+a.selected {
+  background-color: black;
+  color:white;
+}
+
+/***********
+ INDEX page
+***********/
+.profilepic{
+  height: 55%;
+  border-radius: 60%;
+  background-color: #f5f5f5b0;
+  border: 2px solid antiquewhite;
+}
+
+/***********
+ contact page
+***********/
+#emailfromcustomer {
+  text-align:center;
+  width:100%;
+}
+
+#emailfromcustomer button {
+  font-size:150%;
+  margin-top:.7%
+}
+
+input, textarea{
+  width:100%;
+  border-radius:5px;
+  border:3px solid black;
+}
+
+/***********
+ portfolio
+***********/
+.portfolio-content{
+  margin-top:-10px;
+}
+
+.portfolio img, #portfoliodetails img{
+  border-radius:5px;
+  border: 2px solid;
+  color:antiquewhite;
+}
+
+.portfoliodetail .col-1 img{
+  border:none;
+  width:45%;
+  height:100%;
+  cursor: pointer;
+}
+
+#portfoliodetails img{
+  border-radius:5px;
+  border: 2px solid;
+}
+
+.portfoliodetail h1.title{
+  padding:0;
+}
+
+.portfolio p , .portfolio a{
+  text-align:center;
+
+}
+
+h2.projectname{
+  font-size:1.5rem;
+}
+
+.portfolio p.description, .portfolio p.role, .portfolio a, .portfolio p.link, p.skills, p.projectname  {
+  color: inherit;
+  text-align:left;
+}
+
+.portfolio a {
+   margin-top: -15px;
+}
+
+.portfolio button, .portfoliodetail button {
+ margin-top:4px;
+  margin-right: 10px;
+  font-size:150%;
+}
+
+#portfoliodetails .content{
+  text-align:center;
+  display:none;
+}
+
+#portfoliodetails .content p{
+  text-align:left;
+}
+
+/***********
+ footer styles
+***********/
+footer , .footer{
+  background-color:black;
+  text-align: center;
+  color:white;
+  width: 100%;
+  padding-top:2%;
+  bottom:0;
+  height:100%;
+}
+
+footer p {
+  text-align: center;
+}
+
+footer img{
+  background-color: none;
+  height:40px !important;
+}
