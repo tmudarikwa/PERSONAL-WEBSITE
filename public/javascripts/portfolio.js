@@ -78,7 +78,7 @@ function navigatePortfolio(direction, currentProject){
                                                +"<div class='col'>\n"
                                                  +"<h2 class='projectname'> <strong>PROJECT NAME:</strong> MUMOAFRUIKA-PLATFORM - UI</h2>\n"
                                                  +"<p class='role'> <strong>ROLE:</strong> Front end developer</p>\n"
-                                                 +"<p class='skills'> <strong>TECHNOLOGIES:</strong> HTML5 , CSS, JQUERY, Javascript, Photoshop</p>\n"
+                                                 +"<p class='skills'> <strong>TECHNOLOGIES:</strong> HTML5 , CSS, Bootstrap, JQUERY, Javascript, Photoshop</p>\n"
                                                  +"<p class='description'> <strong>DESCRIPTION:</strong> This is the UI concept for the comming soon MuMoAfruika plaform. Currently focusing on the responsive web version.</p>"
                                                  +"<a href='#'>\n"
                                                  +"<p class='link'><strong>GITHUB:</strong> NONE</p></a>\n"
@@ -86,7 +86,7 @@ function navigatePortfolio(direction, currentProject){
                                                  +"<a href='#' title='#'>NONE</a></p>\n"
                                               +"</div>")
           $('.portfolio .portfolio-content').show("slide", { direction: slideDirection}, 1000);
-    } else if(currentProject.includes("MUMOAFRUIKA-PLATFORM") && direction.startsWith("NEXT") || currentProject.includes("EXPENSE") && direction.startsWith("PREVIOUS")){
+    } else if(currentProject.includes("MUMOAFRUIKA-PLATFORM") && direction.startsWith("NEXT") || currentProject.includes("GIRL CHILD") && direction.startsWith("PREVIOUS")){
       $('.portfolio #previousprojbtn').show();
       $('.portfolio #nextprojbtn').show();
       $('.portfolio .portfolio-content').hide().html("<div class='col-8'> \n"
@@ -97,7 +97,7 @@ function navigatePortfolio(direction, currentProject){
                                              +"<div class='col'>\n"
                                                +"<h2 class='projectname'> <strong>PROJECT NAME:</strong> GERFUSA</h2>\n"
                                                +"<p class='role'> <strong>ROLE:</strong> Designer, front & back-end coder, database architect </p>\n"
-                                               +"<p class='skills'> <strong>TECHNOLOGIES:</strong> NodeJS, HTML, CSS, JQuery, MongoDB, Express, MailChimp, Twilio, Mandrill,Heroku</p>\n"
+                                               +"<p class='skills'> <strong>TECHNOLOGIES:</strong> NodeJS, HTML, CSS, JavaScript, JQuery, MongoDB, Express, MailChimp, Twilio, Mandrill,Heroku</p>\n"
                                                +"<p class='description'> <strong>DESCRIPTION:</strong> This web application is for a service and errands company which will enable customers to buy and schedule groceries/errands. It also has a customer chat interface plus a employee portal to facilitate retrieving the orders and other company/customer data.</p>"
                                                +"<a href='https://github.com/tmudarikwa/GERFUSA' target='_blank'>\n"
                                                +"<p class='link'><strong>GITHUB:</strong> https://github.com/tmudarikwa/GERFUSA</p></a>\n"
@@ -105,7 +105,26 @@ function navigatePortfolio(direction, currentProject){
                                                +"<a href='https://salty-mountain-65693.herokuapp.com/' title='GERF website' target='_blank'>http://salty-mountain-65693.herokuapp.com/</a></p>\n"
                                             +"</div>")
         $('.portfolio .portfolio-content').show("slide", { direction: slideDirection}, 1000);
-    }else if(currentProject.includes("GERFUSA") && direction.startsWith("NEXT") || currentProject.includes("REPLICATION TRACE") && direction.startsWith("PREVIOUS")){
+    }else if(currentProject.includes("GERFUSA") && direction.startsWith("NEXT") || currentProject.includes("EXPENSE") && direction.startsWith("PREVIOUS")){
+      $('.portfolio #previousprojbtn').show();
+      $('.portfolio #nextprojbtn').show();
+      $('.portfolio .portfolio-content').hide().html("<div class='col-8'> \n"
+                                            +"<a href='#'>\n"
+                                             +"<img class='img-fluid mx-auto d-block ' src='images/portifolio/girlchildoutreach.png' style='height:"+imgHeight+";width:"+imgWidth+"'  alt='girl child outreach web application picture'/>\n"
+                                             +"</a>\n"
+                                             +"</div>\n"
+                                             +"<div class='col'>\n"
+                                               +"<h2 class='projectname'> <strong>PROJECT NAME:</strong> GIRL CHILD OUTREACH</h2>\n"
+                                               +"<p class='role'> <strong>ROLE:</strong> Designer, frontend coder </p>\n"
+                                               +"<p class='skills'> <strong>TECHNOLOGIES:</strong> NodeJS, HTML, CSS, bootstrap, JavaScript, JQuery, Express, Mandrill, Heroku</p>\n"
+                                               +"<p class='description'> <strong>DESCRIPTION:</strong> This a static web application for a charity group that focuses on the girl child. They wanted something a simple on the eyes design that strongly outlines their mission </p>"
+                                               +"<a href='#' target='_blank'>\n"
+                                               +"<p class='link'><strong>GITHUB:</strong> NONE</p></a>\n"
+                                               +"<p class='link'><strong>LINK:</strong> \n"
+                                               +"<a href='https://girlchildoutreach.herokuapp.com/' title='GIRLCHILD OUTREACH website' target='_blank'>http://girlchildoutreach.herokuapp.com/</a></p>\n"
+                                            +"</div>")
+        $('.portfolio .portfolio-content').show("slide", { direction: slideDirection}, 1000);
+    }else if(currentProject.includes("GIRL CHILD") && direction.startsWith("NEXT") || currentProject.includes("REPLICATION TRACE") && direction.startsWith("PREVIOUS")){
         $('.portfolio #previousprojbtn').show();
         $('.portfolio #nextprojbtn').show();
         $('.portfolio .portfolio-content').hide().html("<div class='col-8'> \n"
