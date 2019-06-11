@@ -117,7 +117,7 @@ function navigatePortfolio(direction, currentProject){
                                                +"<h2 class='projectname'> <strong>PROJECT NAME:</strong> GIRL CHILD OUTREACH</h2>\n"
                                                +"<p class='role'> <strong>ROLE:</strong> Designer, frontend and backend coder </p>\n"
                                                +"<p class='skills'> <strong>TECHNOLOGIES:</strong> NodeJS, HTML, CSS, bootstrap, JavaScript, JQuery, Express, Mandrill, Heroku</p>\n"
-                                               +"<p class='description'> <strong>DESCRIPTION:</strong> This a static web application for a charity group that focuses on the girl child. They wanted something a simple on the eyes design that strongly outlines their mission. </p>"
+                                               +"<p class='description'> <strong>DESCRIPTION:</strong> This a static web application for a charity group that focuses on the girl child. They wanted something that is simple on the eyes but with strong design elements that will clearly outline their mission. </p>"
                                                +"<a href='#' target='_blank'>\n"
                                                +"<p class='link'><strong>GITHUB:</strong> NONE</p></a>\n"
                                                +"<p class='link'><strong>LINK:</strong> \n"
