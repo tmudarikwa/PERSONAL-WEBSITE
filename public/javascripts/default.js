@@ -4,7 +4,7 @@ if( navigator.userAgent.match(/Android/i) || navigator.userAgent.match(/webOS/i)
  || navigator.userAgent.match(/BlackBerry/i)
  || navigator.userAgent.match(/Windows Phone/i)){
     $('body').css("height","100%");
-    $('.profilepic').css("height","300px");
+    $('.profilepic').css("height","200px");
     $('nav').addClass("sticky-top");
     $('.navlink').css("margin","0");
     $('.navlink').css("padding","0");
@@ -35,7 +35,7 @@ if( navigator.userAgent.match(/Android/i) || navigator.userAgent.match(/webOS/i)
  }else{
 
     //setting main body content height
-    $('.bcontent').css('height',(86/100 * winH)+'px');
+    $('.bcontent').css('height',(86/100 * winH)+10+'px');
     $('.portfolio').css('height',(86/100 * winH)+10+'px');
 
     //setting portfolio image height sizes
