@@ -3,17 +3,21 @@ html(lang="en")
   head
     include ./partials/_head
   body
-    .loader
-    .topbar(style="display:none")
+    #loader
+      .bar.vh-100(role='status')
+        .circle
     block content
-    include ./partials/_nav
     include ./partials/_footer
+    script.
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-129411421-1');
     script(src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous")
+    script(src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous")
     script(src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous")
     script(src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous")
-    script(src='/javascripts/noty/jquery.noty.packaged.min.js')
-    script(src='/javascripts/default.js')
-    if path == '/portfolio'
-      script(src='/javascripts/portfolio.js')
-    if path == '/portfolio/'
-      script(src='/javascripts/portfoliodetails.js')
+    script(src='javascripts/noty/jquery.noty.packaged.min.js')
+    script(src='javascripts/jquery.sticky.js')
+    script(src='javascripts/base.js')

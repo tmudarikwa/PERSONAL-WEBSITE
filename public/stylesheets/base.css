@@ -1,0 +1,242 @@
+body {
+font-family: 'Sintony', sans-serif;
+background-color:#ecf0f1;
+color: #2c3e50;
+height:100vh;
+overflow-x:hidden;
+}
+#loader{
+height:100%;
+justify-content:center;
+text-align:center;
+vertical-align:middle;
+padding-top:25%;
+}
+.bar {
+  position: relative;
+  height: 1px;
+  width: 400px;
+  background: #2c3e50;
+  margin: 0 auto;
+}
+
+.circle {
+  position: absolute;
+  top: -15px;
+  margin-left: -10px;
+  height: 1px;
+  width: 1px;
+  left: 0;
+  border-radius:50%;
+  background: #2c3e50;
+  -webkit-animation: move 5s infinite;
+}
+
+
+@-webkit-keyframes move {
+  0% {left: 0;-webkit-transform: rotate(450deg); width: 5px; height: 5px}
+  50% {left: 100%; -webkit-transform: rotate(450deg); width: 10px; height: 10px;}
+  75% {left: 100%; -webkit-transform: rotate(450deg); width: 15px; height: 15px;}
+  100 {right: 100%;-webkit-transform: rotate(450deg); width: 20px; height: 20px;}
+}
+.container-fluid{
+display:none;
+}
+#home,#about,#contact{
+height:100vh
+}
+h1{
+text-align:center;
+}
+h4{
+    font-weight: bolder;
+    font-size: .8rem;
+text-align:center;
+}
+#navdiv{
+width:100%;
+z-index:99999;
+}
+.navbar,.navbar a {
+color:#2c3e50 !important;
+font-weight:bold;
+margin-right:2.5%;
+font-size:1.3rem;
+}
+.navbar-nav{
+ display:block;
+}
+.navbar-nav,#sticky-wrapper{
+width:100%;
+text-align:center ;
+justify-content:center;
+z-index:99999;
+}
+.is-sticky .navbar-nav{
+ background-color: #e5eaeae3;
+}
+.navbar-nav .selected{
+text-decoration:underline;
+}
+blockquote{
+margin-top:-15%;
+}
+blockquote p{
+font-size:3.5rem;
+text-align:center;
+overflow: hidden;
+border-right: 1px solid;
+white-space: nowrap;
+margin: 0 auto;
+animation:
+  typing 4.5s steps(40, end),
+  blink-caret .75s step-end infinite;
+}
+.blockquote-footer{
+text-align:center;
+}
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+@keyframes blink-caret {
+  0% { border-color: transparent }
+  25% { border-color: #c5c9ca; }
+  50% { border-color: transparent }
+}
+#portfolio,#about,#contact{
+padding: 5em 0 5em 0;
+}
+#portfolio h1{
+  text-align:center;
+  font-size: 3.5rem;
+  padding-top:45px;
+}
+#portfolio div div{
+font-size:.8rem;
+background-color:#ecf1f3;
+margin:.3rem;
+padding:.5rem;
+box-shadow: 0 0 4px rgba(0,0,0,0.6);
+-moz-box-shadow: 0 0 4px rgba(0,0,0,0.6);
+-webkit-box-shadow: 0 0 4px rgba(0,0,0,0.6);
+-o-box-shadow: 0 0 4px rgba(0,0,0,0.6);
+}
+#portfolio div div:hover{
+transform: scale(1.1);
+z-index:9;
+}
+#portfolio a {
+width:100%
+}
+#portfolio .viewp{
+width: 100%;
+    text-align: center;
+    color: #2c3e50 !important;
+    text-decoration-color: #2c3e50 !important;
+font-size:1.2rem;
+}
+#fpg{
+height:100%;
+}
+.pcontent{
+  padding: 10% 5% 10% 5%;
+  font-size: 1.8rem !important;
+}
+.pbtns{
+  padding-left: 5%;
+  padding-right: 5%;
+}
+#gasco{
+height:100%;
+display:none;
+}
+
+.pbtns{
+  text-align:center;
+}
+
+#portfolio .btnlink {
+    color: #fff;
+    background-color: transparent !important;
+    width: 100%;
+    margin-bottom: 1rem;
+    color: #2c3e50 !important;
+    font-weight: bolder;
+    font-size: 1.8rem !important;
+    cursor: pointer;
+  }
+
+footer img{
+  height:25px !important;
+}
+
+#about .col-lg-4{
+  text-align:center;
+  padding-top:3%;
+}
+#about .col-lg-4 img{
+width:80%;
+}
+#about .col-lg-8 h1{
+  text-align:center;
+  font-size: 3.5rem;
+}
+#about .col-lg-8{
+  font-size: 1.3.5rem;
+  border-left: 1px solid #b2c6cc;
+  padding-top: 10%;
+}
+#contact .col-lg-4{
+  padding-top:8%;
+}
+#contact .col-lg-8 h1{
+  text-align:center;
+  font-size: 3.5rem;
+}
+
+#contact .col-lg-8{
+  font-size: 1.3.5rem;
+  border-right: 1px solid #b2c6cc;
+  padding-top: 10%;
+}
+#contact h1,#contact input,#contact textarea{
+  width:100%;
+  margin-bottom:1rem;
+}
+#contact button{
+  width: 100%;
+  background: transparent;
+  border: none;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: inherit;
+  cursor: pointer;
+}
+#contact button:hover{
+  text-decoration: underline;
+}
+
+@media (max-width: 767.98px) {
+#home h4{
+ display:none;
+}
+#about .col-lg-4, #contact .col-lg-4{
+ display:none
+}
+#about .col-lg-4 img, #contact .col-lg-4 img{
+ width:100%;
+}
+#contact .col-lg-8 h1,#portfolio h1,#about .col-lg-8 h1,blockquote p,.h1{
+  font-size: 1.75rem;
+}
+#contact button{
+ font-size: 1.2rem;
+}
+.navlink{
+ font-size:2rem;
+}
+#about,#contact{
+ height:auto;
+}
+}

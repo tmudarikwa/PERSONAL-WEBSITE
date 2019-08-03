@@ -1,11 +1,198 @@
 extends layout
 
 block content
-  .container-fluid
-    .row(class='align-items-center')
-      .col(class='bcontent')
-        img(class='img-fluid profilepic mx-auto d-block',src='images/profilepic/taku-circle.png', alt=' profile picture')
-        h1.title(class='h1') Takunda Eugene Mudarikwa | Full-stack Web Developer
-        div
-          p Having worked as a Developer for little over four years now, I have had the chance to be exposed to various languages and technologies. The projects and tasks that I have done range from as simple as creating reporting templates to getting complex as building applications that accomplish multi-important tasks. I have had the opportunity to address, gather requirements directly from CEO's and top managerial people, and be able to articulate those needs into visible software accomplishments.
-          p I am an individual who keeps on seeking a constant advancement in knowledge in order to keep myself as relevant as possible. Problem solving keeps me intrigued because within a complex problem lies an aftermath of rewarding satisfaction, incomparable to any other, and self discovery of one's potential. I try my best to forever stay a humble student of technology whilst leveraging every experience that I have accumulated thus far, to produce the best result out of every work that bears my signature.
+  .container-fluid.vh-100
+    #home.row.vh-100
+      h4.col-12 Hi, my name is Takunda Mudarikwa. I'm a Full Stack Web Developer.
+      #navdiv
+        nav.navbar.navbar-nav.col-12
+          a.navlink.nav-item(href='') HOME
+          a.navlink.nav-item(href='') PORTFOLIO
+          a.navlink.nav-item(href='/TAKUNDAEUGENEMUDARIKWA-RESUME', target='_blank') RÉSUMÉ
+          a.navlink.nav-item(href='') ABOUT
+          a.navlink.nav-item(href='') CONTACT
+      blockquote.blockquote.col-12.card-block
+        p.mb-0.text-wrap
+        footer.blockquote-footer
+    #portfolio.row
+      h1.col-12  Portfolio
+      .col-sm-12.col-md-6.col-lg-3
+        .col-12
+          p.projectname
+            strong PROJECT NAME:
+            |  INTERNAL FPG SALES PORTAL
+          p.role
+            strong ROLE:
+            |  Designer , front & back-end coder
+          p.skills
+            strong TECHNOLOGIES:
+            |  FPG | J2EE, HTML, HTML5, AJAX, jQuery, CSS, PostgreSQL
+          p.description
+            strong DESCRIPTION:
+            |  This is an internal sales portal which serves to make it easier for sales people to set and target customer to focus on. Though this was the main idea the application does far more than that from displaying a snap shot of the companys' revenue through graphs to mapping customers on a map using google maps API and also uploading excel data to a Postgres database.
+          a(href='http://portal.frewprocess.com', target='_blank')
+            p.link
+              strong LINK:
+              |  http://portal.frewprocess.com
+          a.viewp.text-reset(href='/portfolio/fpg', target='_blank')
+            p.viewp
+              strong PROJECT IMAGES
+        .col-12
+          p.projectname
+            strong PROJECT NAME:
+            |  MUMOAFRUIKA-PLATFORM - UI
+          p.role
+            strong ROLE:
+            | Frontend developer
+          p.skills
+            strong TECHNOLOGIES:
+            |  HTML5 , CSS, Bootstrap, JQUERY, Javascript, Photoshop
+          p.description
+            strong DESCRIPTION:
+            |  This is the UI concept for the comming soon MuMoAfruika plaform. Currently focusing on the responsive web version.
+          a.viewp.text-reset(href='/portfolio/mumoafruika-platform', target='_blank')
+            p.viewp.text-reset
+              strong PROJECT IMAGES
+      .col-sm-12.col-md-6.col-lg-3
+        .col-12
+          p.projectname
+            strong PROJECT NAME:
+            |  MUMOAFRUIKA-LANDING PAGE
+          p.role
+            strong ROLE:
+            |  Designer , frontend & backend coder, database architect
+          p.skills
+            strong TECHNOLOGIES:
+            |  NodeJS, HTML, JQuery, MongoDB, Express, Mandrill, Heroku
+          p.description
+            strong DESCRIPTION:
+            |  This a web page that curates information and as well serves as a way to update the progress on the actual MuMoAfruika platform.
+          a(href='https://github.com/tmudarikwa/MuMoAfruika', target='_blank')
+            p.link
+              strong GITHUB:
+              |  https://github.com/tmudarikwa/MuMoAfruika
+          a(href='http://www.mumoafruika.com', target='_blank')
+            p.link
+              strong LINK:
+              |  http://www.mumoafruika.com
+          a.viewp.text-reset(href='/portfolio/mumoafruika-landing', target='_blank')
+            p.viewp.text-reset
+              strong PROJECT IMAGES
+        .col-12
+          p.projectname
+            strong PROJECT NAME:
+            |  INTERNAL GASCO SALES PORTAL
+          p.role
+            strong ROLE:
+            |  Designer , front & back-end coder
+          p.skills
+            strong TECHNOLOGIES:
+            |  FPG | J2EE, HTML, HTML5, AJAX, jQuery, CSS, PostgreSQL
+          p.description
+            strong DESCRIPTION:
+            |  This is an internal sales portal which serves to make it easier for sales people to set and target customer to focus on. Though this was the main idea the application does far more than that from displaying a snap shot of the companys' revenue through graphs to mapping customers on a map using google maps API and also uploading excel data to a Postgres database.
+          a(href='http://portal.frewprocess.com', target='_blank')
+            p.link
+              strong LINK:
+              |  http://portal.frewprocess.com
+          a.viewp.text-reset(href='/portfolio/gasco', target='_blank')
+            p.viewp.text-reset
+              strong PROJECT IMAGES
+      .col-sm-12.col-md-6.col-lg-3
+        .col-12
+          p.projectname
+            strong PROJECT NAME:
+            |  GERFUSA
+          p.role
+            strong ROLE:
+            |  Designer, frontend & backend coder, database architect
+          p.skills
+            strong TECHNOLOGIES:
+            |  NodeJS, HTML, CSS, JavaScript, JQuery, MongoDB, Express, MailChimp, Twilio, Mandrill,Heroku
+          p.description
+            strong DESCRIPTION:
+            |  This web application is for a service and errands company which will enable customers to buy and schedule groceries/errands. It also has a customer chat interface plus a employee portal to facilitate retrieving the orders and other company/customer data.
+          a(href='https://github.com/tmudarikwa/GERFUSA', target='_blank')
+            p.link
+              strong GITHUB:
+              |  https://github.com/tmudarikwa/GERFUSA
+          a(href='http://salty-mountain-65693.herokuapp.com/', target='_blank')
+            p.link
+              strong LINK:
+              |  http://salty-mountain-65693.herokuapp.com/
+          a.viewp.text-reset(href='/portfolio/gerfusa', target='_blank')
+            p.viewp.text-reset
+              strong PROJECT IMAGES
+        .col-12
+          p.projectname
+            strong PROJECT NAME:
+            |  GIRL CHILD OUTREACH
+          p.role
+            strong ROLE:
+            |  Designer, frontend & backend coder
+          p.skills
+            strong TECHNOLOGIES:
+            |  NodeJS, HTML, CSS, bootstrap, JavaScript, JQuery, Express, Mandrill, Heroku
+          p.description
+            strong DESCRIPTION:
+            |  NodeJS, HTML, CSS, bootstrap, JavaScript, JQuery, Express, Mandrill, Heroku
+          p.link
+            strong GITHUB:
+            | NONE
+          a(href='http://girlchildoutreach.herokuapp.com/', target='_blank')
+            p.link
+              strong LINK:
+              |  http://girlchildoutreach.herokuapp.com/
+      .col-sm-12.col-md-6.col-lg-3
+        .col-12
+          p.projectname
+            strong PROJECT NAME:
+            |  EXPENSE ALLOCATION METRICS WINDOWS DESKTOP APPLICATION
+          p.role
+            strong ROLE:
+            | GUI Designer & programmer
+          p.skills
+            strong TECHNOLOGIES:
+            |  C#, WPF
+          p.description
+            strong DESCRIPTION:
+            |  This desktop application was intended to ease the bi-weekly accounting and warehouse split calculations. The clients shared accounting and warehouse personel but always had to track payments owed from each client by means of querying invoices and orders processed by each department for each client. Migrated the queries from MySQL to Postgres and build a windows GUI application.
+          a.viewp.text-reset(href='/portfolio/expense', target='_blank')
+            p
+              strong PROJECT IMAGES
+        .col-12
+          p.projectname
+            strong PROJECT NAME:
+            |  REPLICATION TRACE WINDOWS DESKTOP APPLICATION
+          p.role
+            strong ROLE:
+            | GUI Designer & programmer
+          p.skills
+            strong TECHNOLOGIES:
+            |  C# & WPF
+          p.description
+            strong DESCRIPTION:
+            |  This desktop application was built inorder to trace duplicate records in a table. The application will return all the records that are identical from the table which it attains by individually checking each record in the table.
+    #about.row
+      .col-sm-12.col-md-4.col-lg-4
+        img.img-fluid.img-thumbnail.rounded.mx-auto.d-block(src='images/family.jpg', alt='family picture')
+        .title
+          h1.h1 THE MUDARIKWA's
+          h4 (left - right : Takunda , Iris & Israel)
+          | `
+      .col-sm-12.col-md-8.col-lg-8
+        h1  About
+        p
+          | I am a father of a handsome son and a beautiful daughter. I enjoy spending time with my kids and relaxing at home while watching some of my favorite TV shows or movies. I enjoy embarking on different kinds of coding challenges and adventures as well as learning new skills. I have a three-year Advanced Diploma in Health Informatics Technology from Centennial College in Canada. From there, I enrolled in Computer Science at the University of Indianapolis; took a couple of classes which led me to my first realization of wanting to focus on web development. I managed to secure an internship that turned into a full-time position where I was exposed to different stages of software development life cycles and was able to solidify my fundamental skills.
+        p
+          | As I keep on adding more skills to my never-ending bag of skill set, staying current with new and emerging technologies will forever be my motto!
+    #contact.row
+      .float-right.col-sm-12.col-md-8.col-lg-8
+        h1.title.h1 Let's get some work done!
+        .col-12
+          #emailfromcustomer.col-12
+            input#customeremail.col-12(type='text', placeholder='Please enter your email')
+            textarea#customertext.col-12(placeholder='Please write a reason for contacting me. I usually respond to emails within 24 hours. :)', rows='4')
+            button#contactform_submit.col-12 SEND EMAIL
+      .float-left.col-sm-12.col-md-4.col-lg-4
+        img.img-fluid.img-thumbnail.rounded.mx-auto.d-block(src='images/workflow.jpg', alt=' profile picture')
