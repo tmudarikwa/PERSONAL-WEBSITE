@@ -41,7 +41,6 @@ window.addEventListener('load', function(){
 $('.nav-item').click(function(e){
   var txt = e.target.innerText.toLowerCase();
   if (txt.includes("resu") == false){
-    e.preventDefault();
     $('html,body').animate({
       scrollTop: $("#"+txt).offset().top}
     , 1300);
