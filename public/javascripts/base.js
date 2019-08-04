@@ -43,7 +43,7 @@ $('.nav-item').click(function(e){
   if (txt.includes("resu") == false){
     e.preventDefault();
     $('html,body').animate({
-      scrollTop: $("#"+txt).offset().top}
+      scrollTop: $("#"+txt).offset()}
     , 1300);
     if(txt != 'home') ScrollReveal().reveal("#"+txt,{delay:600});
   }
