@@ -39,15 +39,13 @@ window.addEventListener('load', function(){
    NAVIGATION
 ****************************/
 $('.nav-item').click(function(e){
-  e.preventDefault();
   var txt = e.target.innerText.toLowerCase();
   if (txt.includes("resu") == false){
+    e.preventDefault();
     $('html,body').animate({
       scrollTop: $("#"+txt).offset().top}
     , 1300);
     if(txt != 'home') ScrollReveal().reveal("#"+txt,{delay:600});
-  }else{
-    return true;
   }
 });
 /****************************
