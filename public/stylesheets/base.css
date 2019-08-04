@@ -221,6 +221,12 @@ width:80%;
   #navdiv{
     margin-bottom:1.5rem;
   }
+  .navbar, .navbar a{
+    font-size:1rem;
+    margin-top:-4.5rem;
+    margin-right:1%;
+    margin-left:1%;
+  }
   #home h4{
    display:none;
   }
