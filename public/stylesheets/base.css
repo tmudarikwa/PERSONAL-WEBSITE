@@ -245,6 +245,9 @@ width:80%;
     word-break: break-all;
     white-space: normal;
   }
+  #about .col-lg-8{
+    font-size:1rem;
+  }
   #contact button{
    font-size: 1.2rem;
   }
@@ -263,7 +266,9 @@ width:80%;
   #navdiv{
     margin-bottom:1.5rem;
   }
-
+  #about .col-lg-8{
+    font-size:1rem;
+  }
   blockquote p{
     word-break: break-all;
     white-space: normal;
