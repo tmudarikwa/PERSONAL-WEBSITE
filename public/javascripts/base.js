@@ -43,9 +43,11 @@ $('.nav-item').click(function(e){
   if (txt.includes("resu") == false){
     e.preventDefault();
     $('html,body').animate({
-      scrollTop: $("#"+txt).offset()}
+      scrollTop: $("#"+txt).offset().top}
     , 1300);
     if(txt != 'home') ScrollReveal().reveal("#"+txt,{delay:600});
+  }else{
+    window.open('/TAKUNDAEUGENEMUDARIKWA-RESUME', target='_blank');
   }
 });
 /****************************
