@@ -47,7 +47,7 @@ $('.nav-item').click(function(e){
     , 1300);
     if(txt != 'home') ScrollReveal().reveal("#"+txt,{delay:600});
   }else{
-    e.Default();
+    return true;
   }
 });
 /****************************
