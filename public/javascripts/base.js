@@ -45,7 +45,9 @@ $('.nav-item').click(function(e){
     $('html,body').animate({
       scrollTop: $("#"+txt).offset().top}
     , 1300);
-if(txt != 'home') ScrollReveal().reveal("#"+txt,{delay:600});
+    if(txt != 'home') ScrollReveal().reveal("#"+txt,{delay:600});
+  }else{
+    e.Default();
   }
 });
 /****************************
