@@ -219,7 +219,7 @@ width:80%;
 }
 
 @media (max-width: 767.98px) {
-  #navdiv{
+  /*#navdiv{
     margin-bottom:1.5rem;
   }
   .navbar, .navbar a{
@@ -260,6 +260,9 @@ width:80%;
   }
   #about,#contact{
    height:auto;
+  }*/
+  #loader,#home,#about,#contact,#footer{
+    display:none;
   }
 }
 @media (max-width: 991.98px) {
