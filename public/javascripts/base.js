@@ -4,10 +4,10 @@ MOBILE DEVICES CODING
 var heightX = document.body.clientHeight;
 //detecting if site is on mobile device
 if( navigator.userAgent.match(/Android/i)|| navigator.userAgent.match(/webOS/i)|| navigator.userAgent.match(/iPhone/i)|| navigator.userAgent.match(/iPod/i)|| navigator.userAgent.match(/BlackBerry/i)|| navigator.userAgent.match(/Windows Phone/i)){
-   /*$('#home').css('height','100%');
+   $('#home').css('height','100%');
    $('#home').css('padding','75% 0 75% 0');
    $('#about').css('height','100%');
-   $('#contact').css('height','100%');*/
+   $('#contact').css('height','100%');
    $('body').append("<p> My mobile site is under construction. Please check out my site on an ipad, laptop or desktop.<br/><br/> Thank you.</p>")
 
 }
