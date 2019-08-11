@@ -262,7 +262,7 @@ width:80%;
    height:auto;
   }*/
   #loader,#home,#about,#contact,#portfolio,footer{
-    display:none;
+    display:none !important;
   }
 }
 @media (max-width: 991.98px) {
