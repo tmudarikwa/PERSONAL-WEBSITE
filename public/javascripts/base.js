@@ -5,10 +5,10 @@ var heightX = document.body.clientHeight;
 //detecting if site is on mobile device
 if( navigator.userAgent.match(/Android/i)|| navigator.userAgent.match(/webOS/i)|| navigator.userAgent.match(/iPhone/i)|| navigator.userAgent.match(/iPod/i)|| navigator.userAgent.match(/BlackBerry/i)|| navigator.userAgent.match(/Windows Phone/i)){
    $('#home').css('height','100%');
-  // $('#home').css('padding','75% 0 75% 0');
+   $('#home').css('padding','35% 0 35% 0');
    $('#about').css('height','100%');
    $('#contact').css('height','100%');
-   $('body').append("<p id='mm' My mobile site is under construction. Please check out my site on an ipad, laptop or desktop.<br/><br/> Thank you.</p>")
+   $('body').append("<p id='mm'> My mobile site is under construction. Please check out my site on an ipad, laptop or desktop.<br/><br/> Thank you.</p>")
 
 }
 /*****************************************************************************************
@@ -41,17 +41,15 @@ window.addEventListener('load', function(){
    NAVIGATION
 ****************************/
 $('.nav-item').click(function(e){
+  e.preventDefault();
   var txt = e.target.innerText.toLowerCase();
   if (txt.includes("résumé") == false){
-    console.log(txt);
-    e.preventDefault();
     $('html,body').animate({
       scrollTop: $("#"+txt).offset().top}
     , 1300);
     if(txt != 'home') ScrollReveal().reveal("#"+txt,{delay:600});
   }else{
     window.open('/TAKUNDAEUGENEMUDARIKWA-RESUME', target='_blank');
-    return true;
   }
 });
 /****************************
