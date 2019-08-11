@@ -261,7 +261,7 @@ width:80%;
   #about,#contact{
    height:auto;
   }*/
-  #loader,#home,#about,#contact,#footer{
+  #loader,#home,#about,#contact,#portfolio,footer{
     display:none;
   }
 }
