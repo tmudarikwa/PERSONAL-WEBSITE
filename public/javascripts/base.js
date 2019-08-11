@@ -8,7 +8,7 @@ if( navigator.userAgent.match(/Android/i)|| navigator.userAgent.match(/webOS/i)|
    $('#home').css('padding','35% 0 35% 0');
    $('#about').css('height','100%');
    $('#contact').css('height','100%');
-   $('body').append("<p id='mm'> My mobile site is under construction. Please check out my site on an ipad, laptop or desktop.<br/><br/> Thank you.</p>")
+   $('body').append("<p id='mm'> My mobile site currently going through maintenance. Please check out my site on an ipad, laptop or desktop.<br/><br/> Thank you.</p>")
 
 }
 /*****************************************************************************************

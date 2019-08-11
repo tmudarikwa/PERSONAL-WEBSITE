@@ -218,7 +218,7 @@ width:80%;
   text-decoration: underline;
 }
 
-@media (max-width: 767.98px) {
+@media (max-width: 991.98px}/*767.98px) {*/ {
   /*#navdiv{
     margin-bottom:1.5rem;
   }
@@ -265,7 +265,7 @@ width:80%;
     display:none !important;
   }
 }
-@media (min-width:767.99px) and (max-width: 991.98px) {
+/*media (min-width:767.99px) and (max-width: 991.98px) {
   #mm{
     display:none
   }
@@ -286,4 +286,4 @@ width:80%;
   #contact button{
    font-size: 2rem;
   }
-}
+}*/
