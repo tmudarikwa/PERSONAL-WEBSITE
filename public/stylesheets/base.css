@@ -218,7 +218,7 @@ width:80%;
   text-decoration: underline;
 }
 
-@media (max-width: 991.98px}/*767.98px) {*/ {
+@media (max-width: 991.98px)/*767.98px) {*/ {
   /*#navdiv{
     margin-bottom:1.5rem;
   }
