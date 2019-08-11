@@ -40,7 +40,7 @@ window.addEventListener('load', function(){
 ****************************/
 $('.nav-item').click(function(e){
   var txt = e.target.innerText.toLowerCase();
-  if (txt.includes("resu") == false){
+  if (txt.includes("résumé") == false){
     console.log(txt);
     e.preventDefault();
     $('html,body').animate({
