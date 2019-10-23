@@ -89,7 +89,7 @@ overflow: hidden;
 border-right: 1px solid;
 white-space: nowrap;
 margin: 0 auto;
-width:fit-content
+width:fit-content;
 animation:
   typing 4.5s steps(40, end),
   blink-caret .75s step-end infinite;
