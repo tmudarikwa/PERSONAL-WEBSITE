@@ -264,9 +264,7 @@ width:80%;
   }
 }
 media (min-width:767.99px) and (max-width: 991.98px) {
-  #mm{
-    display:none
-  }
+
   #navdiv{
     margin-bottom:1.5rem;
   }
