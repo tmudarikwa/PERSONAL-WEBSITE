@@ -220,7 +220,7 @@ width:80%;
 }
 
 @media (max-width: 991.98px)/*767.98px) {*/ {
-  /*#navdiv{
+  #navdiv{
     margin-bottom:1.5rem;
   }
   .navbar, .navbar a{
@@ -261,12 +261,9 @@ width:80%;
   }
   #about,#contact{
    height:auto;
-  }*/
-  #loader,#home,#about,#contact,#portfolio,footer{
-    display:none !important;
   }
 }
-/*media (min-width:767.99px) and (max-width: 991.98px) {
+media (min-width:767.99px) and (max-width: 991.98px) {
   #mm{
     display:none
   }
@@ -287,4 +284,4 @@ width:80%;
   #contact button{
    font-size: 2rem;
   }
-}*/
+}
