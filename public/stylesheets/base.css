@@ -218,6 +218,9 @@ width:80%;
 #contact button:hover{
   text-decoration: underline;
 }
+#mdless{
+  display: none;
+}
 
 @media (max-width: 991.98px)/*767.98px) {*/ {
   #navdiv{
@@ -232,8 +235,11 @@ width:80%;
   #home h4{
     font-size: 0.7rem;
   }
-  #about .col-lg-4 img, #contact .col-lg-4 img{
+  #about .col-lg-4 img{
    width:60%;
+  }
+  #contact .col-lg-4 img{
+   display:none;
   }
   #contact .col-lg-8 h1,#portfolio h1,#about .col-lg-8 h1,blockquote p,.h1{
     font-size: 1.5rem;
