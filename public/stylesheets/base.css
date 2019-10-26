@@ -230,13 +230,10 @@ width:80%;
     margin-left:1%;
   }
   #home h4{
-   display:none;
-  }
-  #about .col-lg-4, #contact .col-lg-4{
-   display:none
+    font-size: 0.7rem;
   }
   #about .col-lg-4 img, #contact .col-lg-4 img{
-   width:100%;
+   width:60%;
   }
   #contact .col-lg-8 h1,#portfolio h1,#about .col-lg-8 h1,blockquote p,.h1{
     font-size: 1.5rem;
@@ -256,6 +253,9 @@ width:80%;
     padding-top:5rem;
     padding-bottom:5rem;
   }
+  #contact .col-lg-8,#about .col-lg-8 {
+    border-right: none;
+}
   .navlink{
    font-size:2rem;
   }
@@ -264,7 +264,6 @@ width:80%;
   }
 }
 media (min-width:767.99px) and (max-width: 991.98px) {
-
   #navdiv{
     margin-bottom:1.5rem;
   }
