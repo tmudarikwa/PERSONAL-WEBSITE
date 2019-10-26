@@ -235,11 +235,14 @@ width:80%;
   #home h4{
     font-size: 0.7rem;
   }
-  #about .col-lg-4 img{
+  #about .col-lg-4 img, #contact img{
    width:60%;
   }
-  #contact .col-lg-4 img{
+  #contact .col-lg-4{
    display:none;
+  }
+  #mdless{
+   display:block;
   }
   #contact .col-lg-8 h1,#portfolio h1,#about .col-lg-8 h1,blockquote p,.h1{
     font-size: 1.5rem;
@@ -250,7 +253,7 @@ width:80%;
     white-space: normal;
   }
   #about .col-lg-8{
-    font-size:1rem;
+    font-size:.9rem;
   }
   #contact button{
    font-size: 1.2rem;
