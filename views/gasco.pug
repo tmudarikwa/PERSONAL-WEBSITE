@@ -2,59 +2,59 @@ extends layout
 
 block content
   section.gallery-block.cards-gallery
-  .container
-    .heading
-      .col-1
-        img.img-fluid(id='backbtn' src='../images/back.png' , alt='Back button image')
-      .col-11
-        h1.title PORTFOLIO - GASCO SALES PORTAL
-    .row
-      .col-md-6.col-lg-4
-        .card.border-0.transform-on-hover
-          a.lightbox(href='../images/portifolio/gasco/Dashboard2.png')
-            img.card-img-top(src='../images/portifolio/gasco/Dashboard2.png', alt='Dashboard page')
-          .card-body
-            h6
-              a(href='#') Dashboard Page
-            p.text-muted.card-text When an employee signs into the portal they land on to this dashboard page that gives them an high level look at the company's progress categorized by certain business documents. There is also a filter functionality that enables a historical data search.
-      .col-md-6.col-lg-4
-        .card.border-0.transform-on-hover
-          a.lightbox(href='../images/portifolio/gasco/Dashboard.png')
-            img.card-img-top(src='../images/portifolio/gasco/Dashboard.png', alt='Dashboard page')
-          .card-body
-            h6
-              a(href='#') Dashboard Page (continued)
-            p.text-muted.card-textThe graphs have interactive functionality that enables a user to click the original graph (from the previous page) and be presented with another graph that has more interactive features to respond to clicks and mouseover hovers.
-      .col-md-6.col-lg-4
-        .card.border-0.transform-on-hover
-          a.lightbox(href='../images/portifolio/gasco/Sales Goals.png')
-            img.card-img-top(src='../images/portifolio/gasco/Sales Goals.png', alt='Sales goals page')
-          .card-body
-            h6
-              a(href='#') Sales Goal Page
-            p.text-muted.card-text This page allows a user to create sales target goals based on different sales territories and also to filter and search those goals.
-      .col-md-6.col-lg-4
-        .card.border-0.transform-on-hover
-          a.lightbox(href='../images/portifolio/gasco/Prospects Map.png')
-            img.card-img-top(src='../images/portifolio/gasco/Prospects Map.png', alt='Prospects Map page')
-          .card-body
-            h6
-              a(href='#') Prospects Map Page
-            p.text-muted.card-text The Prospects map page displays plotted customers by different categorization( target account, key accounts, and historic customers and others) which ties back to sales effort roles assigned on the Customer Accounts page. This page leverages to googleMaps API, Ajax, jQuery and javascript to perform its core functions. On a customer plotted pin a user is able to see the customer's past orders, past paid invoices, and furthermore click the pin for a more
-            | detailed look. The right fly out enables filtering by date, classifications, categories, account type, geocoding quality, and by dynamically adding some grouped filters. Last but not least a user can short list the customers that they want to focus on by doubling clicking on a customer plotted pin and by doing so add them to the "Added Partners" cache.
-      .col-md-6.col-lg-4
-        .card.border-0.transform-on-hover
-          a.lightbox(href='../images/portifolio/gasco/Customizable Map.png')
-            img.card-img-top(src='../images/portifolio/gasco/Customizable Map.png', alt='Customizable Map page')
-          .card-body
-            h6
-              a(href='#') Prospects Maps Page (continued)
-            p.text-muted.card-text The Customizable Map is were the "Added Partners" from the Prospects Map are displayed. On this page a user can search a customer's address straight on to the map and can add all those plotted points to a print cache.
-      .col-md-6.col-lg-4
-        .card.border-0.transform-on-hover
-          a.lightbox(href='../images/portifolio/gasco/Pentaho.png')
-            img.card-img-top(src='../images/portifolio/gasco/Pentaho.png', alt='Pentaho page')
-          .card-body
-            h6
-              a(href='#') Pentaho Page
-            p.text-muted.card-text This page provides an on-click link to Pentaho reports that are ran and hosted on the Pentaho Bi Server. I also had the task of creating and designing most of those reports(which included financial reports and an inclusive revenue and margin report that leveraged the company's ERP system workflow).
+    .container
+      .heading
+        .col-1
+          img.img-fluid(id='backbtn' src='../images/back.png' , alt='Back button image')
+        .col-11
+          h1.title PORTFOLIO - GASCO SALES PORTAL
+      .row
+        .col-md-6.col-lg-4
+          .card.border-0.transform-on-hover
+            a.lightbox(href='../images/portifolio/gasco/Dashboard2.png')
+              img.card-img-top(src='../images/portifolio/gasco/Dashboard2.png', alt='Dashboard page')
+            .card-body
+              h6
+                a(href='#') Dashboard Page
+              p.text-muted.card-text When an employee signs into the portal they land on to this dashboard page that gives them an high level look at the company's progress categorized by certain business documents. There is also a filter functionality that enables a historical data search.
+        .col-md-6.col-lg-4
+          .card.border-0.transform-on-hover
+            a.lightbox(href='../images/portifolio/gasco/Dashboard.png')
+              img.card-img-top(src='../images/portifolio/gasco/Dashboard.png', alt='Dashboard page')
+            .card-body
+              h6
+                a(href='#') Dashboard Page (continued)
+              p.text-muted.card-textThe graphs have interactive functionality that enables a user to click the original graph (from the previous page) and be presented with another graph that has more interactive features to respond to clicks and mouseover hovers.
+        .col-md-6.col-lg-4
+          .card.border-0.transform-on-hover
+            a.lightbox(href='../images/portifolio/gasco/Sales Goals.png')
+              img.card-img-top(src='../images/portifolio/gasco/Sales Goals.png', alt='Sales goals page')
+            .card-body
+              h6
+                a(href='#') Sales Goal Page
+              p.text-muted.card-text This page allows a user to create sales target goals based on different sales territories and also to filter and search those goals.
+        .col-md-6.col-lg-4
+          .card.border-0.transform-on-hover
+            a.lightbox(href='../images/portifolio/gasco/Prospects Map.png')
+              img.card-img-top(src='../images/portifolio/gasco/Prospects Map.png', alt='Prospects Map page')
+            .card-body
+              h6
+                a(href='#') Prospects Map Page
+              p.text-muted.card-text The Prospects map page displays plotted customers by different categorization( target account, key accounts, and historic customers and others) which ties back to sales effort roles assigned on the Customer Accounts page. This page leverages to googleMaps API, Ajax, jQuery and javascript to perform its core functions. On a customer plotted pin a user is able to see the customer's past orders, past paid invoices, and furthermore click the pin for a more
+              | detailed look. The right fly out enables filtering by date, classifications, categories, account type, geocoding quality, and by dynamically adding some grouped filters. Last but not least a user can short list the customers that they want to focus on by doubling clicking on a customer plotted pin and by doing so add them to the "Added Partners" cache.
+        .col-md-6.col-lg-4
+          .card.border-0.transform-on-hover
+            a.lightbox(href='../images/portifolio/gasco/Customizable Map.png')
+              img.card-img-top(src='../images/portifolio/gasco/Customizable Map.png', alt='Customizable Map page')
+            .card-body
+              h6
+                a(href='#') Prospects Maps Page (continued)
+              p.text-muted.card-text The Customizable Map is were the "Added Partners" from the Prospects Map are displayed. On this page a user can search a customer's address straight on to the map and can add all those plotted points to a print cache.
+        .col-md-6.col-lg-4
+          .card.border-0.transform-on-hover
+            a.lightbox(href='../images/portifolio/gasco/Pentaho.png')
+              img.card-img-top(src='../images/portifolio/gasco/Pentaho.png', alt='Pentaho page')
+            .card-body
+              h6
+                a(href='#') Pentaho Page
+              p.text-muted.card-text This page provides an on-click link to Pentaho reports that are ran and hosted on the Pentaho Bi Server. I also had the task of creating and designing most of those reports(which included financial reports and an inclusive revenue and margin report that leveraged the company's ERP system workflow).
