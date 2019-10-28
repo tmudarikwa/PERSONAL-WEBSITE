@@ -1,51 +1,69 @@
 extends layout
 
 block content
-  .container-fluid.portfolio.portfoliodetail
-    .row(class='align-items-center',style='border-top: 5px solid black; padding-top: 5px')
-      .col-1
-        img(id='backbtn' src='../images/back.png' , alt='Back button image')
-      .col-11
+  section.gallery-block.cards-gallery
+    .container-fluid
+      .heading
         h1.title PORTFOLIO - FPG SALES PORTAL
-    .row
-      .col
-        #portfoliodetails
-          #1(class='active')
-            img(class='img-fluid mx-auto d-block' src='../images/portifolio/frewprocess/Dashboard2.png', alt='Dashboard page')
-            div.content
-              h4 Dashboard page
-              p When an employee signs into the portal they land on to this dashboard page that gives them an high level look at the company's progress categorized by certain business documents. There is also a filter functionality that enables a historical data search.
-          #2
-            img(class='img-fluid mx-auto d-block' src='../images/portifolio/frewprocess/Dashboard.png', alt='Dashboard page')
-            div.content
-              h4 Dashboard page (continued)
-              p The graphs have interactive functionality that enables a user to click the original graph (from the previous page) and be presented with another graph that has more interactive features to respond to clicks and mouseover hovers.
-          #3
-            img(class='img-fluid mx-auto d-block' src='../images/portifolio/frewprocess/Sales Goals.png', alt='Sales goals page')
-            div.content
-              h4 Sales Goals page
-              p This page allows a user to create sales target goals based on different sales territories and also to filter and search those goals.
-          #4
-            img(class='img-fluid mx-auto d-block' src='../images/portifolio/frewprocess/Customer Accounts.png', alt='Customer Accounts page')
-            div.content
-              h4 Customer Accounts page
-              p The Customer Accounts page lists all customers that the company has and provides options to select if a customer is a sales target for a particular period or not. It also provides searching and sorting capabilities.
-          #5
-            img(class='img-fluid mx-auto d-block' src='../images/portifolio/frewprocess/Prospects Map.png', alt='Prospects Map page')
-            div.content
-              h4 Prospects Map page
-              p The Prospects map page displays plotted customers by different categorization( target account, key accounts, and historic customers and others) which ties back to sales effort roles assigned on the Customer Accounts page. This page leverages to googleMaps API, Ajax, jQuery and javascript to perform its core functions. On a customer plotted pin a user is able to see the customer's past orders, past paid invoices, and furthermore click the pin for a more detailed look. The right fly out enables filtering by date, classifications, categories, account type, geocoding quality, and by dynamically adding some grouped filters. Last but not least a user can short list the customers that they want to focus on by doubling clicking on a customer plotted pin and by doing so add them to the "Added Partners" cache.
-          #6
-            img(class='img-fluid mx-auto d-block' src='../images/portifolio/frewprocess/Customizable Map.png', alt='Customizable Map page')
-            div.content
-              h4 Prospects Map page (continued)
-              p The Customizable Map is were the "Added Partners" from the Prospects Map are displayed. On this page a user can search a customer's address straight on to the map and can add all those plotted points to a print cache.
-          #7
-            img(class='img-fluid mx-auto d-block' src='../images/portifolio/frewprocess/Pentaho.png', alt='Pentaho page')
-            div.content
-              h4 Pentaho page
-              p This page provides an on-click link to Pentaho reports that are run and hosted on the Pentaho Bi Server. I also had the task of creating and designing most of those reports(which included financial reports and an inclusive revenue and margin report that leveraged the company's ERP system workflow).
-    .row(class='align-items-center',style='text-align:center')
-        .col
-          button(id='previousportfoliobtn' style='display:none') PREVIOUS
-          button(id='nextportfoliobtn') NEXT
+      .row
+        .col-md-6.col-lg-4
+          .card.border-0.transform-on-hover
+            a.lightbox(href='../images/portifolio/frewprocess/Dashboard2.png')
+              img.card-img-top(src='../images/portifolio/frewprocess/Dashboard2.png', alt='Dashboard page')
+            .card-body
+              h6
+                a(href='#') Dashboard Page
+              p.text-muted.card-text When an employee signs into the portal they land on to this dashboard page that gives them an high level look at the company's progress categorized by certain business documents. There is also a filter functionality that enables a historical data search.
+        .col-md-6.col-lg-4
+          .card.border-0.transform-on-hover
+            a.lightbox(href='../images/portifolio/frewprocess/Dashboard.png')
+              img.card-img-top(src='../images/portifolio/frewprocess/Dashboard.png', alt='Dashboard page')
+            .card-body
+              h6
+                a(href='#') Dashboard Page (continued)
+              p.text-muted.card-textThe graphs have interactive functionality that enables a user to click the original graph (from the previous page) and be presented with another graph that has more interactive features to respond to clicks and mouseover hovers.
+        .col-md-6.col-lg-4
+          .card.border-0.transform-on-hover
+            a.lightbox(href='../images/portifolio/frewprocess/Sales Goals.png')
+              img.card-img-top(src='../images/portifolio/frewprocess/Sales Goals.png', alt='Sales goals page')
+            .card-body
+              h6
+                a(href='#') Sales Goal Page
+              p.text-muted.card-text This page allows a user to create sales target goals based on different sales territories and also to filter and search those goals.
+        .col-md-6.col-lg-4
+          .card.border-0.transform-on-hover
+            a.lightbox(href='../images/portifolio/frewprocess/Customer Accounts.png')
+              img.card-img-top(src='../images/portifolio/frewprocess/Customer Accounts.png', alt='Customer Accounts page')
+            .card-body
+              h6
+                a(href='#') Customer Accounts Page
+              p.text-muted.card-text The Customer Accounts page lists all customers that the company has and provides options to select if a customer is a sales target for a particular period or not. It also provides searching and sorting capabilities.
+
+        .col-md-6.col-lg-4
+          .card.border-0.transform-on-hover
+            a.lightbox(href='../images/portifolio/frewprocess/Prospects Map.png')
+              img.card-img-top(src='../images/portifolio/frewprocess/Prospects Map.png', alt='Prospects Map page')
+            .card-body
+              h6
+                a(href='#') Prospects Map Page
+              p.text-muted.card-text The Prospects map page displays plotted customers by different categorization( target account, key accounts, and historic customers and others) which ties back to sales effort roles assigned on the Customer Accounts page. This page leverages to googleMaps API, Ajax, jQuery and javascript to perform its core functions. On a customer plotted pin a user is able to see the customer's past orders, past paid invoices, and furthermore click the pin for a more detailed look. The right fly out enables filtering by date, classifications, categories, account type, geocoding quality, and by dynamically adding some grouped filters. Last but not least a user can short list the customers that they want to focus on by doubling clicking on a customer plotted pin and by doing so add them to the "Added Partners" cache.
+        .col-md-6.col-lg-4
+          .card.border-0.transform-on-hover
+            a.lightbox(href='../images/portifolio/frewprocess/Customizable Map.png')
+              img.card-img-top(src='../images/portifolio/frewprocess/Customizable Map.png', alt='Customizable Map page')
+            .card-body
+              h6
+                a(href='#') Prospects Maps Page (continued)
+              p.text-muted.card-text The Customizable Map is were the "Added Partners" from the Prospects Map are displayed. On this page a user can search a customer's address straight on to the map and can add all those plotted points to a print cache.
+        .col-md-6.col-lg-4
+          .card.border-0.transform-on-hover
+            a.lightbox(href='../images/portifolio/frewprocess/Pentaho.png')
+              img.card-img-top(src='../images/portifolio/frewprocess/Pentaho.png', alt='Pentaho page')
+            .card-body
+              h6
+                a(href='#') Pentaho Page
+              p.text-muted.card-text This page provides an on-click link to Pentaho reports that are ran and hosted on the Pentaho Bi Server. I also had the task of creating and designing most of those reports(which included financial reports and an inclusive revenue and margin report that leveraged the company's ERP system workflow).
+
+
+      #backtohome
+        a(href="/") BACK TO HOME
