@@ -1,21 +1,20 @@
 extends layout
 
 block content
-  .container-fluid.portfolio.portfoliodetail
-    .row(class='align-items-center',style='border-top: 5px solid black; padding-top: 5px')
-      .col-1
-        img(id='backbtn' src='../images/back.png' , alt='Back button image')
-      .col-11
-        h2.title PORTFOLIO - EXPENSE ALLOCATION
-    .row
-      .col
-        #portfoliodetails
-          #1(class='active')
-            img(class='img-fluid mx-auto d-block' src='../images/portifolio/expenseallocation/expenseallocation.JPG' , alt='Expense Allocation Metrics')
-            div.content
-              h4 Expense Allocation
-              p The GUI interface provides input for different parameters that allow the user to be able to get calculated total that end up being used for payroll purposes.
-    .row(class='align-items-center',style='text-align:center')
-        .col
-          button(id='previousportfoliobtn' style='display:none') PREVIOUS
-          button(id='nextportfoliobtn') NEXT
+  section.gallery-block.cards-gallery
+    .container-fluid
+      .heading
+        h1.title PORTFOLIO - MuMoAfruika
+      .row
+        .col-md-6.col-lg-4
+          .card.border-0.transform-on-hover
+            a.lightbox(href='../images/portifolio/expenseallocation/expenseallocation.JPG')
+              img.card-img-top(src='../images/portifolio/expenseallocation/expenseallocation.JPG' , alt='Expense Allocation Metrics')
+            .card-body
+              h6
+                a(href='#') Expense Allocation
+              p.text-muted.card-text The GUI interface provides input for different parameters that allow the user to be able to get calculated total that end up being used for payroll purposes.
+
+
+      #backtohome
+        a(href="/") BACK TO HOME
