@@ -253,6 +253,9 @@ width:80%;
     white-space: normal;
   }
   #about .col-lg-8{
+    font-size:1rem;
+  }
+  #about .col-lg-8 p{
     font-size:.9rem;
   }
   #contact button{
@@ -278,6 +281,9 @@ media (min-width:767.99px) and (max-width: 991.98px) {
   }
   #about .col-lg-8{
     font-size:1rem;
+  }
+  #about .col-lg-8 p{
+    font-size:.8rem;
   }
   blockquote p{
     word-break: break-all;

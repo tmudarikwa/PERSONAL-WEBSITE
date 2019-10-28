@@ -55,7 +55,7 @@
   color: #2c3e50;
 }
 @media (min-width: 576px) {
-	.gallery-block .heading{
+	.title{
 		font-size:1.5rem;
 	}
 	#backtohome a {
