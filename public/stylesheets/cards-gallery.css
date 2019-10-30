@@ -21,6 +21,7 @@
 
 .gallery-block.cards-gallery .card{
   transition: 0.4s ease;
+	border-radius: 0;
 }
 
 .gallery-block.cards-gallery .card img {
@@ -53,6 +54,9 @@
 #backtohome a{
 	font-size: 2rem;
   color: #2c3e50;
+}
+#backtohome a:hover{
+	text-decoration:underline;
 }
 @media (min-width: 576px) {
 	.title{
