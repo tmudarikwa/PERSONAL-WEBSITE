@@ -48,12 +48,16 @@
   margin-bottom: 30px;
   box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15);
 }
+.gallery-block .title{
+	font-weight: bold;
+}
 #backtohome{
 	text-align:center;
 }
 #backtohome a{
 	font-size: 2rem;
   color: #2c3e50;
+	font-weight:bold;
 }
 #backtohome a:hover{
 	text-decoration:underline;
