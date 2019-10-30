@@ -275,6 +275,12 @@ width:80%;
   #about,#contact{
    height:auto;
   }
+  .gallery-block.title{
+    font-size:1.5rem;
+  }
+  #backtohome a {
+    font-size:1.5rem;
+  }
 }
 media (min-width:767.99px) and (max-width: 991.98px) {
   #navdiv{
@@ -296,5 +302,12 @@ media (min-width:767.99px) and (max-width: 991.98px) {
   }
   #contact button{
    font-size: 2rem;
+  }
+
+  .gallery-block.title{
+    font-size:1rem;
+  }
+  #backtohome a {
+    font-size:1rem;
   }
 }
