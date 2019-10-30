@@ -52,9 +52,11 @@ $('.nav-item').click(function(e){
   }
 });
 url = window.location.href;
+window.onload(function(){
 if (url.search("#portfolio") > 0){ $('html,body').animate({
       scrollTop: $("#portfolio").offset().top}
-    , 1300)}
+    , 1300)};
+})
 /****************************
    PORTFOLIOca
 ****************************/
