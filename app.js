@@ -45,7 +45,7 @@ app.use('/portfolio/mumoafruika-landing',mumoafruika);
 app.use('/portfolio/mumoafruika-platform',mumoafruikaui);
 app.use('/portfolio/gerfusa',gerf);
 app.use('/portfolio/expense', expenseallocation);
-app.use('/portfolio/potencity', expenseallocation);
+app.use('/portfolio/potencity', potencity);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
