@@ -7,6 +7,7 @@ var date = new Date();
 router.get('/', function(req, res, next) {
   var path = '/portfolio';
   res.locals.path = path;
+  res.locals.year = date.getFullYear();
   res.render('portfolio', { title: 'Takunda Mudarikwa - Full-stack Web Developer | Portfolio', year: date.getFullYear(), portfolioToDisplay: req._parsedOriginalUrl.query});
 });
 

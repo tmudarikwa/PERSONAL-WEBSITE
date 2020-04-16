@@ -5,12 +5,12 @@ var date = new Date();
 
 /* GET portifolio page. */
 router.get('/', function(req, res, next) {
-  var path = '/portfolio/gerfusa';
+  var path = '/portfolio/frewprocess';
   console.log('*******path**************');
   console.log(path);
   res.locals.path = '/portfolio/';
   res.locals.year = date.getFullYear();
-  res.render('portfolio/gerf', { title: 'Takunda Mudarikwa - Full-stack Web Developer | Portfolio - GERFUSA', year: date.getFullYear()});
+  res.render('portfolio/potencity', { title: 'Takunda Mudarikwa - Full-stack Web Developer | Portfolio - Potencity', year: date.getFullYear()});
 });
 
 module.exports = router;
