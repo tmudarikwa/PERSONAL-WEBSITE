@@ -39,7 +39,7 @@ app.use('/about', aboutme);
 app.use('/contact', contactme);
 app.use('/portfolio', portfolio);
 app.post('/sendemail', function(req,res){
-    sendcontactemail.sendContactEmail(req,res);
+    sendemail.sendContactEmail(req,res);
 });
 app.use('/portfolio/fpg',frewprocess);
 app.use('/portfolio/gasco',gasco);
