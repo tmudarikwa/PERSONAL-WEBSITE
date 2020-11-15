@@ -27,11 +27,12 @@ var sendcontactemail = function(req, res){
       transporter.sendMail(message, function(error,result) {
 		  if(error){
 			var emailsent = "We apologize there has been an error trying to submit your information.";
-			return emailsent;
+			res.send(emailsent);
+			return;
 		  }else{
 			var emailsent = "Email sent! I will get intouch with you asap. Thank you!";
-			if(result[0].status !== 'sent') emailsent = "We apologize there has been an error trying to submit your information.";
-			return emailsent;
+			res.send(emailsent);
+			return;
 		  }
       });
 };

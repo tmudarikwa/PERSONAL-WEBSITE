@@ -39,9 +39,7 @@ app.use('/about', aboutme);
 app.use('/contact', contactme);
 app.use('/portfolio', portfolio);
 app.post('/sendemail', function(req,res){
-    var response = sendemail.sendContactEmail(req,res);
-	console.log(response);
-	res.send(response);
+   sendemail.sendContactEmail(req,res);
 });
 app.use('/portfolio/fpg',frewprocess);
 app.use('/portfolio/gasco',gasco);
