@@ -23,8 +23,6 @@ var sendcontactemail = function(req, res){
                   from_name: ""+data.email+"",
                   to:"tkmud91@hotmail.com",
               };
-      var async = false;
-      var ip_pool = "Main Pool";
       //var send_at = "example send_at";
       transporter.sendMail(message, function(error,result) {
 		  if(error){
