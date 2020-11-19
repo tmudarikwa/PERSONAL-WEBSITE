@@ -129,7 +129,7 @@ $("#emailfromcustomer button").click(function(e){
                     layout:'top',
                     theme:'defaultTheme',
                     type :'error',
-                    text:'PLEASE FILL IN THE REASON YOU ARE TRYING TO CONTACT US!',
+                    text:'PLEASE FILL IN THE REASON YOU ARE TRYING TO CONTACT ME!',
                     animation:{
                       open:'animated bounceInCenter',
                       close: 'animated bounceOutLeft',
@@ -140,7 +140,7 @@ $("#emailfromcustomer button").click(function(e){
             });
         }
     }else{
-      $("#customeremail").css("box-shadow", "0 0 5px red");
+      $("#customeremail").css("box-shadow", "0 0 1px red");
           noty({
           layout:'top',
           theme:'defaultTheme',
@@ -157,7 +157,7 @@ $("#emailfromcustomer button").click(function(e){
     }
 
   }else{
-    $("#customeremail").css("box-shadow", "0 0 5px red");
+    $("#customeremail").css("box-shadow", "0 0 1px red");
     noty({
       layout:'top',
       theme:'defaultTheme',
