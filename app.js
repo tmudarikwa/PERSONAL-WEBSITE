@@ -17,6 +17,8 @@ var mumoafruika = require('./routes/portfolio/mumoafruika');
 var mumoafruikaui = require('./routes/portfolio/mumoafruikaui');
 var gerf = require('./routes/portfolio/gerfusa');
 var expenseallocation = require('./routes/portfolio/expenseallocation');
+var chillybarrels = require('./routes/portfolio/chillybarrels');
+var chillybarrelsportal = require('./routes/portfolio/chillybarrels-portal');
 var potencity = require('./routes/portfolio/potencity');
 
 var app = express();
@@ -48,6 +50,8 @@ app.use('/portfolio/mumoafruika-platform',mumoafruikaui);
 app.use('/portfolio/gerfusa',gerf);
 app.use('/portfolio/expense', expenseallocation);
 app.use('/portfolio/potencity', potencity);
+app.use('/portfolio/chillybarrels', chillybarrels);
+app.use('/portfolio/chillybarrels-portal', chillybarrelsportal);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
