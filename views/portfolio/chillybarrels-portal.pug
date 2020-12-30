@@ -1,0 +1,27 @@
+extends ../layout
+
+block content
+  section.gallery-block.cards-gallery
+    .container-fluid
+      .heading
+        h1.title PORTFOLIO - ChillyBarrels-Portal
+      .row
+        .col-md-6.col-lg-4
+          .card.border-0.transform-on-hover
+            a.lightbox(href='../images/portifolio/chillybarrels-portal/loginpage.png')
+              img.card-img-top(src='../images/portifolio/chillybarrels-portal/loginpage.png', alt='ChillyBarrels Portal Login Page')
+            .card-body
+              h6
+                a(href='#') Login Page
+              p.text-muted.card-text Portal Login page for local stores and ChillyBarrels Admin.
+        .col-md-6.col-lg-4
+          .card.border-0.transform-on-hover
+            a.lightbox(href='../images/portifolio/chillybarrels-portal/orders.png')
+              img.card-img-top(src='../images/portifolio/chillybarrels-portal/orders.png', alt='ChillyBarrels Portal Orders Page')
+            .card-body
+              h6
+                a(href='#') Orders Page
+              p.text-muted.card-text All orders made through the site will be loaded on this page and only visible to the local store that they were ordered from. The page auto loads every 3mins with any new order data.
+
+      #backtohome
+        a(href="/#portfolio") BACK TO HOME
