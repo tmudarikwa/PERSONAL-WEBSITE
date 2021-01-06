@@ -52,7 +52,7 @@ $('.nav-item').click(function(e){
   }
 });
 
-window.onload = () => {
+document.addEventListener("DOMContentLoaded", () => {
   if(window.location.href.includes("#portfolio")){
     $(document).ready(function(){
       $('html,body').animate({
@@ -60,7 +60,7 @@ window.onload = () => {
       },'slow');
     });
   }
-};
+});
 /****************************
    PORTFOLIOca
 ****************************/
