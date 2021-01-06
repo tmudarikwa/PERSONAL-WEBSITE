@@ -51,13 +51,16 @@ $('.nav-item').click(function(e){
     window.open('/TAKUNDAEUGENEMUDARIKWA-RESUME', target='_blank');
   }
 });
-if(window.location.href.includes("#portfolio")){
-  $(document).ready(function(){
-    $('html,body').animate({
-      scrollTop:$('#portfolio').offset().top
-    },'slow');
-  });
-}
+
+window.onload = () => {
+  if(window.location.href.includes("#portfolio")){
+    $(document).ready(function(){
+      $('html,body').animate({
+        scrollTop:$('#portfolio').offset().top
+      },'slow');
+    });
+  }
+};
 /****************************
    PORTFOLIOca
 ****************************/
