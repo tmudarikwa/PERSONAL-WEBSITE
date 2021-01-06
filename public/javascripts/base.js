@@ -51,6 +51,13 @@ $('.nav-item').click(function(e){
     window.open('/TAKUNDAEUGENEMUDARIKWA-RESUME', target='_blank');
   }
 });
+if(window.url.includes("#portfolio")){
+  $(document).ready(function(){
+    $('html,body').animate({
+      scrollTop:$('#portfolio').offset().top
+    },'slow');
+  });
+}
 /****************************
    PORTFOLIOca
 ****************************/
@@ -177,10 +184,3 @@ function emailStatus(message){
     });
   }
 }
-
-window.onload = (event) => {
-  url = window.location.href;
-  if (url.search("#portfolio") > 0){ $('html,body').animate({
-        scrollTop: $("#portfolio").offset().top}
-      , 1300)};
-};
