@@ -51,7 +51,7 @@ $('.nav-item').click(function(e){
     window.open('/TAKUNDAEUGENEMUDARIKWA-RESUME', target='_blank');
   }
 });
-if(window.url.includes("#portfolio")){
+if(window.location.href.includes("#portfolio")){
   $(document).ready(function(){
     $('html,body').animate({
       scrollTop:$('#portfolio').offset().top
