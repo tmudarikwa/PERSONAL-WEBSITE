@@ -20,6 +20,7 @@ var expenseallocation = require('./routes/portfolio/expenseallocation');
 var chillybarrels = require('./routes/portfolio/chillybarrels');
 var chillybarrelsportal = require('./routes/portfolio/chillybarrels-portal');
 var potencity = require('./routes/portfolio/potencity');
+var adbdeliveryservices = require('./routes/portfolio/adbdeliveryservices');
 
 var app = express();
 
@@ -52,6 +53,7 @@ app.use('/portfolio/expense', expenseallocation);
 app.use('/portfolio/potencity', potencity);
 app.use('/portfolio/chillybarrels', chillybarrels);
 app.use('/portfolio/chillybarrels-portal', chillybarrelsportal);
+app.use('/portfolio/adbdeliveryservices', adbdeliveryservices);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

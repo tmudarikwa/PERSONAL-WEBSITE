@@ -1,0 +1,51 @@
+extends ../layout
+
+block content
+  section.gallery-block.cards-gallery
+    .container-fluid
+      .heading
+        h1.title PORTFOLIO - ADB Delivery Services
+      .row
+        .col-md-6.col-lg-4
+          .card.border-0.transform-on-hover
+            a.lightbox(href='../images/portifolio/adb/adb.png')
+              img.card-img-top(src='../images/portifolio/adb/adb.png', alt='Adb Delivery Service Home Page')
+            .card-body
+              h6
+                a(href='#') Home Page
+              p.text-muted.card-text The homepage allows customers to schedule a service, subscribe to the mailing list and view past reviews or leave thier own review.
+        .col-md-6.col-lg-4
+          .card.border-0.transform-on-hover
+            a.lightbox(href='../images/portifolio/adb/adbdeliveryservice.png')
+              img.card-img-top(src='../images/portifolio/adb/adbdeliveryservice.png', alt='Adb Delivery Service - Delivery Service Scheduler')
+            .card-body
+              h6
+                a(href='#') Delivery Service
+              p.text-muted.card-text When wants to schedule an appointment they have to fill the above form. After filling the form they will recieve and email that includes a quoted price. They can make a payment once the appointment has been scheduled depending on their prior selected payment type.
+        .col-md-6.col-lg-4
+          .card.border-0.transform-on-hover
+            a.lightbox(href='../images/portifolio/adb/adbgarageservice.png')
+              img.card-img-top(src='../images/portifolio/adb/adbgarageservice.png', alt='Adb Delivery Service - Garage Cleaning/Hauling Service Scheduler')
+            .card-body
+              h6
+                a(href='#') Garage Cleaning/Hauling Service
+              p.text-muted.card-text Customers are able to schedule garage cleaning or hauling service. Unlike the delivery service they can not make a payment up until a member from the company asseses how much cleaning or hauling is actually involved.
+        .col-md-6.col-lg-4
+          .card.border-0.transform-on-hover
+            a.lightbox(href='../images/portifolio/adb/adbmailinglist.png')
+              img.card-img-top(src='../images/portifolio/adb/adbmailinglist.png', alt='Adb Delivery Service - Subscribe to mailing list Section')
+            .card-body
+              h6
+                a(href='#') Subscribe to mailing list
+              p.text-muted.card-text Full name and email inputs for customer willing to subscribe to the mailing list. Customers that have already subscribed will be notified if they try to resubscribe.
+        .col-md-6.col-lg-4
+          .card.border-0.transform-on-hover
+            a.lightbox(href='../images/portifolio/adb/adbreview.png')
+              img.card-img-top(src='../images/portifolio/adb/adbreview.png', alt='Adb Delivery Service - Review Section')
+            .card-body
+              h6
+                a(href='#') Reviews
+              p.text-muted.card-text Customers are able to leave reviews directly on the website for different types of services. 
+
+      #backtohome
+        a(href="/#portfolio") BACK TO HOME
