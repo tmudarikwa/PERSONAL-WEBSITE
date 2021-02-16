@@ -19,6 +19,7 @@ var gerf = require('./routes/portfolio/gerfusa');
 var expenseallocation = require('./routes/portfolio/expenseallocation');
 var chillybarrels = require('./routes/portfolio/chillybarrels');
 var chillybarrelsportal = require('./routes/portfolio/chillybarrels-portal');
+var chillybarrelswoocommerce = require('./routes/portfolio/chillybarrels-woocommerce');
 var potencity = require('./routes/portfolio/potencity');
 var adbdeliveryservices = require('./routes/portfolio/adbdeliveryservices');
 
@@ -53,6 +54,7 @@ app.use('/portfolio/expense', expenseallocation);
 app.use('/portfolio/potencity', potencity);
 app.use('/portfolio/chillybarrels', chillybarrels);
 app.use('/portfolio/chillybarrels-portal', chillybarrelsportal);
+app.use('/portfolio/chillybarrels-woocommerce', chillybarrelswoocommerce);
 app.use('/portfolio/adbdeliveryservices', adbdeliveryservices);
 
 // catch 404 and forward to error handler
