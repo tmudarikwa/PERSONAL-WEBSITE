@@ -93,7 +93,7 @@ animation:gradient 15s ease infinite;
 
 #loaderinner .curve:before {
   transform: rotate(-63deg) translateX(-50px) translateY(-54px);
-  -webkit-transform: rotate(-63deg) translateX(-27px) translateY(-4px);
+  -webkit-transform: rotate(-63deg) translateX(-50px) translateY(-54px);
 }
 
 #loaderinner .curve:after {
