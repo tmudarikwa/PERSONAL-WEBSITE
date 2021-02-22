@@ -21,12 +21,13 @@ const quotes=[
   ['Simplicity is the ultimate sophistication.','Leonardo Da Vinci'],
   ['Creativity takes courage.','Henri Matisse'],
   ['I never lose. I either win or learn.','Nelson Mandela'],
-  ['Every job is a self potrait for a person who did it.','UNKOWN']
+  ['Every job is a self potrait for a person who did it.','UNKOWN'],
+  ['Small steps add up to complete big journeys.','Matshona Dhliwayo']
 ];
 function getRanInt(max) {
   return Math.floor(Math.random() * Math.floor(max));
 }
-let index= getRanInt(6);
+let index= getRanInt(9);
 window.addEventListener('load', function(){
   $(".navbar-nav").sticky();
   $('.blockquote p').text(quotes[index][0]);
