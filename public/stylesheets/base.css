@@ -248,18 +248,21 @@ text-align:center;
   25% { border-color: #c5c9ca; }
   50% { border-color: transparent }
 }
-#portfolio,#about,#contact{
+.portfolio,#about,#contact{
 padding: 5em 0 5em 0;
+}
+#portfolio{
+  text-align:center;
 }
 #portfolio h1{
   text-align:center;
   font-size: 3rem;
   padding-top:45px;
+  margin-bottom:1rem;
 }
-#portfolio div div{
+.portfolio div{
 font-size:.8rem;
 background-color:#ecf1f3;
-margin:.3rem;
 padding:.5rem;
 box-shadow: 0 0 4px rgba(0,0,0,0.6);
 -moz-box-shadow: 0 0 4px rgba(0,0,0,0.6);
@@ -267,14 +270,14 @@ box-shadow: 0 0 4px rgba(0,0,0,0.6);
 -o-box-shadow: 0 0 4px rgba(0,0,0,0.6);
 transition: 0.4s ease;
 }
-#portfolio div div:hover{
+.portfolio div:hover{
 transform: scale(1.1);
 z-index:9;
 }
-#portfolio a {
+.portfolio a {
 width:100%
 }
-#portfolio .viewp{
+.portfolio .viewp{
 width: 100%;
     text-align: center;
     color: #2c3e50 !important;
@@ -301,7 +304,7 @@ display:none;
   text-align:center;
 }
 
-#portfolio .btnlink {
+.portfolio .btnlink {
     color: #fff;
     background-color: transparent !important;
     width: 100%;
