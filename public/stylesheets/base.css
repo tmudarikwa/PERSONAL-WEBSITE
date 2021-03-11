@@ -248,11 +248,18 @@ text-align:center;
   25% { border-color: #c5c9ca; }
   50% { border-color: transparent }
 }
+#search{
+  font-size:20px;
+}
 .portfolio,#about,#contact{
 padding: 5em 0 5em 0;
 }
 #portfolio{
   text-align:center;
+}
+
+#portfolio input{
+  font-size:20px;
 }
 #portfolio h1{
   text-align:center;
