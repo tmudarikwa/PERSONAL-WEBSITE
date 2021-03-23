@@ -1,15 +1,10 @@
-/*
-var mandrill = require('mandrill-api/mandrill');
-
-var mandrill_client = new mandrill.Mandrill('lQi6Z4MbRPDIZ7P8M2qAxg');
-*/
 var nodemailer = require('nodemailer');
 
 var transporter = nodemailer.createTransport({
 	service:'gmail',
 	auth:{
-		user:'tkmud91@gmail.com',//change this before going to production
-		pass:'qvpxosbpjnsdlkte' // change this line before goin to production
+		user:'takundamudarikwawebservices@gmail.com',//change this before going to production
+		pass:'uapcltghuabthuqn' // change this line before goin to production
 	}
 });
 
