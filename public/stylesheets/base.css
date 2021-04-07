@@ -251,7 +251,11 @@ text-align:center;
 #search{
   font-size:20px;
 }
-.portfolio,#about,#contact{
+.portfolio{
+  padding: 5em 2.5em 5em 2.5em;
+}
+
+#about,#contact{
 padding: 5em 0 5em 0;
 }
 #portfolio{
@@ -436,7 +440,7 @@ width:80%;
     font-size:1.5rem;
   }
 }
-media (min-width:767.99px) and (max-width: 991.98px) {
+@media (min-width:767.99px) and (max-width: 991.98px) {
   #navdiv{
     margin-bottom:1.5rem;
   }
@@ -464,5 +468,11 @@ media (min-width:767.99px) and (max-width: 991.98px) {
   }
   #backtohome a {
     font-size:1rem;
+  }
+}
+
+@media (max-width: 550px) {
+  .portfolio{
+    padding:5em 0 5em 0;
   }
 }
