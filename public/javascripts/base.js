@@ -48,6 +48,10 @@ $('.nav-item').click(function(e){
       scrollTop: $("#"+txt).offset().top}
     , 1300);
     if(txt != 'home') ScrollReveal().reveal("#"+txt,{delay:600});
+    if(txt == 'skills'){
+      $('#skillsgraph').html("");
+      skillsGraph("#skillsgraph");
+    }
   }else{
     window.open('/TAKUNDAEUGENEMUDARIKWA-RESUME', target='_blank');
   }
