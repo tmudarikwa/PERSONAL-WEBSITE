@@ -184,8 +184,12 @@ padding-top:20%;
 .container-fluid{
 display:none;
 }
-#home,#about,#contact{
+#home,#about,#contact,#skills{
 height:100vh
+}
+#skills p{
+  margin-top:-1rem;
+  text-align:center;
 }
 h1{
 text-align:center;
@@ -255,7 +259,7 @@ text-align:center;
   padding: 5em 2.5em 5em 2.5em;
 }
 
-#about,#contact{
+#about,#contact,#skills{
 padding: 5em 0 5em 0;
 }
 #portfolio{
@@ -430,7 +434,7 @@ width:80%;
   .navlink{
    font-size:2rem;
   }
-  #about,#contact{
+  #about,#contact,#skills{
    height:auto;
   }
   .gallery-block .title{
