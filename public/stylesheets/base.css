@@ -190,6 +190,7 @@ height:100vh
 #skills p{
   margin-top:-1rem;
   text-align:center;
+  font-size:.7rem;
 }
 h1{
 text-align:center;
@@ -341,7 +342,7 @@ footer img{
 #about .col-lg-4 img{
 width:80%;
 }
-#about .col-lg-8 h1{
+#about .col-lg-8 h1, #skills h1{
   text-align:center;
   font-size: 3rem;
 }
@@ -406,7 +407,7 @@ width:80%;
   #mdless{
    display:block;
   }
-  #contact .col-lg-8 h1,#portfolio h1,#about .col-lg-8 h1,blockquote p,.h1{
+  #contact .col-lg-8 h1,#skills h1,#portfolio h1,#about .col-lg-8 h1,blockquote p,.h1{
     font-size: 2rem;
     font-weight: bold;
     margin-bottom:1rem;
@@ -458,7 +459,7 @@ width:80%;
     word-break: break-all;
     white-space: normal;
   }
-  #contact .col-lg-8 h1,#portfolio h1,#about .col-lg-8 h1,blockquote p,.h1{
+  #contact .col-lg-8 h1,#skills h1,#portfolio h1,#about .col-lg-8 h1,blockquote p,.h1{
     font-size: 2rem;
     font-weight: bold;
     margin-bottom:1rem;
