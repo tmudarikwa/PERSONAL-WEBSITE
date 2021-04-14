@@ -58,7 +58,7 @@ function skillsGraph(id){
     // Animation
     svg.selectAll("line")
         .transition()
-        .duration(1600)
+        .duration(1100)
         .attr("x1", function(d) { return x(d.years); })
         .attr("x2", x(0))
         .attr("y1", function(d) { return y(d.skills); })
