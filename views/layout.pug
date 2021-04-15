@@ -30,8 +30,116 @@ html(lang="en")
       script(src='https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.9.1/d3-tip.min.js')
       script(src='javascripts/noty/jquery.noty.packaged.min.js')
       script(src='javascripts/jquery.sticky.js')
+      script(src='javascripts/bundle.min.js')
       script(src='javascripts/base.js')
-      script(src='javascripts/search.js')
       script(src='javascripts/skills.js')
       script. 
         skillsGraph("#skillsgraph");
+        let portfolio = document.getElementsByClassName('portfolio')[0].children;
+        let myOptions = [
+          {
+            label: "AJAX",
+            value: "Ajax"
+          },
+          {
+            label: "AWS",
+            value: "Aws"
+          },
+          {
+             label: "BOOTSTRAP",
+             value: "Bootstrap"
+          },
+          {
+             label: "C#",
+             value: "C#"
+          },
+          {
+             label: "CSS",
+             value: "Css"
+          },
+          {
+             label: "CPANEL",
+             value: "Cpanel"
+          },
+          {
+             label: "D3.JS",
+             value: "D3.js"
+          },
+          {
+             label: "EXPRESS",
+             value: "Express"
+          },
+          {
+             label: "GOOGLEMAPS API",
+             value: "GoogleMaps API"
+          },
+          {
+             label: "HEROKU",
+             value: "Heroku"
+          },
+          {
+             label: "HTML",
+             value: "Html"
+          },
+          {
+             label: "JAVASCRIPT",
+             value: "JavaScript"
+          },
+          {
+             label: "JQUERY",
+             value: "jQuery"
+          },
+          {
+             label: "MANDRILL",
+             value: "Mandrill"
+          },
+          {
+             label: "MAILCHIMP",
+             value: "MailChimp"
+          },
+          {
+             label: "MONGODB",
+             value: "MongoDB"
+          },
+          {
+             label: "NODEJS",
+             value: "Nodejs"
+          },
+          {
+             label: "PHOTOSHOP",
+             value: "Photoshop"
+          },
+          {
+             label: "POSTGRES",
+             value: "Postgres"
+          },
+          {
+             label: "SQUARE API",
+             value: "Square API"
+          },
+          {
+             label: "TOOKAN API",
+             value: "Tookan API"
+          },
+          {
+             label: "TWILIO",
+             value: "Twilio"
+          },
+          {
+             label: "UBUNTU",
+             value: "Ubuntu"
+          },
+          {
+             label: "JAVA",
+             value: "JAVA"
+          }
+        ];
+        var autoComplete = new SelectPure(".search", {
+          options: myOptions,
+          placeholder:"Click to search Portfolio",
+          multiple: true,
+          icon: "fa fa-times",
+          autocomplete: true,
+          onChange: value => {search_portfolio(value,portfolio);},
+        });
+      script(src='javascripts/search.js')
