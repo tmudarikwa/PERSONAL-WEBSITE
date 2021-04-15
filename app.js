@@ -6,9 +6,6 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
 var index = require('./routes/index');
-var contactme = require('./routes/contact');
-var aboutme = require('./routes/about');
-var portfolio = require('./routes/portfolio');
 var viewresume = require('./routes/viewresume');
 var sendemail = require('./config/mandrillemail');
 var frewprocess = require('./routes/portfolio/frewprocess');
@@ -38,9 +35,6 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', index);
 app.use('/TAKUNDAEUGENEMUDARIKWA-RESUME', viewresume);
-app.use('/about', aboutme);
-app.use('/contact', contactme);
-app.use('/portfolio', portfolio);
 app.post('/sendemail', function(req,res){
    sendemail.sendContactEmail(req,res);
 });
