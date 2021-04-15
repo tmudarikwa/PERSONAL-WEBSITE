@@ -253,9 +253,7 @@ text-align:center;
   25% { border-color: #c5c9ca; }
   50% { border-color: transparent }
 }
-#search{
-  font-size:20px;
-}
+
 .portfolio{
   padding: 5em 2.5em 5em 2.5em;
 }
@@ -583,5 +581,8 @@ width:80%;
 @media (max-width: 550px) {
   .portfolio{
     padding:5em 0 5em 0;
+  }
+  .select-pure__select{
+    width:100%;
   }
 }
