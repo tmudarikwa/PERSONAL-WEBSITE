@@ -288,7 +288,7 @@ padding: 5em 0 5em 0;
   transition: 0.4s ease;
 }
 .portfolio div:hover{
-  transform: scale(1.1);
+  transform: scale(1.01);
   z-index:9;
 }
 .portfolio a {
