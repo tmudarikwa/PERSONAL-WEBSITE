@@ -1,4 +1,3 @@
-//const d3 = require("d3");
 function skillsGraph(id){
     // set the dimensions and margins of the graph
     var margin = {top: 20, right: 120, bottom: 40, left: 120},

@@ -218,6 +218,7 @@ h4{
   text-align:center ;
   justify-content:center;
   z-index:99999;
+  margin-bottom:2rem;
 }
 .is-sticky .navbar-nav{
  background-color: #e5eaeae3;
