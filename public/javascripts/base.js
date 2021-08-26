@@ -147,5 +147,8 @@ function emailStatus(message){
 function triggerNotyClose(){
   $('.noty_bar').click(function(e){
     $(this).hide();
-  })
+  });
+  $('.noty_close_button').click(function(e){
+    $(this).hide();
+  });
 }
