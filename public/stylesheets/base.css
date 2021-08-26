@@ -487,6 +487,10 @@ footer img{
   width: 100%;
 }
 
+button:focus{
+  outline:none;
+}
+
 @media (max-width: 991.98px)/*767.98px) {*/ {
   #navdiv{
     margin-bottom:1.5rem;

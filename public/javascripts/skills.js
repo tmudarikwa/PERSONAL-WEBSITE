@@ -58,7 +58,7 @@ function skillsGraph(id){
     svg.selectAll("line")
         .transition()
         .duration(1100)
-        .attr("x1", function(d) { return x(d.years); })
+        .attr("x1", function(d) { if(d.years != "NaN" || d.year != null){return x(d.years);}else{return 0;} })
         .attr("x2", x(0))
         .attr("y1", function(d) { return y(d.skills); })
         .attr("y2", function(d) { return y(d.skills); })

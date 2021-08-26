@@ -13,7 +13,6 @@ if( navigator.userAgent.match(/Android/i)|| navigator.userAgent.match(/webOS/i)|
 /*****************************************************************************************
  END OF MOBILE DEVICES CODING
 *****************************************************************************************/
-
 const quotes=[
   ['What is worth doing is worth doing well.','Nicolas Poussin'],
   ['I am still learning.', 'Michelangelo'],
@@ -33,7 +32,7 @@ window.addEventListener('load', function(){
   $('.blockquote p').text(quotes[index][0]);
   $('.blockquote-footer').text(quotes[index][1]);
   setTimeout(function(){
-  $('#loader').hide();//fadeOut('slow');
+  $('#loader').hide();
   $('.container-fluid').fadeIn('slow');
   },3000);
 });
@@ -101,94 +100,46 @@ $("#emailfromcustomer button").click(function(e){
               url:'/sendemail',
               success: function(data)
               {
-
                 emailStatus(data);
                 $("#emailfromcustomer").html(contactusform);
-                noty.clear();
               }
             });
         }else{
-            $("#customertext").css("box-shadow", "0 0 5px red");
-                    noty({
-                    layout:'bottomCenter',
-                    theme:'relax',
-                    type :'error',
-                    text:'PLEASE FILL IN THE REASON YOU ARE TRYING TO CONTACT US!',
-                    animation:{
-                      open:'animated bounceInCenter',
-                      close: 'animated bounceOutLeft',
-                      easing: 'swing',
-                      speed: 500
-                    },closeWith: ['click'],
-                     timeout:100
-
-            });
+            $("#customertext").css("border", "1px solid red");
+            overlayNotification("error","PLEASE FILL IN THE REASON YOU ARE TRYING TO CONTACT US!");
         }
     }else{
-      $("#customeremail").css("box-shadow", "0 0 5px red");
-          noty({
-          layout:'bottomCenter',
-          theme:'relax',
-          closeWith: ['click'],
-          type :'error',
-          text:'PLEASE ENTER A VALID EMAIL!',
-          animation:{
-            open:'animated bounceInCenter',
-            close: 'animated bounceOutLeft',
-            easing: 'swing',
-            speed: 500
-          },
-           timeout:100
-        });
+      $("#customeremail").css("border", "1px solid red");
+      overlayNotification("error","PLEASE ENTER A VALID EMAIL!");
     }
 
   }else{
-    $("#customeremail").css("box-shadow", "0 0 5px red");
-    noty({
-      layout:'bottomCenter',
-      theme:'relax',
-      type :'error',
-      text:'PLEASE ENTER YOUR EMAIL!',
-      animation:{
-        open:'animated bounceInCenter',
-        close: 'animated bounceOutLeft',
-        easing: 'swing',
-        speed: 500
-      },closeWith: ['click'],
-       timeout:1000
-    });
+    $("#customeremail").css("border", "1px solid red");
+    overlayNotification("error","PLEASE ENTER YOUR EMAIL!");
   }
 });
 
+function overlayNotification(notyType,notyText){
+  let noty = new Noty({
+    layout:'bottomCenter',
+    theme:'light',
+    type :notyType,
+    text:notyText,
+    animation:{
+      open:'animated bounceInCenter',
+      close: 'animated bounceOutLeft',
+      easing: 'swing',
+      speed: 500
+    },
+    timeout:1000
+  });
+  noty.show();
+}
 
 function emailStatus(message){
   if(message.includes("apologize")){
-    noty({
-      layout:'bottomCenter',
-      theme:'relax',
-      type :'error',
-      text:message,
-      animation:{
-        open:'animated bounceInCenter',
-        close: 'animated bounceOutLeft',
-        easing: 'swing',
-        speed: 500
-      },closeWith: ['click'],
-      timeout:1000
-    });
+    overlayNotification("error",message);
   }else{
-    noty({
-      layout:'bottomCenter',
-      theme:'defaultTheme',
-      type :'success',
-      text:message,
-      animation:{
-        open:'animated bounceInCenter',
-        close: 'animated bounceOutLeft',
-        easing: 'swing',
-        speed: 500
-      },closeWith: ['click'],
-      timeout:2000
-    });
+    overlayNotification("success",message);
   }
 }
