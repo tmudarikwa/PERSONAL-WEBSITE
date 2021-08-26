@@ -149,6 +149,6 @@ function triggerNotyClose(){
     $(this).hide();
   });
   $('.noty_close_button').click(function(e){
-    $(this).hide();
+    $(this).parent().hide();
   });
 }
