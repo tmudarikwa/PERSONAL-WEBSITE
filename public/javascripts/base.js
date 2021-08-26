@@ -133,6 +133,7 @@ function overlayNotification(notyType,notyText){
   });
   noty.setTimeout(10)
   noty.show();
+  triggerNotyClose();
 }
 
 function emailStatus(message){
@@ -143,6 +144,8 @@ function emailStatus(message){
   }
 }
 
-$('.noty_bar').click((e)=>{
-  $(this).hide();
-})
+function triggerNotyClose(){
+  $('.noty_bar').click(function(e){
+    $(this).hide();
+  })
+}
