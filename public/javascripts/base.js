@@ -1,7 +1,7 @@
 /*****************************************************************************************
 MOBILE DEVICES CODING
 *****************************************************************************************/
-var heightX = document.body.clientHeight;
+const heightX = document.body.clientHeight;
 //detecting if site is on mobile device
 if( navigator.userAgent.match(/Android/i)|| navigator.userAgent.match(/webOS/i)|| navigator.userAgent.match(/iPhone/i)|| navigator.userAgent.match(/iPod/i)|| navigator.userAgent.match(/BlackBerry/i)|| navigator.userAgent.match(/Windows Phone/i)){
    $('blockquote p').css('font-size','2rem');
@@ -26,7 +26,7 @@ const quotes=[
 function getRanInt(max) {
   return Math.floor(Math.random() * Math.floor(max));
 }
-let index= getRanInt(8);
+const index= getRanInt(8);
 window.addEventListener('load', function(){
   $(".navbar-nav").sticky();
   $('.blockquote p').text(quotes[index][0]);
@@ -41,7 +41,7 @@ window.addEventListener('load', function(){
 ****************************/
 $('.nav-item').click(function(e){
   e.preventDefault();
-  var txt = e.target.innerText.toLowerCase();
+  let txt = e.target.innerText.toLowerCase();
   if (txt.includes("résumé") == false){
     $('html,body').animate({
       scrollTop: $("#"+txt).offset().top}
@@ -76,20 +76,20 @@ $(this).append($(this)[0].title);
 ****************************/
 $('.alert').hide();
 //contact form email submit
-var contactusform = ($("#emailfromcustomer").html());
+let contactusform = ($("#emailfromcustomer").html());
 $("#emailfromcustomer button").click(function(e){
   e.preventDefault();
 
-  var email = $("#customeremail").val();
-  var format = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-  var customertext = $("#customertext").val();
+  let email = $("#customeremail").val();
+  let format = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+  let customertext = $("#customertext").val();
 
   //validation first
   if (email.length > 0 ){
     if(format.test(email) == true){
         if (customertext.length > 0){
             $('.alert').html("");
-            var data = {};
+            let data = {};
             data.email = email;
             data.message = customertext;
 
@@ -142,3 +142,7 @@ function emailStatus(message){
     overlayNotification("success",message);
   }
 }
+
+$('noty_bar').click((e)=>{
+
+})
