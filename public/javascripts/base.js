@@ -125,14 +125,13 @@ function overlayNotification(notyType,notyText){
     theme:'light',
     type :notyType,
     text:notyText,
-    animation:{
-      open:'animated bounceInCenter',
-      close: 'animated bounceOutLeft',
-      easing: 'swing',
-      speed: 500
+    animation: {
+      open: 'animated bounceInRight',
+      close: 'animated bounceOutRight' 
     },
-    timeout:1000
+    closeWith:['click','button']
   });
+  noty.setTimeout(10)
   noty.show();
 }
 

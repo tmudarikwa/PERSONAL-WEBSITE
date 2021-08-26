@@ -491,6 +491,20 @@ button:focus{
   outline:none;
 }
 
+.noty_type__success{
+  background: #9bf09f;
+  padding: 10px;
+  color: inherit;
+  text-align: Center;
+}
+
+.noty_type__error{
+  background: #f14352;
+  padding: 10px;
+  color: white;
+  text-align: Center;
+}
+
 @media (max-width: 991.98px)/*767.98px) {*/ {
   #navdiv{
     margin-bottom:1.5rem;
