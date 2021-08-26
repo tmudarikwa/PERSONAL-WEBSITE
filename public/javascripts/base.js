@@ -143,6 +143,6 @@ function emailStatus(message){
   }
 }
 
-$('noty_bar').click((e)=>{
+$('.noty_bar').click((e)=>{
   $(this).hide();
 })
