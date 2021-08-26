@@ -144,5 +144,5 @@ function emailStatus(message){
 }
 
 $('noty_bar').click((e)=>{
-
+  $(this).hide();
 })
