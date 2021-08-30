@@ -1,4 +1,5 @@
 const nodemailer = require('nodemailer');
+const { getMaxListeners } = require('process');
 
 const transporter = nodemailer.createTransport({
 	service:'gmail',
@@ -38,9 +39,9 @@ let sendContactEmailRedWaste =  function(req, res){
     var message = {
                   html: "<h2> Contact NAME: "+data.name+"</h2><br/>CONTACT EMAIL: "+data.email+"<p><br/><br/>"+data.message+"</p>",
                   subject: "REDWASTE EMAIL",
-                  from_email: "nymud94@gmail.com",
+                  from_email: data.email,
                   from_name: ""+data.email+"",
-                  to:"info@redwaste.africa",
+                  to:"nymud94@gmail.com",//"info@redwaste.africa",
               };
       //var send_at = "example send_at";
       transporter.sendMail(message, function(error,result) {
