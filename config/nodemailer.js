@@ -36,8 +36,28 @@ let sendcontactemail = function(req, res){
 let sendContactEmailRedWaste =  function(req, res){
 
     var data = req.body;
+	var htmlTemplate = "<div style='display: block;padding: 4rem;'>\n"+
+							"<header style='display: block;padding: 2rem;'>\n"+
+								"<img src=https://pixykorner.co.za/redwaste/images/global/redwaste_logo.png class='logo-dark' alt='Logo'>\n"+
+							"</header>\n"+
+							"<div style='color:white !important;font-family:'Signika', sans-serif !important;background:#ee4644;padding: 2rem;'>\n"+
+								"<div style='width:50%;float:left;margin-bottom:4rem'>\n"+
+									"<label  style='width:100%;display: block;text-decoration: underline;font-size: 13px;margin-bottom:2rem;font-weight:bold'>Full Name:</label>\n"+
+									"<a  style='width:100%'>"+data.name+"</a>\n"+
+								"</div>\n"+
+								"<div style='width:50%;float:right;margin-bottom:4rem'>\n"+
+									"<label style='width:100%;display: block;text-decoration: underline;font-size: 13px;margin-bottom:2rem;font-weight:bold'>Email Address:</label>\n"+
+									"<a style='width:100%'>"+data.email+"</a>\n"+
+								"</div>\n"+
+								"<div style='width:100%;'>\n"+
+									" <label  style='width:100%;display: block;text-decoration: underline;font-size: 13px;margin-bottom:2rem;font-weight:bold'>Message:</label>\n"+
+									"<textarea style='width:80%'>"+data.message+"</textarea>\n"+
+								"</div>\n"+
+							"</div>\n"+
+						"</div>";
+
     var message = {
-                  html: "<h4> Contact NAME: "+data.name+"</h4><br/>CONTACT EMAIL: "+data.email+"<p><br/><br/>"+data.message+"</p>",
+                  html: htmlTemplate,
                   subject: "REDWASTE EMAIL",
                   from_email: data.email,
                   from_name: ""+data.email+"",
@@ -60,8 +80,51 @@ let sendContactEmailRedWaste =  function(req, res){
 let sendOrderEmailRedWaste =  function(req, res){
 
     var data = req.body;
+	var htmlTemplate = "<div style='display: block;padding: 4rem;'>\n"+
+							"<header style='display: block;padding: 2rem;'>\n"+
+								"<img src=https://pixykorner.co.za/redwaste/images/global/redwaste_logo.png class='logo-dark' alt='Logo'>\n"+
+							"</header>\n"+
+							"<div style='color:white !important;font-family:'Signika', sans-serif !important;background:#ee4644;padding: 2rem;'>\n"+
+								"<div style='width:50%;float:left;margin-bottom:4rem'>\n"+
+									"<label  style='width:100%;display: block;text-decoration: underline;font-size: 13px;margin-bottom:2rem;font-weight:bold'>Full Name:</label>\n"+
+									"<a  style='width:100%'>"+data.name+"</a>\n"+
+								"</div>\n"+
+								"<div style='color:white !important;font-family:'Signika', sans-serif !important;background:#ee4644;padding: 2rem;'>\n"+
+								"<div style='width:50%;float:left;margin-bottom:4rem'>\n"+
+									"<label  style='width:100%;display: block;text-decoration: underline;font-size: 13px;margin-bottom:2rem;font-weight:bold'>Company Name:</label>\n"+
+									"<a  style='width:100%'>"+data.name+"</a>\n"+
+								"</div>\n"+
+								"<div style='color:white !important;font-family:'Signika', sans-serif !important;background:#ee4644;padding: 2rem;'>\n"+
+								"<div style='width:50%;float:left;margin-bottom:4rem'>\n"+
+									"<label  style='width:100%;display: block;text-decoration: underline;font-size: 13px;margin-bottom:2rem;font-weight:bold'>Red Waste : On-The-Go :</label>\n"+
+									"<a  style='width:100%'>"+data.name+"</a>\n"+
+								"</div>\n"+
+								"<div style='color:white !important;font-family:'Signika', sans-serif !important;background:#ee4644;padding: 2rem;'>\n"+
+								"<div style='width:50%;float:left;margin-bottom:4rem'>\n"+
+									"<label  style='width:100%;display: block;text-decoration: underline;font-size: 13px;margin-bottom:2rem;font-weight:bold'>Red Waste : On-The-Go-Plus:</label>\n"+
+									"<a  style='width:100%'>"+data.name+"</a>\n"+
+								"</div>\n"+
+								"<div style='width:50%;float:right;margin-bottom:4rem'>\n"+
+									"<label style='width:100%;display: block;text-decoration: underline;font-size: 13px;margin-bottom:2rem;font-weight:bold'>Email Address:</label>\n"+
+									"<a style='width:100%'>"+data.email+"</a>\n"+
+								"</div>\n"+
+								"<div style='width:50%;float:right;margin-bottom:4rem'>\n"+
+									"<label style='width:100%;display: block;text-decoration: underline;font-size: 13px;margin-bottom:2rem;font-weight:bold'>Shipping Address:</label>\n"+
+									"<a style='width:100%'>"+data.email+"</a>\n"+
+								"</div>\n"+
+								"<div style='width:50%;float:right;margin-bottom:4rem'>\n"+
+									"<label style='width:100%;display: block;text-decoration: underline;font-size: 13px;margin-bottom:2rem;font-weight:bold'>Red Waste : Household :</label>\n"+
+									"<a style='width:100%'>"+data.email+"</a>\n"+
+								"</div>\n"+
+								"<div style='width:100%;'>\n"+
+									" <label  style='width:100%;display: block;text-decoration: underline;font-size: 13px;margin-bottom:2rem;font-weight:bold'>Message:</label>\n"+
+									"<textarea style='width:80%'>"+data.message+"</textarea>\n"+
+								"</div>\n"+
+							"</div>\n"+
+						"</div>";
+
     var message = {
-                  html: "<h4> Contact Name: "+data.name+"</h4><br/>CONTACT Email: "+data.email+"<p><br/><br/>"+data.message+"</p>",
+                  html:htmlTemplate,
                   subject: "REDWASTE Order Email",
                   from_email: data.email,
                   from_name: ""+data.email+"",
