@@ -37,7 +37,7 @@ let sendContactEmailRedWaste =  function(req, res){
 
     var data = req.body;
     var message = {
-                  html: "<h2> Contact NAME: "+data.name+"</h2><br/>CONTACT EMAIL: "+data.email+"<p><br/><br/>"+data.message+"</p>",
+                  html: "<h4> Contact NAME: "+data.name+"</h4><br/>CONTACT EMAIL: "+data.email+"<p><br/><br/>"+data.message+"</p>",
                   subject: "REDWASTE EMAIL",
                   from_email: data.email,
                   from_name: ""+data.email+"",
