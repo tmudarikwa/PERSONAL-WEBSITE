@@ -40,7 +40,7 @@ let sendContactEmailRedWaste =  function(req, res){
 							"<header style='display: block;padding: 2rem;'>\n"+
 								"<img src=https://pixykorner.co.za/redwaste/images/global/redwaste_logo.png class='logo-dark' alt='Logo'>\n"+
 							"</header>\n"+
-							"<div style='color:white !important;font-family:\'Signika\', sans-serif !important;background:#ee4644;padding: 2rem;'>\n"+
+							"<div style='color:white !important;background:#ee4644;padding: 2rem;'>\n"+
 								"<div style='width:50%;float:left;margin-bottom:4rem'>\n"+
 									"<label  style='width:100%;display: block;text-decoration: underline;font-size: 13px;margin-bottom:2rem;font-weight:bold'>Full Name:</label>\n"+
 									"<a  style='width:100%'>"+data.name+"</a>\n"+
@@ -70,7 +70,7 @@ let sendContactEmailRedWaste =  function(req, res){
 			res.send(emailsent);
 			return;
 		  }else{
-			var emailsent = "Email sent! I will get intouch with you asap. Thank you!";
+			var emailsent = "Email sent! We will get intouch with you asap. Thank you!";
 			res.send(emailsent);
 			return;
 		  }
@@ -84,7 +84,7 @@ let sendOrderEmailRedWaste =  function(req, res){
 							"<header style='display: block;padding: 2rem;'>\n"+
 								"<img src=https://pixykorner.co.za/redwaste/images/global/redwaste_logo.png class='logo-dark' alt='Logo'>\n"+
 							"</header>\n"+
-							"<div style='color:white !important;font-family:\'Signika\', sans-serif !important;background:#ee4644;padding: 2rem;'>\n"+
+							"<div style='color:white !important;background:#ee4644;padding: 2rem;'>\n"+
 								"<div style='width:50%;float:left;margin-bottom:4rem'>\n"+
 									"<label  style='width:100%;display: block;text-decoration: underline;font-size: 13px;margin-bottom:2rem;font-weight:bold'>Full Name:</label>\n"+
 									"<a  style='width:100%'>"+data.name+"</a>\n"+
@@ -137,7 +137,7 @@ let sendOrderEmailRedWaste =  function(req, res){
 			res.send(emailsent);
 			return;
 		  }else{
-			var emailsent = "Email sent! I will get intouch with you asap. Thank you!";
+			var emailsent = "Order has been sent! We will get intouch with you asap. Thank you!";
 			res.send(emailsent);
 			return;
 		  }
