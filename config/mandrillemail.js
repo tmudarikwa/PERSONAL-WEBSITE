@@ -1,14 +1,14 @@
-var nodemailer = require('nodemailer');
+const nodemailer = require('nodemailer');
 
-var transporter = nodemailer.createTransport({
+const transporter = nodemailer.createTransport({
 	service:'gmail',
 	auth:{
-		user:'-----@gmail.com',//change this before going to production
-		pass:'---------' // change this line before goin to production
+		user:'takundamudarikwawebservices@gmail.com',//change this before going to production
+		pass:'uapcltghuabthuqn' // change this line before goin to production
 	}
 });
 
-var sendcontactemail = function(req, res){
+let sendcontactemail = function(req, res){
 
     var data = req.body;
     var message = {
@@ -31,4 +31,29 @@ var sendcontactemail = function(req, res){
 		  }
       });
 };
+
+let sendContactEmailRedWaste =  function(req, res){
+
+    var data = req.body;
+    var message = {
+                  html: "<h2> Contact NAME: "+data.name+"</h2><br/>CONTACT EMAIL: "+data.email+"<p><br/><br/>"+data.message+"</p>",
+                  subject: "REDWASTE EMAIL",
+                  from_email: "nymud94@gmail.com",
+                  from_name: ""+data.email+"",
+                  to:"info@redwaste.africa",
+              };
+      //var send_at = "example send_at";
+      transporter.sendMail(message, function(error,result) {
+		  if(error){
+			var emailsent = "We apologize there has been an error trying to submit your information.";
+			res.send(emailsent);
+			return;
+		  }else{
+			var emailsent = "Email sent! I will get intouch with you asap. Thank you!";
+			res.send(emailsent);
+			return;
+		  }
+      });
+};
+
 module.exports.sendContactEmail = sendcontactemail;

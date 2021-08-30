@@ -1,26 +1,28 @@
-var express = require('express');
-var path = require('path');
-var favicon = require('serve-favicon');
-var logger = require('morgan');
-var cookieParser = require('cookie-parser');
-var bodyParser = require('body-parser');
+const express = require('express');
+const path = require('path');
+const favicon = require('serve-favicon');
+const logger = require('morgan');
+const cookieParser = require('cookie-parser');
+const bodyParser = require('body-parser');
+const cors = require('cors');
 
-var index = require('./routes/index');
-var viewresume = require('./routes/viewresume');
-var sendemail = require('./config/mandrillemail');
-var frewprocess = require('./routes/portfolio/frewprocess');
-var gasco = require('./routes/portfolio/gasco');
-var mumoafruika = require('./routes/portfolio/mumoafruika');
-var mumoafruikaui = require('./routes/portfolio/mumoafruikaui');
-var gerf = require('./routes/portfolio/gerfusa');
-var expenseallocation = require('./routes/portfolio/expenseallocation');
-var chillybarrels = require('./routes/portfolio/chillybarrels');
-var chillybarrelsportal = require('./routes/portfolio/chillybarrels-portal');
-var chillybarrelswoocommerce = require('./routes/portfolio/chillybarrels-woocommerce');
-var potencity = require('./routes/portfolio/potencity');
-var adbdeliveryservices = require('./routes/portfolio/adbdeliveryservices');
 
-var app = express();
+const index = require('./routes/index');
+const viewresume = require('./routes/viewresume');
+const sendemail = require('./config/mandrillemail');
+const frewprocess = require('./routes/portfolio/frewprocess');
+const gasco = require('./routes/portfolio/gasco');
+const mumoafruika = require('./routes/portfolio/mumoafruika');
+const mumoafruikaui = require('./routes/portfolio/mumoafruikaui');
+const gerf = require('./routes/portfolio/gerfusa');
+const expenseallocation = require('./routes/portfolio/expenseallocation');
+const chillybarrels = require('./routes/portfolio/chillybarrels');
+const chillybarrelsportal = require('./routes/portfolio/chillybarrels-portal');
+const chillybarrelswoocommerce = require('./routes/portfolio/chillybarrels-woocommerce');
+const potencity = require('./routes/portfolio/potencity');
+const adbdeliveryservices = require('./routes/portfolio/adbdeliveryservices');
+
+const app = express();
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'pug');
@@ -33,10 +35,17 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
+app.use(cors({
+  origin: 'https://pixykorner.co.za'
+}));
+
 app.use('/', index);
 app.use('/TAKUNDAEUGENEMUDARIKWA-RESUME', viewresume);
 app.post('/sendemail', function(req,res){
    sendemail.sendContactEmail(req,res);
+});
+app.post('/sendemailRedWaste', function(req,res){
+  sendemail.sendContactEmailRedWaste(req,res);
 });
 app.use('/portfolio/fpg',frewprocess);
 app.use('/portfolio/gasco',gasco);
