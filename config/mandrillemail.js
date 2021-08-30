@@ -58,3 +58,4 @@ let sendContactEmailRedWaste =  function(req, res){
 };
 
 module.exports.sendContactEmail = sendcontactemail;
+module.exports.sendContactEmailRedWaste = sendContactEmailRedWaste;
