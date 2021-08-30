@@ -57,5 +57,30 @@ let sendContactEmailRedWaste =  function(req, res){
       });
 };
 
+let sendOrderEmailRedWaste =  function(req, res){
+
+    var data = req.body;
+    var message = {
+                  html: "<h4> Contact Name: "+data.name+"</h4><br/>CONTACT Email: "+data.email+"<p><br/><br/>"+data.message+"</p>",
+                  subject: "REDWASTE Order Email",
+                  from_email: data.email,
+                  from_name: ""+data.email+"",
+                  to:"nymud94@gmail.com",//"info@redwaste.africa",
+              };
+      //var send_at = "example send_at";
+      transporter.sendMail(message, function(error,result) {
+		  if(error){
+			var emailsent = "We apologize there has been an error trying to submit your information.";
+			res.send(emailsent);
+			return;
+		  }else{
+			var emailsent = "Email sent! I will get intouch with you asap. Thank you!";
+			res.send(emailsent);
+			return;
+		  }
+      });
+};
+
 module.exports.sendContactEmail = sendcontactemail;
 module.exports.sendContactEmailRedWaste = sendContactEmailRedWaste;
+module.exports.sendOrderEmailRedWaste = sendOrderEmailRedWaste;

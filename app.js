@@ -47,6 +47,9 @@ app.post('/sendemail', function(req,res){
 app.post('/sendemailRedWaste', function(req,res){
   sendemail.sendContactEmailRedWaste(req,res);
 });
+app.post('/sendemailOrderRedWaste', function(req,res){
+  sendemail.sendOrderEmailRedWaste(req,res);
+});
 app.use('/portfolio/fpg',frewprocess);
 app.use('/portfolio/gasco',gasco);
 app.use('/portfolio/mumoafruika-landing',mumoafruika);
