@@ -43,15 +43,15 @@ let sendContactEmailRedWaste =  function(req, res){
 							"<div style='color:white !important;background:#ee4644;padding: 2rem;'>\n"+
 								"<div style='width:50%;float:left;margin-bottom:4rem'>\n"+
 									"<label  style='width:100%;display: block;text-decoration: underline;font-size: 13px;margin-bottom:2rem;font-weight:bold'>Full Name:</label>\n"+
-									"<a  style='width:100%'>"+data.name+"</a>\n"+
+									"<a  style='width:100%;color: fff'>"+data.name+"</a>\n"+
 								"</div>\n"+
 								"<div style='width:50%;float:right;margin-bottom:4rem'>\n"+
 									"<label style='width:100%;display: block;text-decoration: underline;font-size: 13px;margin-bottom:2rem;font-weight:bold'>Email Address:</label>\n"+
-									"<a style='width:100%'>"+data.email+"</a>\n"+
+									"<a style='width:100%;color: fff'>"+data.email+"</a>\n"+
 								"</div>\n"+
 								"<div style='width:100%;'>\n"+
 									" <label  style='width:100%;display: block;text-decoration: underline;font-size: 13px;margin-bottom:2rem;font-weight:bold'>Message:</label>\n"+
-									"<p style='width:80%;border=solid 1px grey;border-radius=5px;'>"+data.message+"</p>\n"+
+									"<p style='width:80%;border=solid 1px grey;border-radius=5px;color: fff'>"+data.message+"</p>\n"+
 								"</div>\n"+
 							"</div>\n"+
 						"</div>";
