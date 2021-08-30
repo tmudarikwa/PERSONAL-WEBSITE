@@ -51,7 +51,7 @@ let sendContactEmailRedWaste =  function(req, res){
 								"</div>\n"+
 								"<div style='width:100%;'>\n"+
 									" <label  style='width:100%;display: block;text-decoration: underline;font-size: 13px;margin-bottom:2rem;font-weight:bold'>Message:</label>\n"+
-									"<textarea style='width:80%'>"+data.message+"</textarea>\n"+
+									"<p style='width:80%;border=solid 1px grey;border-radius=5px;'>"+data.message+"</p>\n"+
 								"</div>\n"+
 							"</div>\n"+
 						"</div>";
@@ -118,7 +118,7 @@ let sendOrderEmailRedWaste =  function(req, res){
 								"</div>\n"+
 								"<div style='width:100%;'>\n"+
 									" <label  style='width:100%;display: block;text-decoration: underline;font-size: 13px;margin-bottom:2rem;font-weight:bold'>Message:</label>\n"+
-									"<textarea style='width:80%'>"+data.message+"</textarea>\n"+
+									"<p style='width:80%;border=solid 1px grey;border-radius=5px;'>"+data.message+"</p>\n"+
 								"</div>\n"+
 							"</div>\n"+
 						"</div>";
