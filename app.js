@@ -9,7 +9,7 @@ const cors = require('cors');
 
 const index = require('./routes/index');
 const viewresume = require('./routes/viewresume');
-const sendemail = require('./config/mandrillemail');
+const sendemail = require('./config/nodemailer');
 const frewprocess = require('./routes/portfolio/frewprocess');
 const gasco = require('./routes/portfolio/gasco');
 const mumoafruika = require('./routes/portfolio/mumoafruika');
