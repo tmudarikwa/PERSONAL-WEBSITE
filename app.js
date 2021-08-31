@@ -36,7 +36,7 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use(cors({
-  origin: 'https://pixykorner.co.za'
+  origin: 'https://redwaste.africa'
 }));
 
 app.use('/', index);
