@@ -1,6 +1,6 @@
 
 $(".select-pure__options input").attr("placeholder","search by tech skill");
-function search_portfolio(vals,portfolio) { 
+let search_portfolio = (vals,portfolio) => { 
     let filteredElements = [];
     for (i = 0; i < portfolio.length; i++) {  
         //checking if vals has text in it

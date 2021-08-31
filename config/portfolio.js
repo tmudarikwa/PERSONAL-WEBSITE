@@ -1,6 +1,15 @@
 let getPortfolio = () => {
     const portfolio = [
                     {
+                        projectName: "Mii App (CURRENT PROJECT)",
+                        role: "Developer",
+                        techStack: "Java, Android Studio, SQLite Database",
+                        description: "An Android app for promoting a healthy mind",
+                        github:"https://github.com/tmudarikwa/Mii",
+                        url:"#",
+                        imgPath:"#"
+                    },
+                    {
                         projectName: "CHILLYBARRELS (WOOCOMMERCE)",
                         role: "Server setup and configuration, Ecommerce & database setup, Frontend development",
                         techStack: "WooCommerce,WordPress, MySQL, AWS (Lightsail), CPanel, Google Maps API",

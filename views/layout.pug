@@ -42,6 +42,10 @@ html(lang="en")
             value: "Ajax"
           },
           {
+             label: "ANDROID",
+             value: "Android"
+          },
+          {
             label: "AWS",
             value: "Aws"
           },
@@ -118,6 +122,10 @@ html(lang="en")
              value: "Postgres"
           },
           {
+             label: "SQLITE DATABASE",
+             value: "SQLite Database"
+          },
+          {
              label: "SQUARE API",
              value: "Square API"
           },
@@ -146,7 +154,7 @@ html(lang="en")
              value: "WPF"
           }
         ];
-        var autoComplete = new SelectPure(".search", {
+        const autoComplete = new SelectPure(".search", {
           options: myOptions,
           placeholder:"Click to search Portfolio",
           multiple: true,

@@ -38,18 +38,19 @@ block content
             strong DESCRIPTION:
             |  #{aportfolio.description }
           if aportfolio.github != "None"
-            a(href=aportfolio.github, target='_blank')
-              p.link
-                strong GITHUB:
-                |  #{aportfolio.github}
+            p.link
+              strong GITHUB:
+                a(href=aportfolio.github, target='_blank')
+                  |  #{aportfolio.github}
           if aportfolio.url != "#"
-            a(href=aportfolio.url, target='_blank')
-              p.link
-                strong LINK:
-                |  #{aportfolio.url}
-          a.viewp.text-reset(href=''+aportfolio.imgPath+'')
-            p.viewp.text-reset
-              strong PROJECT IMAGES
+            p.link
+              strong LINK:
+                a(href=aportfolio.url, target='_blank')    
+                  |  #{aportfolio.url}
+          if aportfolio.imgPath != "#"
+            a.viewp.text-reset(href=''+aportfolio.imgPath+'')
+              p.viewp.text-reset
+                strong PROJECT IMAGES
     #about.row
       .col-lg-4
         img.img-fluid.img-thumbnail.rounded.mx-auto.d-block(src='images/family.jpg', alt='family picture')
