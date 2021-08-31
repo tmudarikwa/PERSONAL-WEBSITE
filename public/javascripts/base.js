@@ -23,7 +23,7 @@ const quotes=[
   ['Every job is a self potrait for a person who did it.','UNKOWN'],
   ['Small steps add up to complete big journeys.','Matshona Dhliwayo']
 ];
-function getRanInt(max) {
+let getRanInt = (max) => {
   return Math.floor(Math.random() * Math.floor(max));
 }
 const index= getRanInt(8);
@@ -77,7 +77,7 @@ $(this).append($(this)[0].title);
 $('.alert').hide();
 //contact form email submit
 let contactusform = ($("#emailfromcustomer").html());
-$("#emailfromcustomer button").click(function(e){
+$("#emailfromcustomer button").click((e) =>{
   e.preventDefault();
 
   let email = $("#customeremail").val();
@@ -119,7 +119,7 @@ $("#emailfromcustomer button").click(function(e){
   }
 });
 
-function overlayNotification(notyType,notyText){
+let overlayNotification = (notyType,notyText) => {
   let noty = new Noty({
     layout:'bottomCenter',
     theme:'light',
@@ -136,7 +136,7 @@ function overlayNotification(notyType,notyText){
   triggerNotyClose();
 }
 
-function emailStatus(message){
+let emailStatus = (message) => {
   if(message.includes("apologize")){
     overlayNotification("error",message);
   }else{
@@ -144,7 +144,7 @@ function emailStatus(message){
   }
 }
 
-function triggerNotyClose(){
+let triggerNotyClose = () => {
   $('.noty_bar').click(function(e){
     $(this).hide();
   });
