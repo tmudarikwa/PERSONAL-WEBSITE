@@ -36,9 +36,9 @@ html(lang="en")
       script. 
         skillsGraph("#skillsgraph");
         let portfolio = document.getElementsByClassName('portfolio')[0].children;
-        let myOptions = !{JSON.stringify(portfolio.skills)};
+        let mySkills = !{JSON.stringify(portfolio.skills)};
         const autoComplete = new SelectPure(".search", {
-          options: myOptions,
+          options: mySkills,
           placeholder:"Click to search Portfolio",
           multiple: true,
           icon: "fa fa-times",
