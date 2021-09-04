@@ -61,7 +61,7 @@ let sendContactEmailRedWaste =  function(req, res){
                   subject: "REDWASTE EMAIL",
                   from_email: data.email,
                   from_name: "RedWaste",
-                  to:"nymud94@gmail.com",//"info@redwaste.africa",
+                  to:"info@redwaste.africa",
               };
       //var send_at = "example send_at";
       transporter.sendMail(message, function(error,result) {
@@ -128,7 +128,7 @@ let sendOrderEmailRedWaste =  function(req, res){
                   subject: "REDWASTE Order Email",
                   from_email: data.email,
                   from_name: "RedWaste",
-                  to:"nymud94@gmail.com",//"info@redwaste.africa",
+                  to:"info@redwaste.africa",
               };
       //var send_at = "example send_at";
       transporter.sendMail(message, function(error,result) {
