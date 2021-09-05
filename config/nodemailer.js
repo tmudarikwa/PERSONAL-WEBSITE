@@ -153,9 +153,9 @@ let sendConfirmationEmailRedWaste =  function(req, res){
 							"<header style='display: block;padding: 2rem;'>\n"+
 								"<img src=https://pixykorner.co.za/redwaste/images/global/redwaste_logo.png class='logo-dark' alt='Logo'>\n"+
 							"</header>\n"+
-							"<div style='color:white !important;background:#ee4644;padding: 2rem;margin-bottom:2rem'>\n"+
-							"<p> This is an email to confirm that your order has been recieved. Thank you for using our services </p>\n"+
-							"</div>"
+							"<div style='width:100;color:white !important;background:#ee4644;padding: 2rem;margin-bottom:2rem'>\n"+
+							"<p> This is an email to confirm that your order has been recieved. Thank you for using our services.</p>\n"+
+							"</div>\n"+
 							"<div style='color:white !important;background:#ee4644;padding: 2rem;'>\n"+
 								"<div style='width:50%;float:left;margin-bottom:4rem'>\n"+
 									"<label  style='color: #fff;width:100%;display: block;text-decoration: underline;font-size: 13px;margin-bottom:2rem;font-weight:bold'>Full Name:</label>\n"+
