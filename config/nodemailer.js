@@ -193,10 +193,10 @@ let sendConfirmationEmailRedWaste =  function(req, res){
 									"<p style='width:80%;border=solid 1px grey;border-radius=5px;;color: #fff'>"+data.message+"</p>\n"+
 								"</div>\n"+
 							"</div>\n"+
-							"<div style='width:100;font-weight:bold;color:black !important;background:white;margin-bottom:2rem'>\n"+
-								"<p style='float:left'>Regards,<br/><br/> RedWaste Team </p>\n"+
-							"</div>\n"+
-						"</div>";
+						"</div>\n"+
+						"<div style='width:100;font-weight:bold;color:black !important;background:white;margin-bottom:2rem'>\n"+
+							"<p style='float:left'>Regards,<br/><br/> RedWaste Team </p>\n"+
+						"</div>\n";
 
     var message = {
                   html: htmlTemplate,
