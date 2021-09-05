@@ -36,7 +36,7 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use(cors({
-  origin: ['https://redwaste.africa','http://redwaste.africa']
+  origin: ['https://redwaste.africa','https://www.redwaste.africa','http://www.redwaste.africa','http://redwaste.africa']
 }));
 
 app.use('/', index);
