@@ -161,17 +161,14 @@ let sendConfirmationEmailRedWaste =  function(req, res){
 									"<label  style='color: #fff;width:100%;display: block;text-decoration: underline;font-size: 13px;margin-bottom:2rem;font-weight:bold'>Full Name:</label>\n"+
 									"<a  style='width:100%;color: #fff'>"+data.name+"</a>\n"+
 								"</div>\n"+
-								"<div >\n"+
 								"<div style='width:50%;float:left;margin-bottom:4rem'>\n"+
 									"<label  style='color: #fff;width:100%;display: block;text-decoration: underline;font-size: 13px;margin-bottom:2rem;font-weight:bold'>Company Name:</label>\n"+
 									"<a  style='width:100%;color: #fff'>"+data.companyname+"</a>\n"+
 								"</div>\n"+
-								"<div >\n"+
 								"<div style='width:50%;float:left;margin-bottom:4rem'>\n"+
 									"<label  style='color: #fff;width:100%;display: block;text-decoration: underline;font-size: 13px;margin-bottom:2rem;font-weight:bold'>Red Waste : On-The-Go :</label>\n"+
 									"<a  style='width:100%;color: #fff'>"+data.productgo+"</a>\n"+
 								"</div>\n"+
-								"<div >\n"+
 								"<div style='width:50%;float:left;margin-bottom:4rem'>\n"+
 									"<label  style='color: #fff;width:100%;display: block;text-decoration: underline;font-size: 13px;margin-bottom:2rem;font-weight:bold'>Red Waste : On-The-Go-Plus:</label>\n"+
 									"<a  style='width:100%;color: #fff'>"+data.productplus+"</a>\n"+
