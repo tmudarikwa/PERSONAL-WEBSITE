@@ -27,13 +27,18 @@ let sendContactEmailRedWaste =  function(req, res){
                     subject: "REDWASTE EMAIL",
                     from_email: "info@redwaste.africa",
                     from_name: "RedWaste",
-                    to:"sales@redwaste.africa",
+                    to:[
+                        {
+                            email: "sales@redwaste.africa",
+                            name: "Sales Redwaste"
+                        }
+                    ]
                 };
 
     const run = async () => {
     const response = await mailchimpClient.messages.send( {message: emailMessage});
     console.log(response);
-    if(response.status('error')){
+    if(response.data.status('error')){
         var emailsent = "We apologize there has been an error trying to submit your information.";
         res.send(emailsent);
         return;  
@@ -98,13 +103,18 @@ let sendOrderEmailRedWaste =  function(req, res){
                     subject: "REDWASTE Order Email",
                     from_email: "info@redwaste.africa",
                     from_name: "RedWaste",
-                    to:"sales@redwaste.africa",
+                    to:[
+                        {
+                            email: "sales@redwaste.africa",
+                            name: "Sales Redwaste"
+                        }
+                    ]
                 };
 
     const run = async () => {
     const response = await mailchimpClient.messages.send( {message : emailMessage});
     console.log(response);
-    if(response.status('error')){
+    if(response.data.status('error')){
         var emailsent = "We apologize there has been an error trying to submit your information.";
         res.send(emailsent);
         return;  
@@ -174,12 +184,17 @@ let sendConfirmationEmailRedWaste =  function(req, res){
                     subject: "ORDER CONFIRMATION EMAIL",
                     from_email: "sales@redwaste.africa" ,
                     from_name: "RedWaste",
-                    to:data.email,
+                    to:[
+                        {
+                            email: data.email,
+                            name: data.name
+                        }
+                    ]
                 };
 
     const run = async () => {
     const response = await mailchimpClient.messages.send({message:emailMessage});
-    if(response.status('error')){
+    if(response.data.status('error')){
         console.log("**** error sending confirmation email to customer ****");
         console.log(response);
     }else{
