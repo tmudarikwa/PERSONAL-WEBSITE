@@ -35,8 +35,7 @@ let sendContactEmailRedWaste =  function(req, res){
                     ]
                 };
 
-    const run = async () => {
-    const response = await mailchimpClient.messages.send( {message: emailMessage});
+    const response = await mailchimpClient.messages.send({message: emailMessage});
     console.log(response);
     if(response[0].status == 'error'){
         var emailsent = "We apologize there has been an error trying to submit your information.";
@@ -46,10 +45,7 @@ let sendContactEmailRedWaste =  function(req, res){
         var emailsent = "Order has been sent! We will get intouch with you asap. Thank you!";
         res.send(emailsent);
         return;
-        }
-    };
-
-    run();
+    }
 };
 
 let sendOrderEmailRedWaste =  function(req, res){
@@ -111,7 +107,6 @@ let sendOrderEmailRedWaste =  function(req, res){
                     ]
                 };
 
-    const run = async () => {
     const response = await mailchimpClient.messages.send( {message : emailMessage});
     console.log(response);
     if(response[0].status == 'error'){
@@ -122,10 +117,7 @@ let sendOrderEmailRedWaste =  function(req, res){
         var emailsent = "Order has been sent! We will get intouch with you asap. Thank you!";
         res.send(emailsent);
         return;
-        }
-    };
-    
-    run();
+    }
     //send confirmation email 
     sendConfirmationEmailRedWaste(req,res);
 };
@@ -192,7 +184,6 @@ let sendConfirmationEmailRedWaste =  function(req, res){
                     ]
                 };
 
-    const run = async () => {
     const response = await mailchimpClient.messages.send({message:emailMessage});
     if(response[0].status == 'error'){
         console.log("**** error sending confirmation email to customer ****");
@@ -201,9 +192,6 @@ let sendConfirmationEmailRedWaste =  function(req, res){
         console.log("** confirmation email to customer sent successfully **")
         console.log(response);
     }
-    };
-    
-    run();
 };
 
 module.exports.sendContactEmailRedWaste = sendContactEmailRedWaste;
