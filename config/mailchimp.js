@@ -35,7 +35,7 @@ let sendContactEmailRedWaste =  function(req, res){
                     ]
                 };
 
-    const response = await mailchimpClient.messages.send({message: emailMessage});
+    const response = mailchimpClient.messages.send({message: emailMessage});
     console.log(response);
     if(response[0].status == 'error'){
         var emailsent = "We apologize there has been an error trying to submit your information.";
@@ -107,7 +107,7 @@ let sendOrderEmailRedWaste =  function(req, res){
                     ]
                 };
 
-    const response = await mailchimpClient.messages.send( {message : emailMessage});
+    const response = mailchimpClient.messages.send( {message : emailMessage});
     console.log(response);
     if(response[0].status == 'error'){
         var emailsent = "We apologize there has been an error trying to submit your information.";
@@ -184,7 +184,7 @@ let sendConfirmationEmailRedWaste =  function(req, res){
                     ]
                 };
 
-    const response = await mailchimpClient.messages.send({message:emailMessage});
+    const response = mailchimpClient.messages.send({message:emailMessage});
     if(response[0].status == 'error'){
         console.log("**** error sending confirmation email to customer ****");
         console.log(response);
