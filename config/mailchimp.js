@@ -35,7 +35,8 @@ let sendContactEmailRedWaste =  function(req, res){
                     ]
                 };
 
-    const response = mailchimpClient.messages.send({message: emailMessage});
+    const runSendContact = async () => {
+    const response = await mailchimpClient.messages.send( {message: emailMessage});
     console.log(response);
     if(response[0].status == 'error'){
         var emailsent = "We apologize there has been an error trying to submit your information.";
@@ -45,7 +46,10 @@ let sendContactEmailRedWaste =  function(req, res){
         var emailsent = "Order has been sent! We will get intouch with you asap. Thank you!";
         res.send(emailsent);
         return;
-    }
+        }
+    };
+
+    runSendContact();
 };
 
 let sendOrderEmailRedWaste =  function(req, res){
@@ -107,7 +111,8 @@ let sendOrderEmailRedWaste =  function(req, res){
                     ]
                 };
 
-    const response = mailchimpClient.messages.send( {message : emailMessage});
+    const runSendOrder = async () => {
+    const response = await mailchimpClient.messages.send( {message : emailMessage});
     console.log(response);
     if(response[0].status == 'error'){
         var emailsent = "We apologize there has been an error trying to submit your information.";
@@ -117,7 +122,9 @@ let sendOrderEmailRedWaste =  function(req, res){
         var emailsent = "Order has been sent! We will get intouch with you asap. Thank you!";
         res.send(emailsent);
         return;
-    }
+        }
+    };
+    runSendOrder();
     //send confirmation email 
     sendConfirmationEmailRedWaste(req,res);
 };
@@ -184,7 +191,8 @@ let sendConfirmationEmailRedWaste =  function(req, res){
                     ]
                 };
 
-    const response = mailchimpClient.messages.send({message:emailMessage});
+    const runSendConfirmation = async () => {
+    const response = await mailchimpClient.messages.send({message:emailMessage});
     if(response[0].status == 'error'){
         console.log("**** error sending confirmation email to customer ****");
         console.log(response);
@@ -192,6 +200,9 @@ let sendConfirmationEmailRedWaste =  function(req, res){
         console.log("** confirmation email to customer sent successfully **")
         console.log(response);
     }
+    };
+    
+    runSendConfirmation();
 };
 
 module.exports.sendContactEmailRedWaste = sendContactEmailRedWaste;
