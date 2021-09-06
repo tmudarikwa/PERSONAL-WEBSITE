@@ -10,6 +10,7 @@ const cors = require('cors');
 const index = require('./routes/index');
 const viewresume = require('./routes/viewresume');
 const sendemail = require('./config/nodemailer');
+const sendRedwasteEmail = require('./config/mailchimp');
 const frewprocess = require('./routes/portfolio/frewprocess');
 const gasco = require('./routes/portfolio/gasco');
 const mumoafruika = require('./routes/portfolio/mumoafruika');
@@ -45,10 +46,10 @@ app.post('/sendemail', function(req,res){
    sendemail.sendContactEmail(req,res);
 });
 app.post('/sendemailRedWaste', function(req,res){
-  sendemail.sendContactEmailRedWaste(req,res);
+  sendRedwasteEmail.sendContactEmailRedWaste(req,res);
 });
 app.post('/sendemailOrderRedWaste', function(req,res){
-  sendemail.sendOrderEmailRedWaste(req,res);
+  sendRedwasteEmail.sendOrderEmailRedWaste(req,res);
 });
 app.use('/portfolio/fpg',frewprocess);
 app.use('/portfolio/gasco',gasco);
