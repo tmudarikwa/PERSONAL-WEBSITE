@@ -11,7 +11,7 @@ router.get('/', function(req, res, next) {
   console.log(path);
   res.locals.path = '/portfolio/';
   res.locals.year = date.getFullYear();
-  res.render('portfolio/gasco', { title: 'Takunda Mudarikwa - Full-stack Web Developer | Portfolio - Gasco Portal', year: date.getFullYear(), portfolio: portfolio.getPortfolio()});
+  res.render('portfolio/projects', { title: 'Takunda Mudarikwa - Full-stack Web Developer | Portfolio - Gasco Portal', year: date.getFullYear(), portfolio: portfolio.getPortfolio(), pageTitle:'PORTFOLIO - GASCO SALES PORTAL'});
 });
 
 module.exports = router;
