@@ -4,7 +4,7 @@ block content
   section.gallery-block.cards-gallery
     .container-fluid
       each project in portfolio.portfolioProjects
-        if project.title == 'PORTFOLIO - FPG SALES PORTAL'
+        if project.title == pageTitle
           .heading
             h1.title #{project.title}
           .row

@@ -3,40 +3,21 @@ extends ../layout
 block content
   section.gallery-block.cards-gallery
     .container-fluid
-      .heading
-        h1.title PORTFOLIO - ChillyBarrels (WooCommerce)
-      .row
-        .col-md-6.col-lg-4
-          .card.border-0.transform-on-hover
-            a.lightbox(href='../images/portifolio/chillybarrels-woocommerce/ageRestriction.png')
-              img.card-img-top(src='../images/portifolio/chillybarrels-woocommerce/ageRestriction.png', alt='ChillyBarrels Age Restriction Page')
-            .card-body
-              h6
-                a(href='#') Age Restriction
-              p.text-muted.card-text A potential customer to verify that they're above 18. They're prompted once a day. I created the custom clientside javascript function that checks the cookies and renders the appropriate page.
-        .col-md-6.col-lg-4
-          .card.border-0.transform-on-hover
-            a.lightbox(href='../images/portifolio/chillybarrels-woocommerce/homapage.png')
-              img.card-img-top(src='../images/portifolio/chillybarrels-woocommerce/homapage.png', alt='ChillyBarrels Landing Page')
-            .card-body
-              h6
-                a(href='#') Landing Page
-              p.text-muted.card-text Landing page for the ecommerce site.
-        .col-md-6.col-lg-4
-          .card.border-0.transform-on-hover
-            a.lightbox(href='../images/portifolio/chillybarrels-woocommerce/serviceCoverageAreasServiceAvailable.png')
-              img.card-img-top(src='../images/portifolio/chillybarrels-woocommerce/serviceCoverageAreasServiceAvailable.png', alt='ChillyBarrels Proucts Page')
-            .card-body
-              h6
-                a(href='#') Service Coverage
-              p.text-muted.card-text A user can check where we service the area by either entering their address and clicking the "coverage" button or by clicking the button on it own. I wrote the the javascript code that geocodes a user location and checks whether we have service in their location or not.             
-        .col-md-6.col-lg-4
-          .card.border-0.transform-on-hover
-            a.lightbox(href='../images/portifolio/chillybarrels-woocommerce/productPage.png')
-              img.card-img-top(src='../images/portifolio/chillybarrels-woocommerce/productPage.png', alt='ChillyBarrels Proucts Page')
-            .card-body
-              h6
-                a(href='#') Beer Page
-              p.text-muted.card-text All of the products page have the same layout that allows for filtering and adding preferred products to the cart.
+      each project in portfolio.portfolioProjects
+        if project.title == 'PORTFOLIO - ChillyBarrels (WooCommerce)'
+          .heading
+            h1.title #{project.title}
+          .row
+            - var iterator = 0
+            each image in project.images
+              .col-md-6.col-lg-4
+                .card.border-0.transform-on-hover
+                  a.lightbox(href=''+image+'')
+                    img.card-img-top(src=''+image+'', alt=project.imageCaptions[iterator])
+                  .card-body
+                    h6
+                      a(href='#') #{project.cardHeaders[iterator]}
+                    p.text-muted.card-text #{project.cardDescriptions[iterator]}
+              - iterator += 1
       #backtohome
         a(href="/#portfolio") BACK TO HOME

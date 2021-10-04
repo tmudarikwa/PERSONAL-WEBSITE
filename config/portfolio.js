@@ -1,7 +1,6 @@
 let getPortfolio = () => {
     const portfolio = {
-                        portfolio:
-                            [
+                        portfolio:[
                                 {
                                     projectName: "Mii App (CURRENT PROJECT)",
                                     role: "Developer",
@@ -245,6 +244,171 @@ let getPortfolio = () => {
                                     {
                                     label: "WPF",
                                     value: "WPF"
+                                    }
+                                ], portfolioProjects:[
+                                    {
+                                        title: "PORTFOLIO - ChillyBarrels (WooCommerce)",
+                                        images:[
+                                            '../images/portifolio/chillybarrels-woocommerce/ageRestriction.png',
+                                            '../images/portifolio/chillybarrels-woocommerce/homapage.png',
+                                            '../images/portifolio/chillybarrels-woocommerce/serviceCoverageAreasServiceAvailable.png',
+                                            '../images/portifolio/chillybarrels-woocommerce/productPage.png'
+                                        ],
+                                        imageCaptions:[
+                                            'ChillyBarrels Age Restriction Page',
+                                            'ChillyBarrels Landing Page',
+                                            'ChillyBarrels Service Coverage',
+                                            'ChillyBarrels Products Page'  
+                                        ],
+                                        cardHeaders:[
+                                            'Age Restriction',
+                                            'Landing Page',
+                                            'Service Coverage',
+                                            'Beer Page'
+                                        ],
+                                        cardDescriptions:[
+                                            'A potential customer to verify that they\'re above 18. They\'re prompted once a day. I created the custom clientside javascript function that checks the cookies and renders the appropriate page.',
+                                            'Landing page for the ecommerce site.',
+                                            'A user can check where we service the area by either entering their address and clicking the "coverage" button or by clicking the button on it own. I wrote the the javascript code that geocodes a user location and checks whether we have service in their location or not.',
+                                            'All of the products page have the same layout that allows for filtering and adding preferred products to the cart.'
+                                        ]
+                                    },
+                                    {
+                                        title: "PORTFOLIO - ChillyBarrels-Portal",
+                                        images:[
+                                            '../images/portifolio/chillybarrels-portal/loginpage.png',
+                                            '../images/portifolio/chillybarrels-portal/orders.png'
+                                        ],
+                                        imageCaptions:[
+                                            'ChillyBarrels Portal Login Page',
+                                            'ChillyBarrels Portal Orders Page'
+                                            
+                                        ],
+                                        cardHeaders:[
+                                            'Login Page',
+                                            'Orders Page'
+                                        ],
+                                        cardDescriptions:[
+                                            'Portal Login page for local stores and ChillyBarrels Admin.',
+                                            'All orders made through the site will be loaded on this page and only visible to the local store that they were ordered from. The page auto loads every 3mins with any new order data.'
+                                        ]
+                                    },
+                                    {
+                                        title: "PORTFOLIO - ChillyBarrels",
+                                        images:[
+                                            '../images/portifolio/chillybarrels/homepage.png',
+                                            '../images/portifolio/chillybarrels/productspage.png',
+                                            '../images/portifolio/chillybarrels/loginpage.png'
+                                        ],
+                                        imageCaptions:[
+                                            'ChillyBarrels Landing Page',
+                                            'ChillyBarrels Products Page',
+                                            'ChillyBarrels Login Page'
+                                            
+                                        ],
+                                        cardHeaders:[
+                                            'Landing Page',
+                                            'Beer Page',
+                                            'Login Page'
+                                        ],
+                                        cardDescriptions:[
+                                            'Landing page for the ecommerce site.',
+                                            'All of the products page have the same layout that allows for filtering and adding preferred products to the cart.',
+                                            'Login Page with links to create an account for new customers.'
+                                        ]
+                                    },
+                                    {
+                                        title: "PORTFOLIO - Expense Allocation Metrics",
+                                        images:[
+                                            '../images/portifolio/expenseallocation/expenseallocation.JPG'
+                                        ],
+                                        imageCaptions:[
+                                            'Expense Allocation Metrics'
+                                        ],
+                                        cardHeaders:[
+                                            'Expense Allocation'
+                                        ],
+                                        cardDescriptions:[
+                                            'The GUI interface provides input for different parameters that allow the user to be able to get calculated total that end up being used for payroll purposes.'
+                                        ]
+                                    },
+                                    {
+                                        title: "PORTFOLIO - FPG SALES PORTAL",
+                                        images:[
+                                            '../images/portifolio/frewprocess/Dashboard2.png',
+                                            '../images/portifolio/frewprocess/Dashboard.png',
+                                            '../images/portifolio/frewprocess/Sales Goals.png',
+                                            '../images/portifolio/frewprocess/Customer Accounts.png',
+                                            '../images/portifolio/frewprocess/Prospects Map.png',
+                                            '../images/portifolio/frewprocess/Customizable Map.png',
+                                            '../images/portifolio/frewprocess/Pentaho.png'
+                                        ],
+                                        imageCaptions:[
+                                            'Dashboard page',
+                                            'Dashboard page',
+                                            'Sales goals page',
+                                            'Customer Accounts page',
+                                            'Prospects Map page',
+                                            'Customizable Map page',
+                                            'Pentaho page'
+                                        ],
+                                        cardHeaders:[
+                                            'Dashboard Page',
+                                            'Dashboard page',
+                                            'Sales Goal Page',
+                                            'Customer Accounts Page',
+                                            'Prospects Map Page',
+                                            'Prospects Maps Page (continued)',
+                                            'Pentaho Page'
+                                        ],
+                                        cardDescriptions:[
+                                            'When an employee signs into the portal they land on to this dashboard page that gives them an high level look at the company\'s progress categorized by certain business documents. There is also a filter functionality that enables a historical data search.',
+                                            'The graphs have interactive functionality that enables a user to click the original graph (from the previous page) and be presented with another graph that has more interactive features to respond to clicks and mouseover hovers.',
+                                            'This page allows a user to create sales target goals based on different sales territories and also to filter and search those goals.',
+                                            'The Customer Accounts page lists all customers that the company has and provides options to select if a customer is a sales target for a particular period or not. It also provides searching and sorting capabilities.',
+                                            'The Prospects map page displays plotted customers by different categorization( target account, key accounts, and historic customers and others) which ties back to sales effort roles assigned on the Customer Accounts page. This page leverages to googleMaps API, Ajax, jQuery and javascript to perform its core functions. On a customer plotted pin a user is able to see the customer\'s past orders, past paid invoices, and furthermore click the pin for a more detailed look. The right fly out enables filtering by date, classifications, categories, account type, geocoding quality, and by dynamically adding some grouped filters. Last but not least a user can short list the customers that they want to focus on by doubling clicking on a customer plotted pin and by doing so add them to the "Added Partners" cache.',
+                                            'The Customizable Map is were the "Added Partners" from the Prospects Map are displayed. On this page a user can search a customer\'s address straight on to the map and can add all those plotted points to a print cache.',
+                                            'This page provides an on-click link to Pentaho reports that are ran and hosted on the Pentaho Bi Server. I also had the task of creating and designing most of those reports(which included financial reports and an inclusive revenue and margin report that leveraged the company\'s ERP system workflow).'
+                                        ]
+                                    },
+                                    {
+                                        title: "PORTFOLIO - GASCO SALES PORTAL",
+                                        images:[
+                                            '../images/portifolio/gasco/Dashboard2.png',
+                                            '../images/portifolio/gasco/Dashboard.png',
+                                            '../images/portifolio/gasco/Sales Goals.png',
+                                            '../images/portifolio/gasco/Customer Accounts.png',
+                                            '../images/portifolio/gasco/Prospects Map.png',
+                                            '../images/portifolio/gasco/Customizable Map.png',
+                                            '../images/portifolio/gasco/Pentaho.png'
+                                        ],
+                                        imageCaptions:[
+                                            'Dashboard page',
+                                            'Dashboard page',
+                                            'Sales goals page',
+                                            'Customer Accounts page',
+                                            'Prospects Map page',
+                                            'Customizable Map page',
+                                            'Pentaho page'
+                                        ],
+                                        cardHeaders:[
+                                            'Dashboard Page',
+                                            'Dashboard page',
+                                            'Sales Goal Page',
+                                            'Customer Accounts Page',
+                                            'Prospects Map Page',
+                                            'Prospects Maps Page (continued)',
+                                            'Pentaho Page'
+                                        ],
+                                        cardDescriptions:[
+                                            'When an employee signs into the portal they land on to this dashboard page that gives them an high level look at the company\'s progress categorized by certain business documents. There is also a filter functionality that enables a historical data search.',
+                                            'The graphs have interactive functionality that enables a user to click the original graph (from the previous page) and be presented with another graph that has more interactive features to respond to clicks and mouseover hovers.',
+                                            'This page allows a user to create sales target goals based on different sales territories and also to filter and search those goals.',
+                                            'The Customer Accounts page lists all customers that the company has and provides options to select if a customer is a sales target for a particular period or not. It also provides searching and sorting capabilities.',
+                                            'The Prospects map page displays plotted customers by different categorization( target account, key accounts, and historic customers and others) which ties back to sales effort roles assigned on the Customer Accounts page. This page leverages to googleMaps API, Ajax, jQuery and javascript to perform its core functions. On a customer plotted pin a user is able to see the customer\'s past orders, past paid invoices, and furthermore click the pin for a more detailed look. The right fly out enables filtering by date, classifications, categories, account type, geocoding quality, and by dynamically adding some grouped filters. Last but not least a user can short list the customers that they want to focus on by doubling clicking on a customer plotted pin and by doing so add them to the "Added Partners" cache.',
+                                            'The Customizable Map is were the "Added Partners" from the Prospects Map are displayed. On this page a user can search a customer\'s address straight on to the map and can add all those plotted points to a print cache.',
+                                            'This page provides an on-click link to Pentaho reports that are ran and hosted on the Pentaho Bi Server. I also had the task of creating and designing most of those reports(which included financial reports and an inclusive revenue and margin report that leveraged the company\'s ERP system workflow).'
+                                        ]
                                     }
                                 ]
                         };

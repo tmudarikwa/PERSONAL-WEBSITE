@@ -3,33 +3,21 @@ extends ../layout
 block content
   section.gallery-block.cards-gallery
     .container-fluid
-      .heading
-        h1.title PORTFOLIO - ChillyBarrels
-      .row
-        .col-md-6.col-lg-4
-          .card.border-0.transform-on-hover
-            a.lightbox(href='../images/portifolio/chillybarrels/homepage.png')
-              img.card-img-top(src='../images/portifolio/chillybarrels/homepage.png', alt='ChillyBarrels Landing Page')
-            .card-body
-              h6
-                a(href='#') Landing Page
-              p.text-muted.card-text Landing page for the ecommerce site.
-        .col-md-6.col-lg-4
-          .card.border-0.transform-on-hover
-            a.lightbox(href='../images/portifolio/chillybarrels/productspage.png')
-              img.card-img-top(src='../images/portifolio/chillybarrels/productspage.png', alt='ChillyBarrels Proucts Page')
-            .card-body
-              h6
-                a(href='#') Beer Page
-              p.text-muted.card-text All of the products page have the same layout that allows for filtering and adding preferred products to the cart.
-        .col-md-6.col-lg-4
-          .card.border-0.transform-on-hover
-            a.lightbox(href='../images/portifolio/chillybarrels/loginpage.png')
-              img.card-img-top(src='../images/portifolio/chillybarrels/loginpage.png', alt='ChillyBarrels Login Page')
-            .card-body
-              h6
-                a(href='#') Login Page
-              p.text-muted.card-text Login Page with links to create an account for new customers.
-
+      each project in portfolio.portfolioProjects
+        if project.title == 'PORTFOLIO - ChillyBarrels'
+          .heading
+            h1.title #{project.title}
+          .row
+            - var iterator = 0
+            each image in project.images
+              .col-md-6.col-lg-4
+                .card.border-0.transform-on-hover
+                  a.lightbox(href=''+image+'')
+                    img.card-img-top(src=''+image+'', alt=project.imageCaptions[iterator])
+                  .card-body
+                    h6
+                      a(href='#') #{project.cardHeaders[iterator]}
+                    p.text-muted.card-text #{project.cardDescriptions[iterator]}
+              - iterator += 1
       #backtohome
         a(href="/#portfolio") BACK TO HOME

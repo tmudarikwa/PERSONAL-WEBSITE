@@ -3,18 +3,21 @@ extends ../layout
 block content
   section.gallery-block.cards-gallery
     .container-fluid
-      .heading
-        h1.title PORTFOLIO - MuMoAfruika
-      .row
-        .col-md-6.col-lg-4
-          .card.border-0.transform-on-hover
-            a.lightbox(href='../images/portifolio/expenseallocation/expenseallocation.JPG')
-              img.card-img-top(src='../images/portifolio/expenseallocation/expenseallocation.JPG' , alt='Expense Allocation Metrics')
-            .card-body
-              h6
-                a(href='#') Expense Allocation
-              p.text-muted.card-text The GUI interface provides input for different parameters that allow the user to be able to get calculated total that end up being used for payroll purposes.
-
-
+      each project in portfolio.portfolioProjects
+        if project.title == 'PORTFOLIO - Expense Allocation Metrics'
+          .heading
+            h1.title #{project.title}
+          .row
+            - var iterator = 0
+            each image in project.images
+              .col-md-6.col-lg-4
+                .card.border-0.transform-on-hover
+                  a.lightbox(href=''+image+'')
+                    img.card-img-top(src=''+image+'', alt=project.imageCaptions[iterator])
+                  .card-body
+                    h6
+                      a(href='#') #{project.cardHeaders[iterator]}
+                    p.text-muted.card-text #{project.cardDescriptions[iterator]}
+              - iterator += 1
       #backtohome
         a(href="/#portfolio") BACK TO HOME
