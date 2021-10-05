@@ -9,7 +9,7 @@ router.get('/', function(req, res, next) {
   var path = '/portfolio/adbdeliveryservices';
   res.locals.path = '/portfolio/';
   res.locals.year = date.getFullYear();
-  res.render('portfolio/adbdeliveryservices', { title: 'Takunda Mudarikwa - Full-stack Web Developer | Portfolio - ADB Delivery Services', year: date.getFullYear(), portfolio: portfolio.getPortfolio(), pageTitle:'PORTFOLIO - ADB Delivery Services'});
+  res.render('portfolio/projects', { title: 'Takunda Mudarikwa - Full-stack Web Developer | Portfolio - ADB Delivery Services', year: date.getFullYear(), portfolio: portfolio.getPortfolio(), pageTitle:'PORTFOLIO - ADB Delivery Services'});
 });
 
 module.exports = router;

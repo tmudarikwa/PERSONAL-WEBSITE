@@ -277,20 +277,24 @@ let getPortfolio = () => {
                                         title: "PORTFOLIO - ChillyBarrels-Portal",
                                         images:[
                                             '../images/portifolio/chillybarrels-portal/loginpage.png',
-                                            '../images/portifolio/chillybarrels-portal/orders.png'
+                                            '../images/portifolio/chillybarrels-portal/orders.png',
+                                            '../images/portifolio/chillybarrels-portal/createaccount.png'
                                         ],
                                         imageCaptions:[
                                             'ChillyBarrels Portal Login Page',
-                                            'ChillyBarrels Portal Orders Page'
+                                            'ChillyBarrels Portal Orders Page',
+                                            'ChillyBarrels Portal Create Account'
                                             
                                         ],
                                         cardHeaders:[
                                             'Login Page',
-                                            'Orders Page'
+                                            'Orders Page',
+                                            'Create Account'
                                         ],
                                         cardDescriptions:[
                                             'Portal Login page for local stores and ChillyBarrels Admin.',
-                                            'All orders made through the site will be loaded on this page and only visible to the local store that they were ordered from. The page auto loads every 3mins with any new order data.'
+                                            'All orders made through the site will be loaded on this page and only visible to the local store that they were ordered from. The page auto loads every 3mins with any new order data.',
+                                            'Used to create account for either stores or store associates. The dropdown facilitates the distinction'
                                         ]
                                     },
                                     {
@@ -409,6 +413,184 @@ let getPortfolio = () => {
                                             'The Customizable Map is were the "Added Partners" from the Prospects Map are displayed. On this page a user can search a customer\'s address straight on to the map and can add all those plotted points to a print cache.',
                                             'This page provides an on-click link to Pentaho reports that are ran and hosted on the Pentaho Bi Server. I also had the task of creating and designing most of those reports(which included financial reports and an inclusive revenue and margin report that leveraged the company\'s ERP system workflow).'
                                         ]
+                                    },
+                                    {
+                                        title: "PORTFOLIO - ADB Delivery Services",
+                                        images:[
+                                            '../images/portifolio/adb/adb.png',
+                                            '../images/portifolio/adb/adbdeliveryservice.png',
+                                            '../images/portifolio/adb/adbgarageservice.png',
+                                            '../images/portifolio/adb/adbmailinglist.png',
+                                            '../images/portifolio/adb/adbreview.png'
+                                        ],
+                                        imageCaptions:[
+                                            'Adb Delivery Service Home Page',
+                                            'Adb Delivery Service - Delivery Service Scheduler',
+                                            'Adb Delivery Service - Garage Cleaning/Hauling Service Scheduler',
+                                            'Adb Delivery Service - Subscribe to mailing list Section',
+                                            'Adb Delivery Service - Review Section'
+                                        ],
+                                        cardHeaders:[
+                                            'Home Page',
+                                            'Delivery Service',
+                                            'Garage Cleaning/Hauling Service',
+                                            'Subscribe to mailing list',
+                                            'Reviews'
+                                        ],
+                                        cardDescriptions:[
+                                            'The homepage allows customers to schedule a service, subscribe to the mailing list and view past reviews or leave thier own review.',
+                                            'When a customer wants to schedule an appointment they have to fill the above form. After filling the form they will recieve and email that includes a quoted price. They can make a payment once the appointment has been scheduled depending on their prior selected payment type.',
+                                            'Customers are able to schedule garage cleaning or hauling service. Unlike the delivery service they can not make a payment up until a member from the company asseses how much cleaning or hauling is actually involved.',
+                                            'Full name and email inputs for customer willing to subscribe to the mailing list. Customers that have already subscribed will be notified if they try to resubscribe.',
+                                            'Customers are able to leave reviews directly on the website for different types of services.'
+                                        ]
+                                    },
+                                    {
+                                        title: 'PORTFOLIO - GERFUSA',
+                                        images:[
+                                            '../images/portifolio/gerfusa/homepage.png',
+                                            '../images/portifolio/gerfusa/homepage2.png',
+                                            '../images/portifolio/gerfusa/services.png',
+                                             '../images/portifolio/gerfusa/login.png',
+                                             '../images/portifolio/gerfusa/groceries.png',
+                                             '../images/portifolio/gerfusa/groceries-store.png',
+                                              '../images/portifolio/gerfusa/errands.png',
+                                              '../images/portifolio/gerfusa/fastfood.png',
+                                              '../images/portifolio/gerfusa/servicelocations.png',
+                                              '../images/portifolio/gerfusa/contactus.png'
+                                        ],
+                                        imageCaptions:[
+                                            'GERFUSA home page',
+                                            'GERFUSA how it works',
+                                            'GERFUSA Services information',
+                                            'GERFUSA Login PAGE',
+                                            'GERFUSA Groceries Order page',
+                                            'GERFUSA Groceries Order page',
+                                            'GERFUSA Errands page',
+                                            'GERFUSA Login page',
+                                            'GERFUSA Service locations page',
+                                            'GERFUSA Contact us'
+                                        ],
+                                        cardHeaders:[
+                                            'Home Page',
+                                            'Home page (continued) - HOW IT WORKS',
+                                            'Home page (continued) - SERVICES',
+                                            'Home page (continued) - ERRANDS',
+                                            'Groceries Page',
+                                            'Groceries Page (continued)',
+                                            'Errands Page',
+                                            'Fast Food Page',
+                                            'Service Location Page',
+                                            'Contact Page'
+                                        ],
+                                        cardDescriptions:[
+                                            'Full window browser width home page look that gives users a peak at what the company does.',
+                                            'Clicking the "HOW IT WORKS" button shows the ordering a service process from start to delivery.',
+                                            'Clicking on one of the navigation links opens up a detailed description of that service. In the above image there is a detailed description and estimated pricing for Grocery deliveries, Errands service, and Fastfood deliveries.',
+                                            'The login page that has an option to sign in with Facebook, Google, and Twitter. Users can also use their GERFUSA created account information if they created their account from the "SIGN UP" page.',
+                                            'After logging in a user is redirected to the groceries page where they can start scheduling a delivery by clicking on a chosen store.',
+                                            'When a user clicks on a chosen store there are shown options the should assist them in completing their order. Depending with the selected store some options will be available or not.',
+                                            'Clicking on the Errand menu takes you to the errands page where they can start scheduling a delivery by clicking on a chosen errand category.',
+                                            'Clicking on the Fastfood menu takes you to the errands page where they can start scheduling a delivery by clicking on a chosen fastfood restaurant.',
+                                            'Google Maps API powered page that detects a users location and shows them if there is service in their area or not.',
+                                            'The contact page provides an option for users to submit information using our form based on a couple of categories. Alternatively they can just see displayed contact information.'
+                                   
+                                        ]
+                                    },
+                                    {
+                                        title: 'PORTFOLIO - MuMoAfruika',
+                                        images:[
+                                            '../images/portifolio/mumoafruika/usertypes.png',
+                                            '../images/portifolio/mumoafruika/emailfill.png',
+                                            '../images/portifolio/mumoafruika/subscription.png'
+
+                                        ],
+                                        imageCaptions:[
+                                           'MuMoAfruika  user types',
+                                           'MuMoAfruika Email Subscription',
+                                           'MuMoAfruika Email Subscription Confirmation'
+                                        ],
+                                        cardHeaders:[
+                                            'User Types',
+                                            'Email Subscription Registration',
+                                            'Email Subscription Registration (continued)'
+                                        ],
+                                        cardDescriptions:[
+                                            'Visitors are prompted to select one of the three user types since these are crucial in defining user roles in the upcoming application.',
+                                            'They then should enter a valid email for them to be able to subscribe to the email blast. An email validation is in place on the text field.',
+                                            'After hitting submit a status confirmation dialog pops up.'
+                                        ]
+                                    },
+                                    {
+                                        title: 'PORTFOLIO - MuMoAfruika Platform UI',
+                                        images:[
+                                            '../images/portifolio/mumoafruikaui/mumoafruikaui.png',
+                                            '../images/portifolio/mumoafruikaui/mumoafruikamovies.png',
+                                            '../images/portifolio/mumoafruikaui/mumoafruikavideos.png',
+                                        ],
+                                        imageCaptions:[
+                                            'MuMoAfruika  user types',
+                                            'MuMoAfruika  Movies Page',
+                                           'MuMoAfruika Videos Page'
+                                        ],
+                                        cardHeaders:[
+                                            'Music Page',
+                                            'Movies Page',
+                                            'Videos Page'
+                                        ],
+                                        cardDescriptions:[
+                                            'This will be the homepage were users are mostly likely to be automatically re-routed to. The design will be the basis for the whole WEB platform. It directly shows the features that make us distinct and at the same time provide the user with a great user experience.',
+                                            'The MOVIES page will be very similar to the MUSIC page because on both of these pages were are trying to showcase the different content that is produced from all African countries.',
+                                            'The VIDEOS page differs from the first two page because in its default layout is doesn\'t present the country filter. We feel that since these videos maybe random and do not fit in the MOVIES & MUSIC professional or aspiring categories there isn\'t a need to present the country filter by default.'                               
+                                        ]
+                                    },
+                                    {
+                                        title: 'PORTFOLIO - POTENCITY',
+                                        images:[
+                                          '../images/portifolio/potencity/homepage.png',
+                                          '../images/portifolio/potencity/whatwedo.png',
+                                          '../images/portifolio/potencity/gottalent.png',
+                                          '../images/portifolio/potencity/findtalent.png',
+                                          '../images/portifolio/potencity/ourpartners.png',
+                                          '../images/portifolio/potencity/joinourmailinglist.png',
+                                          '../images/portifolio/potencity/aboutpage.png',
+                                          '../images/portifolio/potencity/signuppage.png',
+                                          '../images/portifolio/potencity/loginpage.png'
+                                        ],
+                                        imageCaptions:[
+                                          'Home Page',
+                                          'What We Do',
+                                          'Got Talent',
+                                          'Find Talent',
+                                          'Our Partners',
+                                          'Join Our mailing list',
+                                          'About Page',
+                                          'Signup Page',
+                                          'Login Page'
+                                        ],
+                                        cardHeaders:[
+                                          'Home Page',
+                                          'Home Page (continued)',
+                                          'Home Page (continued)',
+                                          'Home Page (continued)',
+                                          'Home Page (continued)',
+                                          'Home Page (continued)',
+                                          'About Page',
+                                          'Signup Page',
+                                          'Login Page'
+                                        ],
+                                        cardDescriptions:[
+                                        'Landing Page that show the description of what Potencity offers.',
+                                        'Description of what Potencity does. Buttons redirect to named links after the user signs in.',
+                                        'Perks of signing up for Potencity for those looking for a growing opportunity.',
+                                        'Perks of signing up for Firms that are looking for a diverse pool of dedicated employees.',
+                                        'Some of the company\'s brand partners that aide to their business advantage.',
+                                        'Staying connected with updates and news from Potencity.',
+                                        'Potencity provides something unique for both employees and firms. The elevation makes both entities realize their Potencity.',
+                                        'Signup Page for both talent and firms.',
+                                        'Multiple ways to login and harness the power and advantages of Potencity.'
+                                        ]                                        
+
                                     }
                                 ]
                         };
