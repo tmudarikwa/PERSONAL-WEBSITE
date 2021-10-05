@@ -22,6 +22,7 @@ const chillybarrelsportal = require('./routes/portfolio/chillybarrels-portal');
 const chillybarrelswoocommerce = require('./routes/portfolio/chillybarrels-woocommerce');
 const potencity = require('./routes/portfolio/potencity');
 const adbdeliveryservices = require('./routes/portfolio/adbdeliveryservices');
+const replicationtrace = require('./routes/portfolio/replicationtrace.js');
 
 const app = express();
 // view engine setup
@@ -62,6 +63,7 @@ app.use('/portfolio/chillybarrels', chillybarrels);
 app.use('/portfolio/chillybarrels-portal', chillybarrelsportal);
 app.use('/portfolio/chillybarrels-woocommerce', chillybarrelswoocommerce);
 app.use('/portfolio/adbdeliveryservices', adbdeliveryservices);
+app.use('/portfolio/replicationtrace', replicationtrace);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

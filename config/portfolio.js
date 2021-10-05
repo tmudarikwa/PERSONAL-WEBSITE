@@ -116,7 +116,7 @@ let getPortfolio = () => {
                                     description: "This desktop application was built inorder to trace duplicate records in a table. The application will return all the records that are identical from the table which it attains by individually checking each record in the table.",
                                     github:"None",
                                     url:"#",
-                                    imgPath:"/portfolio/gerfusa"
+                                    imgPath:"/portfolio/replicationtrace"
                                 },
                                 {
                                     projectName: "EXPENSE ALLOCATION METRICS WINDOWS DESKTOP APPLICATION",
@@ -319,6 +319,21 @@ let getPortfolio = () => {
                                             'Landing page for the ecommerce site.',
                                             'All of the products page have the same layout that allows for filtering and adding preferred products to the cart.',
                                             'Login Page with links to create an account for new customers.'
+                                        ]
+                                    },
+                                    {
+                                        title: "PORTFOLIO - REPLICATION TRACE",
+                                        images:[
+                                            '../images/portifolio/replicationtrace/replication_trace.JPG'
+                                        ],
+                                        imageCaptions:[
+                                            'Replication Trace'
+                                        ],
+                                        cardHeaders:[
+                                            'Replication Trace'
+                                        ],
+                                        cardDescriptions:[
+                                            ' This desktop application was built inorder to trace duplicate records in a table. The application will return all the records that are identical from the table which it attains by individually checking each record in the table.'
                                         ]
                                     },
                                     {
