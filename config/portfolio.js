@@ -490,7 +490,7 @@ let getPortfolio = () => {
                                             'Home Page',
                                             'Home page (continued) - HOW IT WORKS',
                                             'Home page (continued) - SERVICES',
-                                            'Home page (continued) - ERRANDS',
+                                            'Login Page',
                                             'Groceries Page',
                                             'Groceries Page (continued)',
                                             'Errands Page',
