@@ -1,20 +1,20 @@
 skills,years
-Html,6
+Html,7
 Java,3
-Python,3
+Python,4.5
 PHP,1
 C#,2
 NodeJS,2
 Javascript,6
-React,1
+React,.5
 Angular,1
-JQuery,6
-Ajax,5
+JQuery,7
+Ajax,6
 Bootstrap,4
-CSS,6
+CSS,7
 Sass,1
-API's,3
-Web Development,6
+API's,5
+Web Development,7
 SQL,6
 NoSQL,3
 MongoDB,3
@@ -27,4 +27,4 @@ Git, 3
 Ubuntu,4
 Heroku,3
 AWS,1
-Server Management,5
+Application Management,5
