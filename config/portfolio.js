@@ -88,7 +88,7 @@ let getPortfolio = () => {
                                     techStack: "NodeJS, HTML, JQuery, MongoDB, Express, Mandrill, Heroku",
                                     description: "This a web page that curates information and as well serves as a way to update the progress on the actual MuMoAfruika platform.",
                                     github:"https://github.com/tmudarikwa/MuMoAfruika",
-                                    url:"#",
+                                    url:"https://mumoafruika.herokuapp.com/",
                                     imgPath:"/portfolio/mumoafruika-landing"
                                 },
                                 {
