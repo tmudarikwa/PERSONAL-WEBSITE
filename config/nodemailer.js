@@ -1,11 +1,12 @@
 const nodemailer = require('nodemailer');
 const { getMaxListeners } = require('process');
+const cred = require('dotenv').config()
 
 const transporter = nodemailer.createTransport({
 	service:'gmail',
 	auth:{
-		user:'takundamudarikwawebservices@gmail.com',//change this before going to production
-		pass:'uapcltghuabthuqn' // change this line before goin to production
+		user:cred.parsed.GMAIL_USER,
+		pass:cred.parsed.GMAIL_PASS
 	}
 });
 
