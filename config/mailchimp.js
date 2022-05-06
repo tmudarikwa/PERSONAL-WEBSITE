@@ -1,8 +1,8 @@
 const mailchimpClient = require('@mailchimp/mailchimp_transactional')("2x0ddDMW9H9p-WQjZUlBIw");
 
-let sendContactEmailRedWaste =  function(req, res){
-    var data = req.body;
-    var htmlTemplate = "<div style='display: block;padding: 4rem;'>\n"+
+let sendContactEmailRedWaste =  (req, res) =>{
+    const data = req.body;
+    const htmlTemplate = "<div style='display: block;padding: 4rem;'>\n"+
                             "<header style='display: block;padding: 2rem;'>\n"+
                                 "<img src=https://pixykorner.co.za/redwaste/images/global/redwaste_logo.png class='logo-dark' alt='Logo'>\n"+
                             "</header>\n"+
@@ -39,11 +39,11 @@ let sendContactEmailRedWaste =  function(req, res){
     const response = await mailchimpClient.messages.send( {message: emailMessage});
     console.log(response);
     if(response[0].status == 'error' || response[0].status == 'rejected'){
-        var emailsent = "We apologize there has been an error trying to submit your information.";
+        const emailsent = "We apologize there has been an error trying to submit your information.";
         res.send(emailsent);
         return;  
     }else{
-        var emailsent = "Order has been sent! We will get intouch with you asap. Thank you!";
+        const emailsent = "Order has been sent! We will get intouch with you asap. Thank you!";
         res.send(emailsent);
         return;
         }
@@ -52,7 +52,7 @@ let sendContactEmailRedWaste =  function(req, res){
     runSendContact();
 };
 
-let sendOrderEmailRedWaste =  function(req, res){
+let sendOrderEmailRedWaste =  (req, res) => {
 
     const data = req.body;
     const  htmlTemplate = "<div style='display: block;padding: 4rem;'>\n"+
@@ -115,11 +115,11 @@ let sendOrderEmailRedWaste =  function(req, res){
     const response = await mailchimpClient.messages.send( {message : emailMessage});
     console.log(response);
     if(response[0].status == 'error' || response[0].status == 'rejected'){
-        var emailsent = "We apologize there has been an error trying to submit your information.";
+        const emailsent = "We apologize there has been an error trying to submit your information.";
         res.send(emailsent);
         return;  
     }else{
-        var emailsent = "Order has been sent! We will get intouch with you asap. Thank you!";
+        const emailsent = "Order has been sent! We will get intouch with you asap. Thank you!";
         res.send(emailsent);
         return;
         }
@@ -129,7 +129,7 @@ let sendOrderEmailRedWaste =  function(req, res){
     sendConfirmationEmailRedWaste(req,res);
 };
 
-let sendConfirmationEmailRedWaste =  function(req, res){
+let sendConfirmationEmailRedWaste =  (req, res) =>{
 
     const data = req.body;
     const htmlTemplate = "<div style='display: block;padding: 4rem;'>\n"+

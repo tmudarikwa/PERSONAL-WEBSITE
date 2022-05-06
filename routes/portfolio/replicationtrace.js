@@ -1,14 +1,12 @@
-var express = require('express');
-var router = express.Router();
+const express = require('express');
+const router = express.Router();
 
-var date = new Date();
+const date = new Date();
 // portfolio data
-var portfolio = require('../../config/portfolio');
+const portfolio = require('../../config/portfolio');
 /* GET portifolio page. */
 router.get('/', function(req, res, next) {
-  var path = '/portfolio/expense-allocation-metrics';
-  console.log('*******path**************');
-  console.log(path);
+  const path = '/portfolio/expense-allocation-metrics';
   res.locals.path = '/portfolio/';
   res.locals.year = date.getFullYear();
   res.render('portfolio/projects', { title: 'Takunda Mudarikwa - Full-stack Web Developer | Portfolio - Replication Trace', year: date.getFullYear(), portfolio: portfolio.getPortfolio(), pageTitle:'PORTFOLIO - REPLICATION TRACE'});
