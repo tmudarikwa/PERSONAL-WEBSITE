@@ -28,7 +28,7 @@ const quotes=[
 let getRanInt = (max) => {
   return Math.floor(Math.random() * Math.floor(max));
 }
-const index= getRanInt(9);
+const index= getRanInt(11);
 window.addEventListener('load', function(){
   $(".navbar-nav").sticky();
   $('.blockquote p').text(quotes[index][0]);
