@@ -21,7 +21,9 @@ const quotes=[
   ['Creativity takes courage.','Henri Matisse'],
   ['I never lose. I either win or learn.','Nelson Mandela'],
   ['Every job is a self potrait for a person who did it.','UNKOWN'],
-  ['Small steps add up to complete big journeys.','Matshona Dhliwayo']
+  ['Small steps add up to complete big journeys.','Matshona Dhliwayo'],
+  ['Before software should be reusable, it should be usable.','Ralph Johnson'],
+  ['Simplicity carried to the extreme, becomes elegance', 'Jon Franklin']
 ];
 let getRanInt = (max) => {
   return Math.floor(Math.random() * Math.floor(max));
