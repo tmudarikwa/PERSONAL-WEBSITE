@@ -1,0 +1,10 @@
+extends layout
+
+block content
+  .container-fluid
+    .row(class='align-items-center')
+      .col(class='bcontent')
+        img(class='img-fluid img-thumbnail rounded mx-auto d-block',style='height:350px !important',src='/images/Israelerror.jpg', alt='error')
+        h1(style='text-align:center') Sorry there was an error trying to access your requested path:
+        article
+          p(style='text-align:center')= message

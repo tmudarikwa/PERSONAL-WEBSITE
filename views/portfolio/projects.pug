@@ -1,0 +1,23 @@
+extends ../layout
+
+block content
+  section.gallery-block.cards-gallery
+    .container-fluid
+      each project in portfolio.portfolioProjects
+        if project.title == pageTitle
+          .heading
+            h1.title #{project.title}
+          .row
+            - var iterator = 0
+            each image in project.images
+              .col-md-6.col-lg-4
+                .card.border-0.transform-on-hover
+                  a.lightbox(href=''+image+'')
+                    img.card-img-top(src=''+image+'', alt=project.imageCaptions[iterator])
+                  .card-body
+                    h6
+                      a(href='#') #{project.cardHeaders[iterator]}
+                    p.text-muted.card-text #{project.cardDescriptions[iterator]}
+              - iterator += 1
+      #backtohome
+        a(href="javascript:window.close();") BACK TO PORTFOLIO

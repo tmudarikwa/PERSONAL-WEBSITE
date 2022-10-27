@@ -1,0 +1,78 @@
+extends layout
+
+block content
+  .container-fluid.vh-100(ng-app='')
+    #home.row.vh-100
+      h4.col-12 Hi, my name is Takunda Mudarikwa. I'm a Full Stack Web Developer.
+      #navdiv
+        nav.navbar.navbar-nav.col-12
+          a.navlink.nav-item(href='') HOME
+          a.navlink.nav-item(href='') SKILLS
+          a.navlink.nav-item(href='') PORTFOLIO
+          a.navlink.nav-item(href='') RÉSUMÉ
+          a.navlink.nav-item(href='') ABOUT
+          a.navlink.nav-item(href='') CONTACT
+      blockquote.blockquote.col-12.card-block
+        p.mb-0.text-wrap
+        footer.blockquote-footer
+    #skills.row
+      h1.col-12  Technical Skills
+      #skillsgraph.col-12
+      p.col-12 Years of Experience
+    #portfolio
+      h1.col-12  Portfolio
+      span.search
+    .row.portfolio
+      each aportfolio in portfolio.portfolio
+        .col-12.col-md-6.col-lg-4
+          p.projectname
+            strong PROJECT NAME:
+            |  #{aportfolio.projectName}
+          p.role
+            strong ROLE:
+            |  #{aportfolio.role}
+          p.skills
+            strong TECH STACK:
+            |  #{aportfolio.techStack}
+          p.description
+            strong DESCRIPTION:
+            |  #{aportfolio.description }
+          if aportfolio.github != "None"
+            p.link
+              strong GITHUB:
+                a(href=aportfolio.github, target='_blank')
+                  |  #{aportfolio.github}
+          if aportfolio.url != "#"
+            p.link
+              strong LINK:
+                a(href=aportfolio.url, target='_blank')    
+                  |  #{aportfolio.url}
+          if aportfolio.imgPath != "#"
+            a.viewp.text-reset(href=''+aportfolio.imgPath+'', target='_blank')
+              p.viewp.text-reset
+                strong PROJECT IMAGES
+    #about.row
+      .col-lg-4
+        img.img-fluid.img-thumbnail.rounded.mx-auto.d-block(src='images/family.jpg', alt='family picture')
+        .title
+          h1.h1 THE FAM
+          h4 (left - right : Takunda, Iris, Israel & Krystal)
+          |
+      .col-lg-8
+        h1  About
+        p
+          | I am a father to a handsome son and a beautiful daughter. I enjoy spending time with my kids and relaxing at home watching some of my favorite TV shows or movies. I enjoy different kinds of coding challenges and learning new skills. My introduction to the software development came when I enrolled in a three-year Advanced Diploma in Health Informatics Technology at Centennial College in Toronto, Canada. From there, I transferred and enrolled in Computer Science at the University of Indianapolis in USA; reinforced my foundational skills which led to my first realization of wanting to focus on web development. I managed to secure an internship that turned into a three year full-time position. There I was exposed to different stages of software development life cycles which enabled me to solidify my fundamental skills.
+        p
+          | As I keep on adding more skills, staying current with new and emerging technologies is key!
+    #contact.row(class='no-gutters')
+      .col-sm-12(id='mdless')
+        img.img-fluid.img-thumbnail.rounded.mx-auto.d-block(src='images/workflow.jpg', alt=' profile picture')
+      .no-gutters.col-sm-12.col-lg-8
+        h1.title.h1 Let's get some work done!
+        .col-12
+          #emailfromcustomer.col-12
+            input#customeremail.col-12(type='text', placeholder='Enter your email')
+            textarea#customertext.col-12(placeholder='Briefly describe your project. I usually respond to emails within 24 hours. :)', rows='4')
+            button#contactform_submit.col-12 SEND EMAIL
+      .float-left.col-sm-12.col-lg-4
+        img.img-fluid.img-thumbnail.rounded.mx-auto.d-block(src='images/workflow.jpg', alt=' profile picture')

@@ -1,0 +1,48 @@
+doctype html
+html(lang="en")
+  head
+    include ./partials/_head
+  body
+    #loader
+      #loaderinner
+        .straight
+        .curve
+        .center
+        .inner
+    block content
+    include ./partials/_footer
+    script.
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-129411421-1');
+    script(src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous")
+    script(src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous")
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous")
+    script(src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous")
+    if path == /portfolio/
+      script(src='../../javascripts/noty/noty.min.js')
+      script(src='../../javascripts/jquery.sticky.js')
+      script(src='../../javascripts/base.js')
+    else
+      script(src='https://d3js.org/d3.v4.min.js')
+      script(src='https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.9.1/d3-tip.min.js')
+      script(src='javascripts/noty/noty.min.js')
+      script(src='javascripts/jquery.sticky.js')
+      script(src='javascripts/bundle.min.js')
+      script(src='javascripts/base.js')
+      script(src='javascripts/skills.js')
+      script. 
+        skillsGraph("#skillsgraph");
+        let portfolio = document.getElementsByClassName('portfolio')[0].children;
+        let mySkills = !{JSON.stringify(portfolio.skills)};
+        const autoComplete = new SelectPure(".search", {
+          options: mySkills,
+          placeholder:"Click to search Portfolio",
+          multiple: true,
+          icon: "fa fa-times",
+          autocomplete: true,
+          onChange: value => {search_portfolio(value,portfolio);},
+        });
+      script(src='javascripts/search.js')
