@@ -1,0 +1,11 @@
+.table-responsive{    
+    height:90%
+}
+
+table thead{
+    background:black;
+    color:white
+}
+.title{
+    margin:2rem;
+}
