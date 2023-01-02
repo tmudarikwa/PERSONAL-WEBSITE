@@ -43,7 +43,7 @@ let getPortfolio = () => {
                                     techStack: "NodeJS, HTML, CSS, bootstrap, JavaScript, JQuery, Express, Heroku, MongoDB, GoogleMaps API, Square API",
                                     description: "I did the front and back end developing for a delivering service company. The main thing they wanted was for their customers to be able to schedules appointments online, make payments, join their mailing list and be able to leave reviews.",
                                     github:"None",
-                                    url:"https://www.adbdeliveryservices.com/",
+                                    url:"http://www.adbdeliveryservices.com/",
                                     imgPath:"/portfolio/adbdeliveryservices"
                                 },
                                 {

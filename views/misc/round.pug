@@ -1,0 +1,27 @@
+extends ../layout
+
+block content
+  .table-responsive
+    .title
+      h3.col-12.text-center ROUND FOR 2023
+    table(class="table table-hover")
+      thead
+        tr 
+          th(scope="col")
+          th(scope="col") MONTH
+          th(scope="col") DAY
+          th(scope="col") NAME
+          th(scope="col") AMOUNT
+        tbody
+          each detail in roundTableDetails.detailsEntries
+            tr 
+              td.count 
+                | #{detail.count}
+              td.month 
+                | #{detail.month}
+              td.day 
+                | #{detail.day}
+              td.name 
+                | #{detail.name}
+              td.amount 
+                | $ #{detail.amount}.00
