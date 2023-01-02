@@ -9,7 +9,7 @@ router.get('/', function(req, res, next) {
   const path = '/misc/round';
   res.locals.path = '/misc/';
   res.locals.year = date.getFullYear();
-  res.render('misc/round', { title: 'Misc | Rhaundi', year: date.getFullYear(), roundTableDetails : roundTable.getDetails()});
+  res.render('misc/editround', { title: 'Misc | Edit Rhaundi', year: date.getFullYear(), roundTableDetails : roundTable.getDetails()});
 });
 
 module.exports = router;

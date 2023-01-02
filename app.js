@@ -22,8 +22,10 @@ const chillybarrelsportal = require('./routes/portfolio/chillybarrels-portal');
 const chillybarrelswoocommerce = require('./routes/portfolio/chillybarrels-woocommerce');
 const potencity = require('./routes/portfolio/potencity');
 const adbdeliveryservices = require('./routes/portfolio/adbdeliveryservices');
-const replicationtrace = require('./routes/portfolio/replicationtrace.js');
-const round = require('./routes/misc/round.js');
+const replicationtrace = require('./routes/portfolio/replicationtrace');
+const round = require('./routes/misc/round');
+const editround = require('./routes/misc/editround');
+const saveRoundTable = require('./config/editedRoundTable');
 
 const app = express();
 // view engine setup
@@ -67,6 +69,12 @@ app.use('/portfolio/adbdeliveryservices', adbdeliveryservices);
 app.use('/portfolio/replicationtrace', replicationtrace);
 //misc routes
 app.use('/misc/round', round);
+app.use('/misc/editround', editround);
+app.post('/misc/postedittedround', function(req,res){
+  console.log('post misc')
+  saveRoundTable.saveEdits(req,res);
+  res.redirect('/misc/round');
+})
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

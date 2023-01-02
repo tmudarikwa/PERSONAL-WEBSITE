@@ -1,0 +1,31 @@
+extends ../layout
+
+block content
+  form(action='/misc/postedittedround', method='post')
+    .table-responsive
+        .title
+        h3.col-12.text-center EDIT ROUND FOR 2023
+        table(class='table table-hover')
+            thead
+                tr 
+                th(scope='col')
+                th(scope='col') MONTH
+                th(scope='col') DAY
+                th(scope='col') NAME
+                th(scope='col') AMOUNT
+            tbody
+            each detail in roundTableDetails.detailsEntries
+                tr 
+                    td
+                        input(name='count',value=''+detail.count+'')
+                    td
+                        input(name='month',value=''+detail.month+'')
+                    td
+                        input(name='day',value=''+detail.day+'')
+                    td
+                        input(name='name',value=''+detail.name+'')
+                    td 
+                        input(name='amount',value=''+detail.amount+'')
+    div#buttons.col-12.text-center
+        button#submit(type='submit')
+            | SUBMIT
