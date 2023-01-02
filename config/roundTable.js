@@ -7,7 +7,13 @@ fs.readFile('config/roundtable.txt', 'utf8', (err, data) => {
     return;
   }
 
-  rawTableDetails = data.split(";");
+  let rawTableDetails = null;
+  if (data.search(';') != -1){
+    rawTableDetails = data.split(";")
+  }else{
+    rawTableDetails = data.split(",");
+  }
+  
   rawTableDetails.forEach(aTableDetail => {
     tableDetails.push(aTableDetail.replace("\r\n",""));
   });
