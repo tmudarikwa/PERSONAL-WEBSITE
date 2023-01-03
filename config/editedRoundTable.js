@@ -6,13 +6,9 @@ let saveEdits = (req,res) =>{
     const data = req.body;
     for(let i = 0; i < data.count.length; i++){
         if (i == 0 || i != data.count.length){
-            if(data.count[i].length > 0 && data.month[i].length > 0 && data.day[i].length > 0 && data.name[i].length > 0 && data.amount[i].length > 0 ){
-                row = data.count[i] + '|'+ data.month[i] +'|'+ data.day[i] +'|'+ data.name[i] +'|'+ data.amount[i];
-            }
+            row = data.count[i] + '|'+ data.month[i] +'|'+ data.day[i] +'|'+ data.name[i] +'|'+ data.amount[i];
         }else{
-            if(data.count[i].length > 0 && data.month[i].length > 0 && data.day[i].length > 0 && data.name[i].length > 0 && data.amount[i].length > 0 ){
-                row = '\r\n' + data.count[i] + '|'+ data.month[i] +'|'+ data.day[i] +'|'+ data.name[i] +'|'+ data.amount[i];
-            }
+            row = '\r\n' + data.count[i] + '|'+ data.month[i] +'|'+ data.day[i] +'|'+ data.name[i] +'|'+ data.amount[i];
         }
         dataRows.push(row);
     }

@@ -22,13 +22,15 @@ let getDetails = () => {
     let detailsEntriesArray = [];
     tableDetails.forEach(row =>{
         let rowArray = row.split("|");
-        detailsEntriesArray.push({
-            count : rowArray[0],
-            month : rowArray[1],
-            day : rowArray[2],
-            name: rowArray[3],
-            amount: rowArray[4]
-        });
+        if(rowArray[0].length > 0 && rowArray[1].length > 0 && rowArray[2].length > 0 && rowArray[3].length > 0 && rowArray[4].length > 0){
+            detailsEntriesArray.push({
+                count : rowArray[0],
+                month : rowArray[1],
+                day : rowArray[2],
+                name: rowArray[3],
+                amount: rowArray[4]
+            });
+        }
     });
 
     const details = {
