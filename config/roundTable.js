@@ -31,8 +31,6 @@ let getDetails = () => {
         });
     });
 
-    console.log(tableDetails);
-
     const details = {
                         detailsEntries: detailsEntriesArray
                     };

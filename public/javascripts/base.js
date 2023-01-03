@@ -164,6 +164,15 @@ function addRow()
 {
   let tableData = document.getElementsByClassName("table")[0].tBodies[0].innerHTML;
   console.log("About to add a row");
-  document.getElementsByClassName("table")[0].tBodies[0].innerHTML = tableData + '<tr> <td><input name="count" value="" ></td><td><input name="month" value="" ></td><td><input name="day" value="1"></td><td><input name="name" value="" ></td><td> <input name="amount" value="100"></td></tr>';
+  document.getElementsByClassName("table")[0].tBodies[0].innerHTML = tableData + '<tr> <td><input name="count" value="" ></td><td><input name="month" value="" ></td><td><input name="day" value="1"></td><td><input name="name" value="" ></td><td> <input name="amount" value="100"></td><td><span onclick="deleteRow(this)">X</span></td></tr>';
   console.log("Row Added!");
+}
+
+function deleteRow(i){
+  const rowindex = i.parentNode.parentNode.rowIndex;
+  let allRowsStr = document.getElementsByClassName("table")[0].tBodies[0].innerHTML;
+  const tempArr = document.getElementsByClassName("table")[0].tBodies[0].innerHTML.split("</tr>")
+  const rowToRemove = tempArr.splice(rowindex - 2,1);
+  const remainingRows = allRowsStr.replace(rowToRemove[0] + '</tr>','');
+  document.getElementsByClassName("table")[0].tBodies[0].innerHTML = remainingRows;
 }
