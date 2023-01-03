@@ -7,7 +7,7 @@ table thead{
     color:white
 }
 
-#submit{
+#submit,#addRow span{
     background:black;
     color:white;
     padding:.5rem;

@@ -154,3 +154,16 @@ let triggerNotyClose = () => {
     $(this).parent().hide();
   });
 }
+
+
+/**********
+ * 
+ *  MISC EDIT ROUND
+ * ********** */
+function addRow()
+{
+  let tableData = document.getElementsByClassName("table")[0].tBodies[0].innerHTML;
+  console.log("About to add a row");
+  document.getElementsByClassName("table")[0].tBodies[0].innerHTML = tableData + '<tr> <td><input name="count" value="" ></td><td><input name="month" value="" ></td><td><input name="day" value="1"></td><td><input name="name" value="" ></td><td> <input name="amount" value="100"></td></tr>';
+  console.log("Row Added!");
+}

@@ -14,18 +14,20 @@ block content
                 th(scope='col') NAME
                 th(scope='col') AMOUNT
             tbody
-            each detail in roundTableDetails.detailsEntries
-                tr 
-                    td
-                        input(name='count',value=''+detail.count+'')
-                    td
-                        input(name='month',value=''+detail.month+'')
-                    td
-                        input(name='day',value=''+detail.day+'')
-                    td
-                        input(name='name',value=''+detail.name+'')
-                    td 
-                        input(name='amount',value=''+detail.amount+'')
+                each detail in roundTableDetails.detailsEntries
+                    tr 
+                        td
+                            input(name='count',value=''+detail.count+'')
+                        td
+                            input(name='month',value=''+detail.month+'')
+                        td
+                            input(name='day',value=''+detail.day+'')
+                        td
+                            input(name='name',value=''+detail.name+'')
+                        td 
+                            input(name='amount',value=''+detail.amount+'')
+    #addRow.col-12.text-right
+        span(onclick="addRow()") ADD A ROW
     div#buttons.col-12.text-center
         button#submit(type='submit')
             | SUBMIT
