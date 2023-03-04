@@ -2,9 +2,10 @@ extends ../layout
 
 block content 
 	.container-fluid.vh-100
+		h1 Bible Study Packet
 		form(id="uploadform",method="POST",enctype="multipart/form-data",action="uploadfile")
 			div
 				label(for="fileupload") Select File to Upload
 				input(type="file", name="fileupload", id="file")
 			div 
-				input(type="submit") Submit
+				input(type="submit" value="Submit")

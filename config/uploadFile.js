@@ -1,11 +1,11 @@
 const fs = require('fs');
-qs = require('querystring');
+const formidable = require('formidable');
 
 let saveUpload = (req,res) =>{
     let form = new formidable.IncomingForm();
     form.parse(req, function (err, fields, files) {
-      var oldpath = files.filetoupload.filepath;
-      var newpath = 'config/' + files.filetoupload.originalFilename;
+      var oldpath = files.fileupload.filepath;
+      var newpath = 'config/' + files.fileupload.originalFilename;
       fs.rename(oldpath, newpath, function (err) {
         if (err) throw err;
         res.write('File uploaded and moved!');
@@ -14,4 +14,4 @@ let saveUpload = (req,res) =>{
     });
 }
 
-module.exports.saveEdits = saveUpload;
+module.exports.saveUpload = saveUpload;

@@ -25,7 +25,7 @@ const replicationtrace = require('./routes/portfolio/replicationtrace');
 const round = require('./routes/misc/round');
 const editround = require('./routes/misc/editround');
 const saveRoundTable = require('./config/editedRoundTable');
-const upload = require('./routes/misc/editround');
+const upload = require('./routes/misc/upload');
 const uploadFile= require('./config/uploadFile');
 
 const app = express();
@@ -80,8 +80,6 @@ app.post('/misc/postedittedround', function(req,res){
 app.post('/misc/uploadfile', function(req,res){
   console.log('post file')
   uploadFile.saveUpload(req,res);
-  res.write("Thank you for sending me the file Mr. Wilson");
-  res.end();
 })
 
 // catch 404 and forward to error handler

@@ -22,3 +22,16 @@ table thead{
     margin-top:2rem;
     margin-bottom:2rem;
 }
+
+#uploadform{
+    text-align: center;
+    padding: 5rem;
+}
+
+#uploadform label{
+    margin-right: 1rem
+}
+
+#uploadform [type=submit] {
+    width:50%;
+}
