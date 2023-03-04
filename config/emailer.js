@@ -34,4 +34,34 @@ let sendcontactemail = (req,res) =>{
       });
 };
 
+let sendFile = (req,res,file) =>{
+
+    const data = req.body;
+    const message = {
+                  html: "<p>"+data.message+"</p> CONTACT EMAIL: "+data.email,
+                  subject: "TAKUNDA MUDARIKWA PERSONAL WEBSITE FILE RECIEVED",
+                  from_email: "tkmud91@gmail.com",
+                  from_name: ""+data.email+"",
+                  to:"tkmud91@hotmail.com",
+				  attachments: [{
+					  path: file
+				  }]
+              };
+
+      transporter.sendMail(message, function(error,result) {
+		  if(error){
+			const emailsent = "We apologize there has been an error trying to submit your information.";
+			res.send(emailsent);
+			console.log(error);
+			return;
+		  }else{
+			const emailsent = "Email sent! I will get intouch with you asap. Thank you!";
+			res.send(emailsent);
+			return;
+		  }
+      });
+
+}
+
 module.exports.sendContactEmail = sendcontactemail;
+module.exports.sendFile = sendFile;

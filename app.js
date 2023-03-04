@@ -8,7 +8,7 @@ const cors = require('cors');
 
 const index = require('./routes/index');
 const viewresume = require('./routes/viewresume');
-const sendemail = require('./config/nodemailer');
+const sendemail = require('./config/emailer');
 const sendRedwasteEmail = require('./config/mailchimp');
 const frewprocess = require('./routes/portfolio/frewprocess');
 const gasco = require('./routes/portfolio/gasco');
