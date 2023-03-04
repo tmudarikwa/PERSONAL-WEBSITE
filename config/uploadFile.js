@@ -8,7 +8,7 @@ let saveUpload = (req,res) =>{
       var newpath = 'config/' + files.fileupload.originalFilename;
       fs.rename(oldpath, newpath, function (err) {
         if (err) throw err;
-        res.write('File uploaded and moved!');
+        res.write('File uploaded. Thank you Mr Wilson!');
         res.end();
       });
     });
