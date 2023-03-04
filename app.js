@@ -6,7 +6,6 @@ const cookieParser = require('cookie-parser');
 const bodyParser = require('body-parser');
 const cors = require('cors');
 
-
 const index = require('./routes/index');
 const viewresume = require('./routes/viewresume');
 const sendemail = require('./config/nodemailer');
@@ -26,6 +25,8 @@ const replicationtrace = require('./routes/portfolio/replicationtrace');
 const round = require('./routes/misc/round');
 const editround = require('./routes/misc/editround');
 const saveRoundTable = require('./config/editedRoundTable');
+const upload = equire('./routes/misc/editround');
+const uploadFile= require('./config/uploadFile');
 
 const app = express();
 // view engine setup
@@ -70,10 +71,17 @@ app.use('/portfolio/replicationtrace', replicationtrace);
 //misc routes
 app.use('/misc/round', round);
 app.use('/misc/editround', editround);
+app.use('/misc/upload', upload);
 app.post('/misc/postedittedround', function(req,res){
   console.log('post misc')
   saveRoundTable.saveEdits(req,res);
   res.redirect('/misc/round');
+})
+app.post('/misc/uploadfile', function(req,res){
+  console.log('post file')
+  uploadFile.saveUpload(req,res);
+  res.write("Thank you for sending me the file Mr. Wilson");
+  res.end();
 })
 
 // catch 404 and forward to error handler
