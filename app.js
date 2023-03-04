@@ -25,7 +25,7 @@ const replicationtrace = require('./routes/portfolio/replicationtrace');
 const round = require('./routes/misc/round');
 const editround = require('./routes/misc/editround');
 const saveRoundTable = require('./config/editedRoundTable');
-const upload = equire('./routes/misc/editround');
+const upload = require('./routes/misc/editround');
 const uploadFile= require('./config/uploadFile');
 
 const app = express();
