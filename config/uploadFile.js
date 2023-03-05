@@ -3,6 +3,7 @@ const formidable = require('formidable');
 const sendEmail = require('./emailer');
 
 let saveUpload = (req,res) =>{
+    let res_message;
     let form = new formidable.IncomingForm();
     form.parse(req, function (err, fields, files) {
         let oldpath = files.fileupload.filepath;
@@ -14,9 +15,8 @@ let saveUpload = (req,res) =>{
             // Write the file
             fs.writeFile(newpath, data, function (err) {
                 if (err) throw err;
-                res.write('File uploaded. Thank you Mr Wilson!');
+                res_message = 'File uploaded. Thank you Mr Wilson!';
                 sendEmail.sendFile(req,res,newpath);
-                res.end();
                 console.log('File written!');
             });
             console.log(newpath);
@@ -27,6 +27,8 @@ let saveUpload = (req,res) =>{
             });
         });
     });
+
+    return res_message;
 }
 
 module.exports.saveUpload = saveUpload;

@@ -27,6 +27,7 @@ const editround = require('./routes/misc/editround');
 const saveRoundTable = require('./config/editedRoundTable');
 const upload = require('./routes/misc/upload');
 const uploadFile= require('./config/uploadFile');
+const uploadedFile = require('./routes/misc/uploadedfile');
 
 const app = express();
 // view engine setup
@@ -72,14 +73,15 @@ app.use('/portfolio/replicationtrace', replicationtrace);
 app.use('/misc/round', round);
 app.use('/misc/editround', editround);
 app.use('/misc/upload', upload);
+app.use('/misc/fileuploaded', uploadedFile);
 app.post('/misc/postedittedround', function(req,res){
   console.log('post misc')
   saveRoundTable.saveEdits(req,res);
   res.redirect('/misc/round');
 })
 app.post('/misc/uploadfile', function(req,res){
-  console.log('post file')
   uploadFile.saveUpload(req,res);
+  res.redirect('/misc/fileuploaded');
 })
 
 // catch 404 and forward to error handler
