@@ -80,7 +80,7 @@ app.post('/misc/postedittedround', function(req,res){
   res.redirect('/misc/round');
 })
 app.post('/misc/uploadfile', function(req,res){
-  let msg = uploadFile.saveUpload(req,res);
+  uploadFile.saveUpload(req,res);
   res.redirect('/misc/fileuploaded');
 })
 
