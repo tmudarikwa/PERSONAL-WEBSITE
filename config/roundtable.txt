@@ -1,1 +1,1 @@
-1|July|27 - 31|Takunda|100,2|August|26 - 28|Mai D|100,3|September|27 - 31|Sethu|100,4|October|27 - 30|Gogo Mudarikwa|100,5|November|27 - 31|Rumby|100,6|December|27 - 30|Lucky|100
+1|July|27 - 31|Takunda|200,2|August|26 - 28|Mai D|200,3|September|27 - 31|Sethu|200,4|October|27 - 30|Gogo Mudarikwa|200,5|November|27 - 31|Rumby|200,6|December|27 - 30|Lucky|200
