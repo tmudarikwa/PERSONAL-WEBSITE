@@ -36,7 +36,7 @@ window.addEventListener('load', function(){
   setTimeout(function(){
   $('#loader').hide();
   $('.container-fluid').fadeIn('slow');
-  },3000);
+  },1000);
 });
 /****************************
    NAVIGATION

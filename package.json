@@ -1,5 +1,5 @@
 {
-  "name": "takundamudarikwa.com-heroku",
+  "name": "mawinginvestmentsfinancialservices",
   "version": "0.0.0",
   "private": true,
   "scripts": {
@@ -23,5 +23,18 @@
     "noty": "^3.2.0-beta-deprecated",
     "pug": ">=3.0.1",
     "serve-favicon": "~2.5.0"
-  }
+  },
+  "description": "Portfolio Website showcasing projects and passions that I have worked on.",
+  "main": "app.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tmudarikwa/mawinginvestmentsandfinancialservices.git"
+  },
+  "author": "Takunda Mudarikwa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tmudarikwa/mawinginvestmentsandfinancialservices/issues"
+  },
+  "homepage": "https://github.com/tmudarikwa/mawinginvestmentsandfinancialservices#readme"
 }
