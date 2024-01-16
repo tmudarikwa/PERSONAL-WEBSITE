@@ -63,7 +63,7 @@ let skillsGraph = (id) =>{
         .attr("y1", function(d) { return y(d.skills); })
         .attr("y2", function(d) { return y(d.skills); })
         .attr("stroke", "rgb(152 180 208)")
-        .delay(function(d,i){; return(i*200)})
+        .delay(function(d,i){; return(i*50)})
 
     svg.selectAll("circle")
         .transition()
@@ -73,7 +73,7 @@ let skillsGraph = (id) =>{
         .attr("r", "7")
         .style("fill", "rgb(152 180 208)")
         .attr("stroke", "#2c3e50")
-        .delay(function(d,i){; return(i*200)})
+        .delay(function(d,i){; return(i*100)})
 
     })
 }

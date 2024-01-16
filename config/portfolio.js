@@ -16,7 +16,7 @@ let getPortfolio = () => {
                                     techStack: "WooCommerce,WordPress, MySQL, AWS (Lightsail), CPanel, Google Maps API",
                                     description: "This is a liquor buying and delivery site built on Magento2 ecommerce platform.",
                                     github:"None",
-                                    url:"https://pixykorner.co.za/chillybarrels",
+                                    url:"#",
                                     imgPath:"/portfolio/chillybarrels-woocommerce"
                                 },
                                 {
@@ -79,7 +79,7 @@ let getPortfolio = () => {
                                     techStack: "JAVA EE, HTML, HTML5, AJAX, jQuery, CSS, PostgreSQL, D3.JS, GoogleMaps API",
                                     description: "This is an internal sales portal which serves to make it easier for sales people to set and target customer to focus on. Though this was the main idea the application does far more than that from displaying a snap shot of the companys' revenue through graphs to mapping customers on a map using google maps API and also uploading excel data to a Postgres database.",
                                     github:"None",
-                                    url:"http://portal.gascoonline.com",
+                                    url:"#",
                                     imgPath:"/portfolio/gasco"
                                 },
                                 {
