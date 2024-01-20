@@ -18,7 +18,7 @@ let skillsGraph = (id) =>{
 
     // Add X axis
     const x = d3.scaleLinear()
-        .domain([0, 7])
+        .domain([0, 10])
         .range([ 0, width]);
     svg.append("g")
         .text("Years of Experience")
