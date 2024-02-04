@@ -15,7 +15,7 @@ let saveEdits = (req,res) =>{
 
     const roundData = dataRows.toString();
 
-    fs.writeFile('config/roundtable.txt', roundData, err => {
+    fs.writeFile('config/roundtable.txt', roundData, {encoding: 'utf8', flag: 'w'}, err => {
     if (err) {
         console.error(err);
     }

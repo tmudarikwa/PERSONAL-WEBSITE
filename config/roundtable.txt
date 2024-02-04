@@ -1,1 +1,1 @@
-1|July|27 - 31|Takunda|200,2|August|27 - 31|Mai D|200,3|September|27 - 30|Sethu|200,4|October|27 - 31|Gogo Mudarikwa|200,5|November|27 - 30|Rumby|200,6|December|27 - 31|Lucky|200
+1|January|27 - 31|Takunda|200,2|February|27 - 29|Mai D|200,3|March|27 - 31|Sethu|200,4|April|27 - 30|Gogo Mudarikwa|200,5|May|27 - 31|Rumby|200,6|June|27 - 30|Lucky|200
