@@ -2,7 +2,16 @@ let getPortfolio = () => {
     const portfolio = {
                         portfolio:[
                                 {
-                                    projectName: "Mii App (CURRENT PROJECT)",
+                                    projectName: "Our Wedding Website",
+                                    role: "Developer",
+                                    techStack: "NodeJS, PUG, MongoDB, Open Meteo API, CSS",
+                                    description: "Single page application for my wedding. Allow guest to RSVP and saves the data to database. Uses the Open Meteo API to get historical weather data",
+                                    github:"None",
+                                    url:"https://takundaandkrystal.com/",
+                                    imgPath:"/portfolio/weddingwebsite"
+                                },
+                                {
+                                    projectName: "Mii App",
                                     role: "Developer",
                                     techStack: "Java, Android Studio, SQLite Database",
                                     description: "An Android app for promoting a healthy mind",
@@ -246,6 +255,21 @@ let getPortfolio = () => {
                                     value: "WPF"
                                     }
                                 ], portfolioProjects:[
+                                    {
+                                        title: "PORTFOLIO - Wedding Website",
+                                        images:[
+                                            '../images/portifolio/weddingwebsite/wedding_website.png'
+                                        ],
+                                        imageCaptions:[
+                                            'Single Page Wedding Website'
+                                        ],
+                                        cardHeaders:[
+                                            'Wedding Website'
+                                        ],
+                                        cardDescriptions:[
+                                            'Single page wedding website that persists data using Mongodb and sends email confirmation emails. Leverages Open Meteo API for historical weather data display and will provide predicted weather insights when it\'s within 7 days of the wedding date.'
+                                        ]
+                                    },
                                     {
                                         title: "PORTFOLIO - ChillyBarrels (WooCommerce)",
                                         images:[

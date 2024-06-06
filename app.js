@@ -26,8 +26,7 @@ const round = require('./routes/misc/round');
 const editround = require('./routes/misc/editround');
 const saveRoundTable = require('./config/editedRoundTable');
 const upload = require('./routes/misc/upload');
-const uploadFile= require('./config/uploadFile');
-const uploadedFile = require('./routes/misc/uploadedfile');
+const weddingwebsite = require('./routes/portfolio/weddingwebsite');
 
 const app = express();
 // view engine setup
@@ -47,7 +46,7 @@ app.use(cors({
 }));
 
 app.use('/', index);
-app.use('/TAKUNDAEUGENEMUDARIKWA-RESUME', viewresume);
+//app.use('/TAKUNDAEUGENEMUDARIKWA-RESUME', viewresume);
 app.post('/sendemail', function(req,res){
    sendemail.sendContactEmail(req,res);
 });
@@ -69,11 +68,11 @@ app.use('/portfolio/chillybarrels-portal', chillybarrelsportal);
 app.use('/portfolio/chillybarrels-woocommerce', chillybarrelswoocommerce);
 app.use('/portfolio/adbdeliveryservices', adbdeliveryservices);
 app.use('/portfolio/replicationtrace', replicationtrace);
+app.use('/portfolio/weddingwebsite', weddingwebsite);
 //misc routes
 app.use('/misc/round', round);
 app.use('/misc/editround', editround);
 app.use('/misc/upload', upload);
-app.use('/misc/fileuploaded', uploadedFile);
 app.post('/misc/postedittedround', function(req,res){
   console.log('post misc')
   saveRoundTable.saveEdits(req,res);
