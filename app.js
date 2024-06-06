@@ -46,6 +46,7 @@ app.use(cors({
 }));
 
 app.use('/', index);
+// commenting out resume route
 //app.use('/TAKUNDAEUGENEMUDARIKWA-RESUME', viewresume);
 app.post('/sendemail', function(req,res){
    sendemail.sendContactEmail(req,res);
