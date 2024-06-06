@@ -69,7 +69,7 @@ app.use('/portfolio/chillybarrels-portal', chillybarrelsportal);
 app.use('/portfolio/chillybarrels-woocommerce', chillybarrelswoocommerce);
 app.use('/portfolio/adbdeliveryservices', adbdeliveryservices);
 app.use('/portfolio/replicationtrace', replicationtrace);
-app.use('/portfolio/weddingwebsite', weddingwebsite);
+//app.use('/portfolio/weddingwebsite', weddingwebsite);
 //misc routes
 app.use('/misc/round', round);
 app.use('/misc/editround', editround);

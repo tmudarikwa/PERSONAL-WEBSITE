@@ -27,13 +27,10 @@
   "description": "Portfolio Website showcasing projects and passions that I have worked on.",
   "main": "app.js",
   "repository": {
-    "type": "git",
-    "url": "git+https://github.com/tmudarikwa/mawinginvestmentsandfinancialservices.git"
+    "type": "git"
   },
   "author": "Takunda Mudarikwa",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/tmudarikwa/mawinginvestmentsandfinancialservices/issues"
-  },
-  "homepage": "https://github.com/tmudarikwa/mawinginvestmentsandfinancialservices#readme"
+  }
 }
